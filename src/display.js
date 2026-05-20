@@ -187,7 +187,7 @@ const crafting_pages = {
 const backup_load_button = document.getElementById("backup_load_button");
 const other_save_load_button = document.getElementById("import_other_save_button");
 
-const units=['','W','E','T','Q','Qi','Sx','Sp','O','N','D','Ud','Dd'];
+const units=['','W','E','Z','J','G','e24','e28','e32','e36','e40','e44','e48'];
 
 function format_number(some_number)
 {

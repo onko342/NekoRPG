@@ -26,7 +26,7 @@ const weapon_type_to_skill = {
     "wand": "Wands"
 };
 
-const units=['','W','E','T','Q','Qi','Sx','Sp','O','N','D','Ud','Dd'];
+const units=['','W','E','Z','J','G','e24','e28','e32','e36','e40','e44','e48'];
 
 function format_number(some_number)
 {
