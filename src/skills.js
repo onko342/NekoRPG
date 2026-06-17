@@ -27,6 +27,7 @@ const weapon_type_to_skill = {
 };
 
 const units=['','W','E','Z','J','G','e24','e28','e32','e36','e40','e44','e48'];
+// after 2.72 (scientific notation available), change this to W E Z J G Zi Rn Go Jn Zn Za Ji
 
 function format_number(some_number)
 {
