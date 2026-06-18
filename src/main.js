@@ -946,14 +946,14 @@ function textline_special(t_key){
         }  
         else if(t_key == "A7-begin"){
             let age=Math.round(current_game_time.year - 1359 + (current_game_time.era-31698)*10081);
-            displayed_text += `To be at the <span class="realm_terra">${window.REALMS[character.xp.current_level][1]}</span> realm, <br>at the age of ${age},<br>and make it here to the Boundary Lake - you are already a remarkable descendant of the Na family.`;
+            displayed_text += `To be at the <span class="realm_terra">${window.REALMS[character.xp.current_level][1]}</span> realm, <br>at the age of ${age},<br>and make it here to the Boundary Lake - you are already a remarkable descendant of the Nya family.`;
 
-            displayed_text += `<br>  If the Na family produces a genius,<br>perhaps we can rise again and avenge my unfinished grudges.<br>`;
+            displayed_text += `<br>  If the Nya family produces a genius,<br>perhaps we can rise again and avenge my unfinished grudges.<br>`;
 
             if(character.xp.current_level >= 15) displayed_text += `The barrier has loosened to this extent...<br>Before, only cultivators below mid-Earth Rank could enter here.<br>`;
-            if(age <= 12) displayed_text += `Wow!!! So young! The revival of the Na family is imminent!<br>`;
+            if(age <= 12) displayed_text += `Wow!!! So young! The revival of the Nya family is imminent!<br>`;
             if(age >= 1000) displayed_text += `I was thinking... I slept here for less than an era,<br>and the cosmic laws outside have changed?<br>Shouldn't Earth Rank only have a lifespan of 0.1 era...<br>`;
-            else if(age >= 500) displayed_text += `Hey hey, isn't this a secret realm meant for young people of the Na family...<br>`;
+            else if(age >= 500) displayed_text += `Hey hey, isn't this a secret realm meant for young people of the Nya family...<br>`;
             else if(age >= 50) displayed_text += `Hmm, what age... never mind.<br>As long as there's insight, it's never too late to start!<br>`;
             
         }
@@ -2562,7 +2562,7 @@ function get_location_rewards(location) {
                             activity: locations[location.repeatable_reward.activities[i].location].activities[location.repeatable_reward.activities[i].activity]});
     }
 
-    if(location.name == "Na Family Secret Realm - ∞" && Math.floor(inf_combat.A6.cur * 1.25) > inf_combat.A6.cap){
+    if(location.name == "Nya Family Secret Realm - ∞" && Math.floor(inf_combat.A6.cur * 1.25) > inf_combat.A6.cap){
         inf_combat.A6.cap = Math.floor(inf_combat.A6.cur * 1.25);
         log_message(`Formation power cap raised: ${inf_combat.A6.cur} -> ${inf_combat.A6.cap} !`, "dialogue_unlocked");
     }

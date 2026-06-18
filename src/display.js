@@ -1917,7 +1917,7 @@ function create_location_types_display(current_location){
     {
         const type_div = document.createElement("div");
         let c_halo = current_location.enemy_stat_halo;
-        if(current_location.name == "Na Family Secret Realm - ∞"){
+        if(current_location.name == "Nya Family Secret Realm - ∞"){
             c_halo = inf_combat.A6.cur * 0.08;
         }
         if(current_location.name.includes("Hel Swamp")){
@@ -3069,7 +3069,7 @@ function update_displayed_ongoing_activity(current_activity, is_job){
             inf_combat.A7 = inf_combat.A7 || {cur:0}; 
             if(inf_combat.A7.cur >= 3.2e6){
                 unlock_location(locations["声律城废墟"],true);
-                action_xp_div.innerHTML += "<br>Destination reached. (Starting from [Na Family Secret Realm])"   
+                action_xp_div.innerHTML += "<br>Destination reached. (Starting from [Nya Family Secret Realm])"   
             }
             else{
                 action_xp_div.innerHTML += "<br>Heading to Shenlv City..."   
@@ -3820,7 +3820,7 @@ function add_bestiary_lines(zone)
     //zone 11-> 1-1，rank作为1200处理
     //sorts bestiary_list div by enemy rank
     bestiary_entry_divs[zone] = document.createElement("div");
-    let ZoneNameMap = {11:"Nayaka Training Ground",12:"Yangang City",13:"Yangang Outskirts",14:"Underground Palace",15:"Underground Palace Core",21:"Wild Beast Forest",22:"Qingye Riverside",23:"Na Family Secret Realm",24:"Barrier Lake",25:"Shenlv City Ruins",26:"Shenlv City Battlefield",27:"Sky Vessel",28:"Ship Core",31:"Hel Swamp",32:"Dark Forest",33:"Pure White Ice Plains",34:"Ice City",35:"Water Prison",36:"Inheritance Realm"}
+    let ZoneNameMap = {11:"Nayaka Training Ground",12:"Yangang City",13:"Yangang Outskirts",14:"Underground Palace",15:"Underground Palace Core",21:"Wild Beast Forest",22:"Qingye Riverside",23:"Nya Family Secret Realm",24:"Barrier Lake",25:"Shenlv City Ruins",26:"Shenlv City Battlefield",27:"Sky Vessel",28:"Ship Core",31:"Hel Swamp",32:"Dark Forest",33:"Pure White Ice Plains",34:"Ice City",35:"Water Prison",36:"Inheritance Realm"}
     const name_div = document.createElement("div");
     name_div.innerHTML = `<b>【${ZoneNameMap[zone]}】</b>`;
     name_div.classList.add("bestiary_entry_name");

@@ -243,7 +243,7 @@ class Combat_zone {
                     if(character.equipment.special?.name == "Nanami")//姐姐在！
                     {
                         log_message(`[Dungeon Cultivator] Oh ho, someone dared to break in here?`,"hero_attacked_critically");
-                        log_message(`[Nanami] I won't waste words with you. Tell me - why are you targeting my Na Family!`,"enemy_defeated");
+                        log_message(`[Nanami] I won't waste words with you. Tell me - why are you targeting my Nya Family!`,"enemy_defeated");
                         log_message(`[Sayuki] 22 lines of the widely-known story about the Blood-Kill Hall and the Dungeon Cultivator are omitted here.`,"sayuki");
                         log_message(`[Nanami] In that case, the time has come... Koko!`,"enemy_defeated");
                         log_message(`Suddenly, a strange weapon appeared in the girl's hands. About a meter long, with a deep black void at its tip. Its overall texture radiates an overwhelming, suffocating presence.`,"enemy_enhanced");
@@ -349,7 +349,7 @@ class Combat_zone {
                     halo_fix -= 0.08*key_cnt;
                 }
             }
-            else if(this.name == "Na Family Secret Realm - ∞"){
+            else if(this.name == "Nya Family Secret Realm - ∞"){
                 inf_combat.A6.cur = Math.min(inf_combat.A6.cur,9999);
                 halo_fix = (inf_combat.A6.cur - 6) * 0.08;
             }
@@ -864,7 +864,7 @@ function get_location_type_penalty(type, stage, stat) {
         description: "A bright and tidy hall, the place where Neko usually spends her time.",
         traders: ["Vending Machine"],
         dialogues: ["猫妖"],
-        name: "Na Family Hall",
+        name: "Nya Family Hall",
     });//1-1
     locations["练兵场深处"] = new Location({ 
         connected_locations: [{location: locations["纳家大厅"], custom_text: "Return to the Hall"}],
@@ -932,13 +932,13 @@ function get_location_type_penalty(type, stage, stat) {
     //NekoRPG conbat locations below
 
     locations["纳家练兵场 - 1"] = new Combat_zone({
-        description: "A place where the Na family trains their younger members. Small monsters are kept here for sparring.",  //MT1
+        description: "A place where the Nya family trains their younger members. Small monsters are kept here for sparring.",  //MT1
         enemy_count: 20, 
         enemies_list: ["毛茸茸","武装毛茸茸","红毛茸茸"],
         types: [],
         enemy_stat_variation: 0.1,
         is_unlocked: false, 
-        name: "Na Family Training Grounds - 1", 
+        name: "Nya Family Training Grounds - 1", 
         parent_location: locations["纳家大厅"],
         first_reward: {
             xp: 8,
@@ -962,7 +962,7 @@ function get_location_type_penalty(type, stage, stat) {
         types: [],
         enemy_stat_variation: 0.1,
         is_unlocked: false, 
-        name: "Na Family Training Grounds - 2", 
+        name: "Nya Family Training Grounds - 2", 
         parent_location: locations["纳家大厅"],
         first_reward: {
             xp: 12,
@@ -986,7 +986,7 @@ function get_location_type_penalty(type, stage, stat) {
         types: [],
         enemy_stat_variation: 0.1,
         is_unlocked: false, 
-        name: "Na Family Training Grounds - 3", 
+        name: "Nya Family Training Grounds - 3", 
         parent_location: locations["纳家大厅"],
         first_reward: {
             xp: 16,
@@ -1007,7 +1007,7 @@ function get_location_type_penalty(type, stage, stat) {
         types: [{type: "dark", stage: 1, xp_gain: 1}],
         enemy_stat_variation: 0.1,
         is_unlocked: true, 
-        name: "Na Family Training Grounds - 4", 
+        name: "Nya Family Training Grounds - 4", 
         
         rank:4,
         bgm:1,
@@ -1029,7 +1029,7 @@ function get_location_type_penalty(type, stage, stat) {
         types: [{type: "dark", stage: 1, xp_gain: 2}],
         enemy_stat_variation: 0.1,
         is_unlocked: false, 
-        name: "Na Family Training Grounds - 5", 
+        name: "Nya Family Training Grounds - 5", 
         
         rank:5,
         bgm:1,
@@ -1051,7 +1051,7 @@ function get_location_type_penalty(type, stage, stat) {
         types: [{type: "dark", stage: 1, xp_gain: 2}],
         enemy_stat_variation: 0.1,
         is_unlocked: false, 
-        name: "Na Family Training Grounds - 6", 
+        name: "Nya Family Training Grounds - 6", 
         
         rank:6,
         bgm:1,
@@ -1077,7 +1077,7 @@ function get_location_type_penalty(type, stage, stat) {
         
         rank:7,
         bgm:1,
-        name: "Na Family Training Grounds - 7", 
+        name: "Nya Family Training Grounds - 7", 
         parent_location: locations["练兵场深处"],
         first_reward: {
             xp: 50,
@@ -1097,7 +1097,7 @@ function get_location_type_penalty(type, stage, stat) {
         enemy_group_size: [1,1],
         is_unlocked: false, 
         is_challenge: true,
-        name: "Na Family Training Grounds - X", 
+        name: "Nya Family Training Grounds - X", 
         leave_text: "Leave obediently",
         parent_location: locations["练兵场深处"],
         repeatable_reward: {
@@ -1124,7 +1124,7 @@ function get_location_type_penalty(type, stage, stat) {
 
     
     locations["燕岗城"] = new Location({ 
-        connected_locations: [{location: locations["练兵场深处"], custom_text: "Return to the Na Family"}],
+        connected_locations: [{location: locations["练兵场深处"], custom_text: "Return to the Nya Family"}],
         description: "The bustling outer city of Yangang. Even in a world that worships strength, the townsfolk always have plenty to talk about.",
 
         bgm: 2,
@@ -2204,7 +2204,7 @@ function get_location_type_penalty(type, stage, stat) {
     
     locations["纳家秘境"] = new Location({ 
         connected_locations: [{location: locations["清野江畔"], custom_text: "Return to the Qingye Riverbank area to train"}],
-        description: "A secret training realm built by the Na Family. Contains an advanced workbench, rest area, and a storage room.",
+        description: "A secret training realm built by the Nya Family. Contains an advanced workbench, rest area, and a storage room.",
 
         traders: ["Storage Chest"],
         sleeping: {
@@ -2222,7 +2222,7 @@ function get_location_type_penalty(type, stage, stat) {
                 alchemy: 6,
             }
             },
-        name: "Na Family Secret Realm", 
+        name: "Nya Family Secret Realm", 
         is_unlocked: false,
         bgm: 8,
         //unlock_text: "好阴森的气息。这里不像是一个强者留下的遗迹，因为强者在创造遗迹时，一般都会留下引导。"
@@ -2230,10 +2230,10 @@ function get_location_type_penalty(type, stage, stat) {
     
     locations["纳家秘境 - 战斗区"] = new Location({ 
         connected_locations: [{location: locations["纳家秘境"], custom_text: "Return to the rest area to recover"}],
-        description: "A secret training realm built by the Na Family. There are five floors in total, each with more and stronger wild beasts and monsters, along with more powerful halo effects.",
+        description: "A secret training realm built by the Nya Family. There are five floors in total, each with more and stronger wild beasts and monsters, along with more powerful halo effects.",
         
         dialogues: ["秘境心火精灵"],
-        name: "Na Family Secret Realm - Combat Zone", 
+        name: "Nya Family Secret Realm - Combat Zone", 
         types: [],
         is_unlocked: true,
         bgm: 8,
@@ -2241,14 +2241,14 @@ function get_location_type_penalty(type, stage, stat) {
     });
     
     locations["纳家秘境 - 1"] = new Combat_zone({
-        description: "The Na Family's secret training realm. This is the outermost area.",
+        description: "The Nya Family's secret training realm. This is the outermost area.",
         enemy_count: 20, 
         enemies_list: ["极冰火","清野江窃贼","火烧云","马里奥菇菇","大门派杂役"],
         enemy_group_size: [1,1],
         types: [],
         is_unlocked: true, 
         is_challenge: false,
-        name: "Na Family Secret Realm - 1",
+        name: "Nya Family Secret Realm - 1",
         enemy_stat_halo: 0.08,
         rank:121, 
         bgm:8,
@@ -2262,13 +2262,13 @@ function get_location_type_penalty(type, stage, stat) {
         },
     });
     locations["纳家秘境 - 2"] = new Combat_zone({
-        description: "The Na Family's secret training realm. This is the outer area.",
+        description: "The Nya Family's secret training realm. This is the outer area.",
         enemy_count: 20, 
         enemies_list: ["火烧云","Traveling Merchant","大门派杂役","高歌骸骨","燕岗高等散修"],
         enemy_group_size: [1.5,2.5],
         types: [],
         is_unlocked: false, 
-        name: "Na Family Secret Realm - 2",
+        name: "Nya Family Secret Realm - 2",
         enemy_stat_halo: 0.16,
         rank:122, 
         bgm:8,
@@ -2282,13 +2282,13 @@ function get_location_type_penalty(type, stage, stat) {
         },
     });
     locations["纳家秘境 - 3"] = new Combat_zone({
-        description: "The Na Family's secret training realm. This is the middle area between the inner and outer zones.",
+        description: "The Nya Family's secret training realm. This is the middle area between the inner and outer zones.",
         enemy_count: 20, 
         enemies_list: ["大门派杂役","高歌骸骨","燕岗高等散修","微花灵阵","灵慧石人"],
         enemy_group_size: [2,2],
         types: [],
         is_unlocked: false, 
-        name: "Na Family Secret Realm - 3",
+        name: "Nya Family Secret Realm - 3",
         enemy_stat_halo: 0.24,
         rank:123, 
         bgm:8,
@@ -2302,13 +2302,13 @@ function get_location_type_penalty(type, stage, stat) {
         },
     });
     locations["纳家秘境 - 4"] = new Combat_zone({
-        description: "The Na Family's secret training realm. This area is closer to the core.",
+        description: "The Nya Family's secret training realm. This area is closer to the core.",
         enemy_count: 20, 
         enemies_list: ["燕岗高等散修","微花灵阵","灵慧石人","纳家探宝者","秘境蝎龙"],
         enemy_group_size: [2.5,3.5],
         types: [],
         is_unlocked: false, 
-        name: "Na Family Secret Realm - 4",
+        name: "Nya Family Secret Realm - 4",
         enemy_stat_halo: 0.32,
         rank:124, 
         bgm:8,
@@ -2322,13 +2322,13 @@ function get_location_type_penalty(type, stage, stat) {
         },
     });
     locations["纳家秘境 - 5"] = new Combat_zone({
-        description: "The Na Family's secret training realm. This is the core area.",
+        description: "The Nya Family's secret training realm. This is the core area.",
         enemy_count: 20, 
         enemies_list: ["微花灵阵","灵慧石人","纳家探宝者","秘境蝎龙","荒兽法兵","巨人先锋"],
         enemy_group_size: [3,3],
         types: [],
         is_unlocked: false, 
-        name: "Na Family Secret Realm - 5",
+        name: "Nya Family Secret Realm - 5",
         enemy_stat_halo: 0.40,
         rank:125, 
         bgm:8,
@@ -2344,13 +2344,13 @@ function get_location_type_penalty(type, stage, stat) {
     });
     
     locations["纳家秘境 - ∞"] = new Combat_zone({
-        description: "The innermost core area of the Na Family's secret training realm. Spirit array intensity can be freely adjusted. (Floor manual updates may not be timely; please refer to the Heart Fire Sprite for accurate stats)",
+        description: "The innermost core area of the Nya Family's secret training realm. Spirit array intensity can be freely adjusted. (Floor manual updates may not be timely; please refer to the Heart Fire Sprite for accurate stats)",
         enemy_count: 20, 
         enemies_list: ["微花灵阵","灵慧石人","纳家探宝者","秘境蝎龙","荒兽法兵","巨人先锋"],
         enemy_group_size: [6,6],
         types: [],
         is_unlocked: false, 
-        name: "Na Family Secret Realm - ∞",
+        name: "Nya Family Secret Realm - ∞",
         enemy_stat_halo: 0.48,
         rank:126, 
         bgm:8,
@@ -2369,7 +2369,7 @@ function get_location_type_penalty(type, stage, stat) {
         types: [],
         is_unlocked: false, 
         is_challenge: true,
-        name: "Na Family Secret Realm - X",
+        name: "Nya Family Secret Realm - X",
         enemy_stat_halo: 0.40,
         bgm:8,
         parent_location: locations["纳家秘境 - 战斗区"],
@@ -2392,7 +2392,7 @@ function get_location_type_penalty(type, stage, stat) {
     
     locations["结界湖"] = new Location({ 
         connected_locations: [{location: locations["纳家秘境"], custom_text: "Return to the family's secret realm"}],
-        description: "Guided here by the ancestor Na Ying, the Barrier Lake that seals the \"Spirit\".",
+        description: "Guided here by the ancestor Nya Ying, the Barrier Lake that seals the \"Spirit\".",
 
         dialogues: ["纳鹰"],
         name: "Barrier Lake",

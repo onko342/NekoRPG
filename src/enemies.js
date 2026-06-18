@@ -648,7 +648,7 @@ class Enemy {
     });
     enemy_templates["习武孩童"] = new Enemy({
         name: "Martial Arts Child",
-        description: "Some other family's kid who snuck over to the Na Family to learn techniques - they deserve a punishment!",
+        description: "Some other family's kid who snuck over to the Nya Family to learn techniques - they deserve a punishment!",
         xp_value: 5, 
         rank: 1122,
         image: "image/enemy/E1122.png",
@@ -708,8 +708,8 @@ class Enemy {
     });
     //1-2 below  
     enemy_templates["纳家待从"] = new Enemy({
-        name: "Na Family Attendant",
-        description: "An ordinary Na Family follower. Since they are on the city streets, they hold back their strength.",
+        name: "Nya Family Attendant",
+        description: "An ordinary Nya Family follower. Since they are on the city streets, they hold back their strength.",
         xp_value: 13, 
         rank: 1201,
         image: "image/enemy/E1201.png",
@@ -824,8 +824,8 @@ class Enemy {
         ],
     });
     enemy_templates["纳家塑像"] = new Enemy({
-        name: "Na Family Statue",
-        description: "A mass-produced Golem statue by the Na Family. Not very powerful, but cheap.",
+        name: "Nya Family Statue",
+        description: "A mass-produced Golem statue by the Nya Family. Not very powerful, but cheap.",
         xp_value: 13, 
         rank: 1207,
         image: "image/enemy/E1207.png",
@@ -2781,7 +2781,7 @@ class Enemy {
     
     enemy_templates["大门派杂役"] = new Enemy({
         name: "Major Sect Handyman",
-        description: "Why would the Na Family's secret realm be open to other sects... Perhaps the Na Family disciples aren't enough to explore such a vast realm?",
+        description: "Why would the Nya Family's secret realm be open to other sects... Perhaps the Nya Family disciples aren't enough to explore such a vast realm?",
         xp_value: 17711, 
         rank: 2301,
         image: "image/enemy/E2301.png",
@@ -2878,7 +2878,7 @@ class Enemy {
         ],
     });
     enemy_templates["纳家探宝者"] = new Enemy({
-        name: "Na Family Treasure Hunter",
+        name: "Nya Family Treasure Hunter",
         description: "Dang, it's a rival! Why does everyone else get to enter right at the level cap...",
         xp_value: 28657, 
         rank: 2306,
@@ -3056,7 +3056,7 @@ class Enemy {
         ],
     });
     enemy_templates["纳家冰雪亲卫"] = new Enemy({
-        name: "Na Family Ice and Snow Royal Guard",
+        name: "Nya Family Ice and Snow Royal Guard",
         description: "A fairy guard that has obtained the power of [9]. If you don't deal with it quickly, there will be big trouble.",
         xp_value: 46368, 
         rank: 2406,
@@ -5509,8 +5509,8 @@ B5 6324'5986 /1'0233'4155exp
 //challenge enemies
 (function(){
     enemy_templates["纳家待从[BOSS]"] = new Enemy({
-        name: "Na Family Attendant [BOSS]",
-        description: "A Na Family Attendant using its full power. Fighting on home turf means no holding back!",
+        name: "Nya Family Attendant [BOSS]",
+        description: "A Nya Family Attendant using its full power. Fighting on home turf means no holding back!",
         add_to_bestiary: true,
         xp_value: 13, 
         rank: 1199,

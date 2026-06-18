@@ -4968,7 +4968,7 @@ item_templates["Twist liek a snek"] = new Book({
     });
     item_templates["秘境芦苇"] = new Loot({
         name: "Secret Realm Reed",
-        description: "A flexible material from the Na family secret realm, can absorb energy attacks. Many cultivators and wild beasts carry it.",
+        description: "A flexible material from the Nya family secret realm, can absorb energy attacks. Many cultivators and wild beasts carry it.",
         value: 2.4e7,
         image: "image/item/A6_reed.png",
     });
