@@ -2498,7 +2498,7 @@ item_templates["Twist liek a snek"] = new Book({
 
 (function(){
     item_templates["三月断宵"] = new Method({
-        name: "Three-Month Severed Night",
+        name: "Three-Moon Severed Night",
         id: "三月断宵",
         description: "A cultivation method suitable for sky-realm cultivators. Greatly increases the efficiency of skill proficiency accumulation, while also slightly increasing the rate of free energy absorption.",
         value: 909090,
@@ -4356,8 +4356,8 @@ item_templates["Twist liek a snek"] = new Book({
     
     item_templates["牵制-从入门到入土"] = new OtherItem({
         id: "牵制-从入门到入土",
-        name: "Suppression - From Beginner to Buried",
-        description: "Completely blacked out, with only a blood letter in the common language of the Xuelo Continent: 'Suppression ruins a life, weakness impoverishes three generations.'",
+        name: "Restraining - From Beginner to Buried",
+        description: "Completely blacked out, with only a blood letter in the common language of the Xuelo Continent: 'Restraining ruins a life, weakness impoverishes three generations.'",
         value: 11037,
         image: "image/item/BurnBlood.png",
     });
@@ -4448,11 +4448,11 @@ item_templates["Twist liek a snek"] = new Book({
         image: "image/item/A9_magic.png",
     });
     item_templates["A9·牵制药剂"] = new UsableItem({
-        name: "A9·Suppression Potion",
-        description: "Provides 60% effective suppression, capped at 3x damage amplification.",
+        name: "A9·Restraining Potion",
+        description: "Provides 60% effective restraining, capped at 3x damage amplification.",
         value: 240e6,
         realmcap:18,
-        effects: [{effect: "Suppression A9", duration: 120}],
+        effects: [{effect: "Restraining A9", duration: 120}],
         image: "image/item/A9_contain.png",
     });
     item_templates["A9·回风药剂"] = new UsableItem({

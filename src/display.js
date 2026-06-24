@@ -3536,7 +3536,7 @@ function update_displayed_faved_stances() {
 
 
 /* 
-Create anything needed about 'special stats' Display
+Create anything needed about 'special skills' Display
 [0]：魔攻
 
 */
@@ -3546,7 +3546,7 @@ let spec_stat = [[0, 'Magic Attack', '#bbb0ff','This enemy seems to have mastere
 [2, "Swift", "#ffcc33","This enemy strikes first.<br>The enemy first launches an <span style='color:yellow'>extra attack</span>."],
 [3, "Double Strike", "#ffee77", "The enemy attacks with great speed and terrifying power, but is more fragile.<br>The enemy attacks <span style='color:#87CEFA'>2 times</span> per round."],
 [4, "Dash", "#5dc44b", "This enemy is fast and agile.<br>The enemy first launches a <span style='color:#87CEFA'>triple strike</span>."],
-[5, "Suppress", "#25c1d9", "A technique to restrain the opponent — a trick or a burden.<br>Enemy damage per round * <span style='color:#87CEFA'>(enemy defense / player defense)</span>."],
+[5, "Restraining", "#25c1d9", "A technique to restrain the opponent — a trick or a burden.<br>Enemy damage per round * <span style='color:#87CEFA'>(enemy defense / player defense)</span>."],
 [6, "Triple Strike", "#ffee77", "The enemy attacks with great speed and terrifying power, but is more fragile.<br>The enemy attacks <span style='color:#87CEFA'>3 times</span> per round."],
 [7, "Rend", "#a52a2a", "This enemy attacks ferociously, creating a rend effect.<br>Enemy combat damage increased by <span style='color:#87CEFA'>half</span>."],
 [8, "Weaken", "#f2a4e8", function(enemy){return "Uses poison magic to weaken the opponent.<br>When fighting this enemy, the player's attack and defense are reduced by <span style='color:#87CEFA'>"+enemy.spec_value[8]+"%</span>."}],

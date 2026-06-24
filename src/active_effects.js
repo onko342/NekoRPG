@@ -201,8 +201,8 @@ effect_templates["Magic Attack A9"] = new ActiveEffect({
     }
 });
 
-effect_templates["Suppression A9"] = new ActiveEffect({
-    name: "Suppression A9",
+effect_templates["Restraining A9"] = new ActiveEffect({
+    name: "Restraining A9",
     effects: {
         stats: {
         }

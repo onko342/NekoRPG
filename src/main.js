@@ -121,7 +121,7 @@ const flag_unlock_texts = {
     is_moonwheel_unlocked: "You have mastered the crafting method for [Silver Frost Moonwheel]!",
 }
 
-// special stats
+// special skills
 //infinity combat
 let inf_combat = {"A6":{cur:6,cap:8},"A7":{cur:0}, "VP":{num:0}, "RM":0,"MP":0,"B3":0};
 //A6:秘境
@@ -1341,7 +1341,7 @@ function do_enemy_attack_loop(enemy_id, count, E_round = 1,isnew = false) {//E_r
     }
     let Spec_S = "";
     if(current_enemies[enemy_id].spec.includes(0)) Spec_S += "[Magic ATK]";
-    if(current_enemies[enemy_id].spec.includes(5)) Spec_S += "[Suppression]";
+    if(current_enemies[enemy_id].spec.includes(5)) Spec_S += "[Restraining]";
     if(current_enemies[enemy_id].spec.includes(7)) Spec_S += "[Rend]";
     if(current_enemies[enemy_id].spec.includes(8)) Spec_S += "[Weaken]";
     if(current_enemies[enemy_id].spec.includes(9)) Spec_S += "[Reverse]";
@@ -2050,10 +2050,10 @@ function do_character_combat_action({target, attack_power}, target_num,c_atk_mul
             damage_dealt = proto_d * 0.1;
             Spec_E += "[Magic ATK]";
         }
-        if(active_effects["Suppression A9"]!=undefined)
+        if(active_effects["Restraining A9"]!=undefined)
         {
             sdmg_mul *= Math.min(character.stats.full.defense / (target.stats.defense + 0.0001) * 0.6,10);
-            Spec_E += "[Suppression]";
+            Spec_E += "[Restraining]";
         }
         if(active_effects["Void Gate B9"]!=undefined)
         {

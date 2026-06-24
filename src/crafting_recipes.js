@@ -1334,7 +1334,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
         recipe_skill: "Alchemy",
     });
     alchemy_recipes.items2["炼金药剂-牵制"] = new ItemRecipe({
-        name: "Alchemical Potion - Suppression",
+        name: "Alchemical Potion - Restraining",
         recipe_type: "material",
         materials: [{material_id: "荒兽精华", count: 20},{material_id: "水溶精华", count: 20},{material_id: "A4·能量核心",count:40}], 
         result: {result_id: "A9·牵制药剂", count: 1},

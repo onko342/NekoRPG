@@ -903,8 +903,8 @@ class Enemy {
         ],
     });
     enemy_templates["百家小卒"] = new Enemy({
-        name: "Hundred Clans Pawn",
-        description: "A Hundred Clans Pawn that is not so determined - it will flee at the first minor injury.",
+        name: "Bai Family Pawn",
+        description: "A Bai Family Pawn that is not so determined - it will flee at the first minor injury.",
         xp_value: 13, 
         rank: 1211,
         image: "image/enemy/E1211.png",
@@ -1508,7 +1508,7 @@ class Enemy {
     });
     enemy_templates["地宫妖偶"] = new Enemy({
         name: "Dungeon Puppet",
-        description: "A puppet that learned restraint techniques from reading books in the Dungeon. By the way, restraint has topped the \"trap effects\" chart at number two!",
+        description: "A puppet that learned restraining techniques from reading books in the Dungeon. By the way, restraining has topped the \"trap effects\" chart at number two!",
         xp_value: 144, 
         rank: 1407,
         image: "image/enemy/E1407.png",
@@ -1526,7 +1526,7 @@ class Enemy {
     });
      enemy_templates["地宫虫卒"] = new Enemy({
         name: "Dungeon Bug Soldier",
-        description: "It read more books and discovered restraint is a huge trap. Unfortunately, its own stats aren't great..",
+        description: "It read more books and discovered restraining is a huge trap. Unfortunately, its own stats aren't great..",
         xp_value: 233, 
         rank: 1408,
         image: "image/enemy/E1408.png",
@@ -1852,7 +1852,7 @@ class Enemy {
     });
     enemy_templates["初级魔法师"] = new Enemy({
         name: "Novice Mage",
-        description: "Of all things to learn, it learned restraint.. Can you guess why it got stuck at Novice level?",
+        description: "Of all things to learn, it learned restraining.. Can you guess why it got stuck at Novice level?",
         xp_value: 610, 
         rank: 1511,
         image: "image/enemy/E1511.png",
@@ -2340,7 +2340,7 @@ class Enemy {
     });
     enemy_templates["深林妖偶"] = new Enemy({
         name: "Deep Forest Puppet",
-        description: "A puppet that escaped the Dungeon in the same batch as the Cave Flying Bird and the Novice Mage. Sadly, it still clings to its restraint ability.",
+        description: "A puppet that escaped the Dungeon in the same batch as the Cave Flying Bird and the Novice Mage. Sadly, it still clings to its restraining ability.",
         xp_value: 4181, 
         rank: 2114,
         image: "image/enemy/E2114.png",
@@ -2454,8 +2454,8 @@ class Enemy {
     });
 //2-2
     enemy_templates["百家近卫"] = new Enemy({
-        name: "Hundred Clans Guard",
-        description: "The relentless Bai Fang left many Hundred Clans spies along the riverside. But they have no will to fight — who risks their life for 3000X a month?",
+        name: "Bai Family Guard",
+        description: "The relentless Bai Fang left many Bai Family spies along the riverside. But they have no will to fight — who risks their life for 3000X a month?",
         xp_value: 7575, 
         rank: 2201,
         image: "image/enemy/E2201.png",
@@ -2681,7 +2681,7 @@ class Enemy {
             //应为1.6Z
         ],
     });
-    enemy_templates["Traveling Merchant"] = new Enemy({
+    enemy_templates["行脚商人"] = new Enemy({
         name: "Traveling Merchant",
         description: "Seems to be the leader of those sailors from before. He's also opened a shop nearby... worth a visit~",
         xp_value: 17711, 
@@ -3077,7 +3077,7 @@ class Enemy {
     });
     enemy_templates["有甲有角族"] = new Enemy({
         name: "Armored Horned Tribe",
-        description: "Why did the Horned Tribe and the Hundred Clans guards get drunk too... People can't — or at least shouldn't!",
+        description: "Why did the Horned Tribe and the Bai Family guards get drunk too... People can't — or at least shouldn't!",
         xp_value: 46368, 
         rank: 2407,
         image: "image/enemy/E2407.png",
@@ -3134,7 +3134,7 @@ class Enemy {
     });
      enemy_templates["秘境胖胖鸟"] = new Enemy({
         name: "Secret Realm Chubby Bird",
-        description: "You really can't blame it for learning Restraint. When everyone nearby is a burst-attack player, it's simply too profitable...",
+        description: "You really can't blame it for learning Restraining. When everyone nearby is a burst-attack player, it's simply too profitable...",
         xp_value: 46368, 
         rank: 2410,
         image: "image/enemy/E2410.png",
@@ -3212,7 +3212,7 @@ class Enemy {
     });
     enemy_templates["蓝帽行者"] = new Enemy({
         name: "Blue Hat Wanderer",
-        description: "A massive HP tank. Even Restraint can't curb its outrageous damage trades.",
+        description: "A massive HP tank. Even Restraining can't curb its outrageous damage trades.",
         xp_value: 75025, 
         rank: 2414,
         image: "image/enemy/E2414.png",
@@ -3231,7 +3231,7 @@ class Enemy {
     });
     enemy_templates["流云级魔法师"] = new Enemy({
         name: "Drifting Cloud Rank Mage",
-        description: "A mage in the secret realm. Not only did it skip learning Restraint, it learned combo attacks — right on the mark...",
+        description: "A mage in the secret realm. Not only did it skip learning Restraining, it learned combo attacks — right on the mark...",
         xp_value: 75025, 
         rank: 2415,
         image: "image/enemy/E2415.png",
@@ -4036,7 +4036,7 @@ class Enemy {
     
     enemy_templates["梅花重工A9"] = new Enemy({
         name: "Clubs Heavy Industry A9",
-        description: "Its specialties are Reversal and... Restraint. With that little defense, it must be a liability...",
+        description: "Its specialties are Reversal and... Restraining. With that little defense, it must be a liability...",
         xp_value: 514229, 
         rank: 2707,
         image: "image/enemy/E2707.png",
@@ -4433,7 +4433,7 @@ class Enemy {
     });
     enemy_templates["鲜血之锋B1"] = new Enemy({
         name: "Blood Edge B1",
-        description: "What? That much HP? Scattered Blossom? Would anyone believe it's only Sky Tier One? Go fetch the magic-attack Restraint grandmaster, quick!",
+        description: "What? That much HP? Scattered Blossom? Would anyone believe it's only Sky Tier One? Go fetch the magic-attack Restraining grandmaster, quick!",
         xp_value: 5702887, 
         rank: 2808,
         image: "image/enemy/E2808.png",
@@ -5528,8 +5528,8 @@ B5 6324'5986 /1'0233'4155exp
         ],
     });
     enemy_templates["百家小卒[BOSS]"] = new Enemy({
-        name: "Hundred Clans Pawn [BOSS]",
-        description: "A Hundred Clans Pawn going all-out to seize the secret technique.",
+        name: "Bai Family Pawn [BOSS]",
+        description: "A Bai Family Pawn going all-out to seize the secret technique.",
         add_to_bestiary: true,
         xp_value: 13, 
         rank: 1298,

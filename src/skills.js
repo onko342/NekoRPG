@@ -617,7 +617,7 @@ function format_skill_rewards(milestone){
                                         return `Improves [Blood-Fusion Art] stance effectiveness`;
                                     }});            
     skills["3Moon/Night"] = new Skill({skill_id: "3Moon/Night", 
-                                    names: {0: "Three-Month Severed Night", 1: "Three-Month Severed Night: Minor", 2: "Three-Month Severed Night: Major", 3: "Three-Month Severed Night: Perfect"}, 
+                                    names: {0: "Three-Moon Severed Night", 1: "Three-Moon Severed Night: Minor", 2: "Three-Moon Severed Night: Major", 3: "Three-Moon Severed Night: Perfect"}, 
                                     parent_skill: "Stance mastery",
                                     description: "A cultivation technique of Sky Rank cultivators, greatly beneficial to all skills", 
                                     max_level_coefficient: 1.25,
