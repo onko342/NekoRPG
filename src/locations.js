@@ -2129,7 +2129,7 @@ function get_location_type_penalty(type, stage, stat) {
     locations["清野江畔 - 4"] = new Combat_zone({
         description: "Along the Qingye River, on the way home. Wild beast strength has greatly increased, but the family estate is no longer far - no need to linger in battle.",
         enemy_count: 20, 
-        enemies_list: ["马里奥菇菇","极冰火","清野江窃贼","礁石灵","火烧云","Traveling Merchant"],
+        enemies_list: ["马里奥菇菇","极冰火","清野江窃贼","礁石灵","火烧云","行脚商人"],
         enemy_group_size: [1.5,2.5],
         types: [],
         is_unlocked: false, 
@@ -2264,7 +2264,7 @@ function get_location_type_penalty(type, stage, stat) {
     locations["纳家秘境 - 2"] = new Combat_zone({
         description: "The Nya Family's secret training realm. This is the outer area.",
         enemy_count: 20, 
-        enemies_list: ["火烧云","Traveling Merchant","大门派杂役","高歌骸骨","燕岗高等散修"],
+        enemies_list: ["火烧云","行脚商人","大门派杂役","高歌骸骨","燕岗高等散修"],
         enemy_group_size: [1.5,2.5],
         types: [],
         is_unlocked: false, 
