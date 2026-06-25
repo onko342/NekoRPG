@@ -335,7 +335,7 @@ class Combat_zone {
                 key_cnt = Math.min(key_cnt,5);
                 if(key_cnt != 0)
                 {
-                    log_message(`Due to holding ${key_cnt} Micro-Petal Fragments, the halo is weakened: 140% -> ${140-key_cnt*8}%!`,"enemy_enhanced");
+                    log_message(`Due to holding ${key_cnt} Micro-Petal Fragments, the aura is weakened: 140% -> ${140-key_cnt*8}%!`,"enemy_enhanced");
                     halo_fix -= 0.08*key_cnt;
                 }
             }
@@ -345,7 +345,7 @@ class Combat_zone {
                 key_cnt = Math.min(key_cnt,4);
                 if(key_cnt != 0)
                 {
-                    log_message(`Due to holding ${key_cnt} Micro-Petal Fragments, the halo is weakened: 132% -> ${132-key_cnt*8}%!`,"enemy_enhanced");
+                    log_message(`Due to holding ${key_cnt} Micro-Petal Fragments, the aura is weakened: 132% -> ${132-key_cnt*8}%!`,"enemy_enhanced");
                     halo_fix -= 0.08*key_cnt;
                 }
             }
@@ -1388,7 +1388,7 @@ function get_location_type_penalty(type, stage, stat) {
         },
     });
     locations["燕岗近郊 - 4"] = new Combat_zone({
-        description: "An area with halo-enhanced wild beasts; their overall strength has risen by a level.", //MT29-30
+        description: "An area with aura-enhanced wild beasts; their overall strength has risen by a level.", //MT29-30
         enemy_count: 20, 
         enemies_list: ["掠原蝠","黑夜傀儡","来一口","绿原行者","初生鬼","灵蔓茸茸"],//16-18三只怪放在-5
         enemy_group_size: [1,1],
@@ -1409,7 +1409,7 @@ function get_location_type_penalty(type, stage, stat) {
         },
     });
     locations["燕岗近郊 - 5"] = new Combat_zone({
-        description: "An area closer to the source of the halo, attracting Earth Rank cultivators.", //MT31-32
+        description: "An area closer to the source of the aura, attracting Earth Rank cultivators.", //MT31-32
         enemy_count: 20, 
         enemies_list: ["绿原行者","初生鬼","燕岗领佣兵","冷冻火","缠绕骸骨","灵蔓茸茸"],//16-18三只怪放在-5
         enemy_group_size: [1,1],
@@ -2230,7 +2230,7 @@ function get_location_type_penalty(type, stage, stat) {
     
     locations["纳家秘境 - 战斗区"] = new Location({ 
         connected_locations: [{location: locations["纳家秘境"], custom_text: "Return to the rest area to recover"}],
-        description: "A secret training realm built by the Nya Family. There are five floors in total, each with more and stronger wild beasts and monsters, along with more powerful halo effects.",
+        description: "A secret training realm built by the Nya Family. There are five floors in total, each with more and stronger wild beasts and monsters, along with more powerful aura effects.",
         
         dialogues: ["秘境心火精灵"],
         name: "Nya Family Secret Realm - Combat Zone", 
@@ -4186,7 +4186,7 @@ function get_location_type_penalty(type, stage, stat) {
         "microflower": new LocationActivity({
             activity_name: "mining",
             infinite: true,
-            starting_text: "Destroy the halo with a pickaxe",
+            starting_text: "Destroy the aura with a pickaxe",
             skill_xp_per_tick: 50,
             is_unlocked: false,
             exp_scaling: true,

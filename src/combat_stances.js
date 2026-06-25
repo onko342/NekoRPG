@@ -168,7 +168,7 @@ stances["MB_Power"] = new Stance({
 });
 
 stances["WH_Speed"] = new Stance({
-    name: "Waterless Mind: Flowing Water",
+    name: "Water Heartless: Flowing Water",
     id: "WH_Speed",
     description: "Increases attack speed and slightly enhances attack power.",
     related_skill: "WaterHeartless",
@@ -182,7 +182,7 @@ stances["WH_Speed"] = new Stance({
 });
 
 stances["WH_Power"] = new Stance({
-    name: "Waterless Mind: Flood",
+    name: "Water Heartless: Flood",
     id: "WH_Power",
     description: "Enhances attack power and slightly increases attack speed.",
     related_skill: "WaterHeartless",
@@ -196,7 +196,7 @@ stances["WH_Power"] = new Stance({
 });
 
 stances["WH_Multi"] = new Stance({
-    name: "Waterless Mind: Rainfall",
+    name: "Water Heartless: Rainfall",
     id: "WH_Multi",
     description: "Slightly amplifies attack power and speed, but can attack multiple targets at once.",
     related_skill: "WaterHeartless",

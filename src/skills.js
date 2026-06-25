@@ -719,7 +719,7 @@ function format_skill_rewards(milestone){
                                 });
     
     skills["WaterHeartless"] = new Skill({skill_id: "WaterHeartless", 
-                                    names: {0: "Waterless Mind", 5: "Waterless Mind: Minor", 15: "Waterless Mind: Proficient", 25: "Waterless Mind: Major", 30: "Waterless Mind: Perfect"}, 
+                                    names: {0: "Water Heartless", 5: "Water Heartless: Minor", 15: "Water Heartless: Proficient", 25: "Water Heartless: Major", 30: "Water Heartless: Perfect"}, 
                                     parent_skill: "Stance mastery",
                                     description: "Sword technique Neko comprehended by the Qingye Waterfall. Has 3 modes of use.", 
                                     max_level_coefficient: 1.25,
@@ -728,7 +728,7 @@ function format_skill_rewards(milestone){
                                     max_level: 30,
                                     related_stances: ["WH_Power","WH_Speed","WH_Multi"],
                                     get_effect_description: ()=> {
-                                        return `Improves [Waterless Mind] stance effectiveness`;
+                                        return `Improves [Water Heartless] stance effectiveness`;
                                     }});   
     skills["ReflectStarFlower"] = new Skill({skill_id: "ReflectStarFlower", 
                                     names: {0: "Starlight Bloom", 10: "Starlight Bloom: Minor", 20: "Starlight Bloom: Proficient", 30: "Starlight Bloom: Major", 40: "Starlight Bloom: Perfect"}, 

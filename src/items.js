@@ -4275,8 +4275,8 @@ item_templates["Twist liek a snek"] = new Book({
     });
     item_templates["峰"] = new Material({
         id: "峰",
-        name: "Peak",
-        description: "<span class='realm_cloudy'>Ascendant Rank: Peak</span><br><b><span style='color:#00fa9a'>Hundred-Line Style</span> <span style='color:#edec9f'>Golden Void Law</span><br><span style='color:lime'>4.489Qi</span> <span style='color:red'>167.24Q</span> <span style='color:blue'>86.49Q</span></b> <br><br>Priceless... but only if you survive to claim it.",
+        name: "Feng",
+        description: "<span class='realm_cloudy'>Cloud Rank Pinnacle</span><br><b><span style='color:#00fa9a'>Hundred-Line Style</span> <span style='color:#edec9f'>Metal and Space Laws</span><br><span style='color:lime'>4.489G</span> <span style='color:red'>167.24J</span> <span style='color:blue'>86.49J</span></b> <br><br>Priceless... but only if you survive to claim it.",
         value: 1.21e24,
         material_type: "metal",
         image: "image/item/bigbrother.png",
@@ -4365,7 +4365,7 @@ item_templates["Twist liek a snek"] = new Book({
     
     item_templates["微花残片"] = new OtherItem({
         name: "Micro-Flower Fragment",
-        description: "It's okay... Father can't enter the secret realm. He definitely doesn't know I secretly broke the halo! (When held, 2-3 and 2-4 BOSS battle halo -8%/piece, no less than 0%)",
+        description: "It's okay... Father can't enter the secret realm. He definitely doesn't know I secretly broke the aura! (When held, 2-3 and 2-4 BOSS battle aura -8%/piece, no less than 0%)",
         value: 99e6,
         image: "image/item/MF_fragment.png",
     });

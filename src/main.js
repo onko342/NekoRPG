@@ -70,36 +70,36 @@ const backup_key = "backup save";
 const dev_backup_key = "dev backup save";
 
 window.REALMS=[
-[0,"Dust Rank: Novice",0,0,0,"basic"],
-[1,"Dust Rank: Adept",1,50,5,"basic"],
-[2,"Dust Rank: Expert",3,200,100,"basic"],
-[3,"Myriad Rank: Novice",6,700,1200,"basic"],//0.1spd
-[4,"Myriad Rank: Expert",12,3000,4800,"basic"],
-[5,"Myriad Rank: Pinnacle",25,6000,16000,"basic"],
-[6,"Tidal Rank: Novice",40,10000,36000,"basic"],//0.1spd
-[7,"Tidal Rank: Expert",100,20000,120000,"basic"],
-[8,"Tidal Rank: Pinnacle",250,40000,2400000,"basic"],
+[0,"Dust Rank Novice",0,0,0,"basic"],
+[1,"Dust Rank Adept",1,50,5,"basic"],
+[2,"Dust Rank Expert",3,200,100,"basic"],
+[3,"Myriad Rank Novice",6,700,1200,"basic"],//0.1spd
+[4,"Myriad Rank Expert",12,3000,4800,"basic"],
+[5,"Myriad Rank Pinnacle",25,6000,16000,"basic"],
+[6,"Tidal Rank Novice",40,10000,36000,"basic"],//0.1spd
+[7,"Tidal Rank Expert",100,20000,120000,"basic"],
+[8,"Tidal Rank Pinnacle",250,40000,2400000,"basic"],
 
-[9,"Earth Rank: Stage 1",600,120000,60000000,"terra"],
-[10,"Earth Rank: Stage 2",1000,250000,80000000,"terra"],
-[11,"Earth Rank: Stage 3",2000,550000,1.6e8,"terra"],
-[12,"Earth Rank: Stage 4",3000,1000000,4.8e8,"terra"],//200w
-[13,"Earth Rank: Stage 5",5000,1500000,12e8,"terra"],//350w
-[14,"Earth Rank: Stage 6",9000,2500000,36e8,"terra"],//600w
-[15,"Earth Rank: Stage 7",16000,6500000,108e8,"terra"],//1250w
-[16,"Earth Rank: Stage 8",32000,12500000,216e8,"terra"],//2500w
-[17,"Earth Rank: Pinnacle",60000,22500000,432e8,"terra"],
-[18,"Earth Rank: Breakthrough",150000,32500000,1080e8,"terra"],
+[9,"Earth Rank Stage 1",600,120000,60000000,"terra"],
+[10,"Earth Rank Stage 2",1000,250000,80000000,"terra"],
+[11,"Earth Rank Stage 3",2000,550000,1.6e8,"terra"],
+[12,"Earth Rank Stage 4",3000,1000000,4.8e8,"terra"],//200w
+[13,"Earth Rank Stage 5",5000,1500000,12e8,"terra"],//350w
+[14,"Earth Rank Stage 6",9000,2500000,36e8,"terra"],//600w
+[15,"Earth Rank Stage 7",16000,6500000,108e8,"terra"],//1250w
+[16,"Earth Rank Stage 8",32000,12500000,216e8,"terra"],//2500w
+[17,"Earth Rank Pinnacle",60000,22500000,432e8,"terra"],
+[18,"Earth Rank Limit Break",150000,32500000,1080e8,"terra"],
 
-[19,"Sky Rank: Stage 1",150000,1.2e8,10000e8,"sky"],//2e
-[20,"Sky Rank: Stage 2",500000,3e8,4e12,"sky"],//5e
-[21,"Sky Rank: Stage 3",1500000,10e8,16e12,"sky"],//15e
-[22,"Sky Rank: Stage 4",4000000,25e8,80e12,"sky"],//40e
-[23,"Sky Rank: Stage 5",16000000,60e8,320e12,"sky"],//100e 经验应为320e12.
-[24,"Sky Rank: Stage 6",40000000,150e8,170.1411e36,"sky"],//250e
-[25,"Sky Rank: Stage 7",70000000,350e8,6000e12,"sky"],//600e
-[26,"Sky Rank: Stage 8",3e8,900e8,2.4e16,"sky"],//1500e
-[27,"Sky Rank: Pinnacle",8e8,1500e8,9.6e16,"sky"],//3000e
+[19,"Sky Rank Stage 1",150000,1.2e8,10000e8,"sky"],//2e
+[20,"Sky Rank Stage 2",500000,3e8,4e12,"sky"],//5e
+[21,"Sky Rank Stage 3",1500000,10e8,16e12,"sky"],//15e
+[22,"Sky Rank Stage 4",4000000,25e8,80e12,"sky"],//40e
+[23,"Sky Rank Stage 5",16000000,60e8,320e12,"sky"],//100e 经验应为320e12.
+[24,"Sky Rank Stage 6",40000000,150e8,170.1411e36,"sky"],//250e
+[25,"Sky Rank Stage 7",70000000,350e8,6000e12,"sky"],//600e
+[26,"Sky Rank Stage 8",3e8,900e8,2.4e16,"sky"],//1500e
+[27,"Sky Rank Pinnacle",8e8,1500e8,9.6e16,"sky"],//3000e
 
 ];
 //境界，X级存储了该等级的数据
@@ -896,7 +896,7 @@ function textline_special(t_key){
             if(enemy_killcount["百方[荒兽森林 ver.][BOSS]"]) displayed_text += "...Wait, you already beat Baifang to tears???<br>";
             else displayed_text += "Once your training bears fruit, that mere Baifang will be nothing to fear!<br>";
 
-            displayed_text += "The family secret realm opens once every half year.<br>During this time, stay with the family<br>and consolidate your current realm strength.";
+            displayed_text += "The family secret realm opens once every half year.<br>During this time, stay with the family<br>and consolidate your current domain strength.";
             let T=(current_game_time.day-1)*10800+current_game_time.hour*60+current_game_time.minute;
             T=T%270000;
             T=270000-T;
@@ -4775,7 +4775,7 @@ function update_quests(){
             //WIP:需要可以吞噬宇宙币
             //心境二重
             if(character.xp.current_level < 28){
-                quests.innerHTML += "<span class='realm_cloudy'>Cloud Sky Rank Stage 1</span> unlocks Mind Realm - 3rd Layer!"
+                quests.innerHTML += "<span class='realm_cloudy'>Cloud Rank Stage 1</span> unlocks Mind Realm - 3rd Layer!"
             }
             else{
 
