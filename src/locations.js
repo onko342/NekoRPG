@@ -1181,7 +1181,7 @@ function get_location_type_penalty(type, stage, stat) {
     });
 
     locations["燕岗城 - 秘法石碑"] = new Challenge_zone({
-        description: "A stone stele inscribed by Yangang City Lord 'Shi Fengxiong', containing basic Blood-Luo secret arts.",
+        description: "A stone stele inscribed by Yangang City Lord 'Shi Fengxiong', containing basic Xuelo secret arts.",
         enemy_count: 1, 
         enemies_list: ["百家小卒[BOSS]"],
         enemy_group_size: [2,2],
@@ -2834,7 +2834,7 @@ function get_location_type_penalty(type, stage, stat) {
     locations["声律城战场"].connected_locations.push({location: locations["声律城战场 - X"],custom_text:"Challenge the massive blue colossus"});
     locations["天外飞船"] = new Location({ 
         connected_locations: [{location: locations["声律城战场"], custom_text: "Leave this spaceship for now"}],
-        description: "The ultimate goal of the Shenglv City journey. It may contain treasures rare even on the Blood-Luo continent, yet everywhere it radiates hostility and killing intent toward outsiders.",
+        description: "The ultimate goal of the Shenglv City journey. It may contain treasures rare even on the Xuelo continent, yet everywhere it radiates hostility and killing intent toward outsiders.",
         name: "Outer-Space Spaceship",
         traders: ["Airship Market"],
         dialogues: ["纳娜米(飞船)","核心反应堆"],

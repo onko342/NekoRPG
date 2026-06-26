@@ -235,12 +235,12 @@ effect_templates["Scatter B9"] = new ActiveEffect({
     name: "Scatter B9",
     effects: {stats: {health_regeneration_percent: {flat: -1}}}
 });
-effect_templates["Reversal B9"] = new ActiveEffect({
-    name: "Reversal B9",
+effect_templates["Retaliate B9"] = new ActiveEffect({
+    name: "Retaliate B9",
     effects: {stats: {attack_mul: {multiplier: 0.7}}}
 });
-effect_templates["Void Gate B9"] = new ActiveEffect({
-    name: "Void Gate B9",
+effect_templates["Dimensional Gate B9"] = new ActiveEffect({
+    name: "Dimensional Gate B9",
     effects: {stats: {attack_mul: {multiplier: 0.1}}}
 });
 

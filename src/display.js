@@ -187,7 +187,7 @@ const crafting_pages = {
 const backup_load_button = document.getElementById("backup_load_button");
 const other_save_load_button = document.getElementById("import_other_save_button");
 
-const units=['','W','E','Z','J','G','e24','e28','e32','e36','e40','e44','e48'];
+const units=['','W','E','Z','J','G','e24','e28','e32','e36','e40','e44','e48']; // after 2.72 (scientific notation available), change this to W E Z J G Zi Rn Go Jn Zn Za Ji
 
 function format_number(some_number)
 {
@@ -3820,7 +3820,7 @@ function add_bestiary_lines(zone)
     //zone 11-> 1-1，rank作为1200处理
     //sorts bestiary_list div by enemy rank
     bestiary_entry_divs[zone] = document.createElement("div");
-    let ZoneNameMap = {11:"Nayaka Training Ground",12:"Yangang City",13:"Yangang Outskirts",14:"Underground Palace",15:"Underground Palace Core",21:"Wild Beast Forest",22:"Qingye Riverside",23:"Nya Family Secret Realm",24:"Barrier Lake",25:"Shenlv City Ruins",26:"Shenlv City Battlefield",27:"Sky Vessel",28:"Ship Core",31:"Hel Swamp",32:"Dark Forest",33:"Pure White Ice Plains",34:"Ice City",35:"Water Prison",36:"Inheritance Realm"}
+    let ZoneNameMap = {11:"Nya Training Ground",12:"Yangang City",13:"Yangang Outskirts",14:"Underground Palace",15:"Underground Palace Core",21:"Wild Beast Forest",22:"Qingye Riverside",23:"Nya Family Secret Realm",24:"Barrier Lake",25:"Shenlv City Ruins",26:"Shenlv City Battlefield",27:"Sky Vessel",28:"Ship Core",31:"Hel Swamp",32:"Dark Forest",33:"Pure White Ice Plains",34:"Ice City",35:"Water Prison",36:"Inheritance Realm"}
     const name_div = document.createElement("div");
     name_div.innerHTML = `<b>【${ZoneNameMap[zone]}】</b>`;
     name_div.classList.add("bestiary_entry_name");

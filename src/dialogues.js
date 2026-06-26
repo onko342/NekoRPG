@@ -483,7 +483,7 @@ class Textline {
             "背景故事": new Textline({
                 is_unlocked: false,
                 name: "Where is this place?",
-                text: "In the beginning, a continent called Xuelo came into being.<br>The Xuelo Continent brims with energy, giving rise to countless races and forms of life.<br>On this continent, the strong can trample the weak underfoot without restraint!<br>And here — within the Xuelo Continent, the Siyong World, the Yangang Territory — is the Nayaka Clan.",
+                text: "In the beginning, a continent called Xuelo came into being.<br>The Xuelo Continent brims with energy, giving rise to countless races and forms of life.<br>On this continent, the strong can trample the weak underfoot without restraint!<br>And here — within the Xuelo Continent, the Siyong World, the Yangang Territory — is the Nya Clan.",
 
 
                 unlocks: {
@@ -495,7 +495,7 @@ class Textline {
             "Neko是谁": new Textline({
                 is_unlocked: false,
                 name: "And who is Neko?",
-                text: "Neko — an ordinary, unremarkable girl of the Nayaka Clan in Yangang City.<br>"+
+                text: "Neko — an ordinary, unremarkable girl of the Nya Clan in Yangang City.<br>"+
                 "One day, just as Neko finished her morning cultivation,<br>"+
                 "she discovered that her elder sister Nanami, who had grown up alongside her, was nowhere to be found.<br>"+
                 "Upon learning from the clan that Nanami had gone out to train the day before and had not yet returned, Neko could not spare a moment to think.<br>"+
@@ -915,7 +915,7 @@ class Textline {
             "jp5": new Textline({ 
                 is_unlocked: false,
                 name: "(Setting for the Extraterrestrial Clan abridged) What a fascinating world —",
-                text: "......It is also time to send you into the clan's Secret Realm for tempering. Know that the requirement to enter the Nayaka Secret Realm is reaching the mid-stage of Earth Rank.",
+                text: "......It is also time to send you into the clan's Secret Realm for tempering. Know that the requirement to enter the Nya Secret Realm is reaching the mid-stage of Earth Rank.",
                 unlocks: {
                     textlines: [{dialogue: "纳布(江畔)", lines: ["jp6"]}],
                 },
@@ -1001,7 +1001,7 @@ class Textline {
             "nb1": new Textline({ 
                 is_unlocked: true,
                 name: "......Senior, may I ask who you are?",
-                text: "Heh heh, you don't recognize me?<br>True enough — it has been several thousand years since my fall.<br>Back in those days, I followed the Lord of Yangang City into battle,<br>and founded the Nayaka Clan within Yangang City.<br>I never imagined the clan would come this far.",
+                text: "Heh heh, you don't recognize me?<br>True enough — it has been several thousand years since my fall.<br>Back in those days, I followed the Lord of Yangang City into battle,<br>and founded the Nya Clan within Yangang City.<br>I never imagined the clan would come this far.",
                 unlocks: {
                     textlines: [{dialogue: "纳鹰", lines: ["nb2"]}],
                 },
@@ -1010,8 +1010,8 @@ class Textline {
             }),
             "nb2": new Textline({ 
                 is_unlocked: false,
-                name: "......You are the ancestor of the Nayaka Clan! This... how is it possible — the Elders and Father both said you were...",
-                text: "No need to be surprised — I am indeed the ancestor of the Nayaka Clan, known as Naying.<br>None of the Nayaka descendants today know of this consciousness of mine,<br>hidden within the Secret Realm.<br>Were it to become known, I fear this Secret Realm<br>would be turned upside down by those adventurers.<br>",
+                name: "......You are the ancestor of the Nya Clan! This... how is it possible — the Elders and Father both said you were...",
+                text: "No need to be surprised — I am indeed the ancestor of the Nya Clan, known as Naying.<br>None of the Nya descendants today know of this consciousness of mine,<br>hidden within the Secret Realm.<br>Were it to become known, I fear this Secret Realm<br>would be turned upside down by those adventurers.<br>",
                 unlocks: {
                     textlines: [{dialogue: "纳鹰", lines: ["nb3"]}],
                 },
@@ -1119,7 +1119,7 @@ class Textline {
             "fx4": new Textline({ 
                 is_unlocked: false,
                 name: "Whew... quite a story. Our goal is to find those crashed 'Vessels' and search for the treasures we need, right?",
-                text: "Exactly. The treasures within the main battle Vessel<br>are currently being fought over by Sky-Cloud Rank and above cultivators.<br>Our target, however, is those smaller vessels.<br>But — there is one more target,<br>Koko, right before your eyes.<br>The ruins of Shenlv City.",
+                text: "Exactly. The treasures within the main battle Vessel<br>are currently being fought over by Cloud Rank and above cultivators.<br>Our target, however, is those smaller vessels.<br>But — there is one more target,<br>Koko, right before your eyes.<br>The ruins of Shenlv City.",
                 unlocks: {
                     textlines: [{dialogue: "纳娜米(废墟)", lines: ["fx5"]}],
                 },
@@ -1129,7 +1129,7 @@ class Textline {
             "fx5": new Textline({ 
                 is_unlocked: false,
                 name: "The ruins of... Shenlv City?",
-                text: "Yes, that's right. The once-flourishing Shenlv City,<br>now in ruins, with many of its original inhabitants gone,<br>has left behind many things. The Clan Head has already issued orders<br>for the entire Nayaka Clan to split up and search.<br>After finding useful valuables and treasures——",
+                text: "Yes, that's right. The once-flourishing Shenlv City,<br>now in ruins, with many of its original inhabitants gone,<br>has left behind many things. The Clan Head has already issued orders<br>for the entire Nya Clan to split up and search.<br>After finding useful valuables and treasures——",
                 unlocks: {
                     textlines: [{dialogue: "纳娜米(废墟)", lines: ["fx6"]}],
                 },
@@ -1139,7 +1139,7 @@ class Textline {
             "fx6": new Textline({ 
                 is_unlocked: false,
                 name: "Wait, Sister — this kind of thing... it doesn't feel right. Won't the people of this city be unable to rest in peace?",
-                text: "Koko, all your sister knows is<br>that anything that helps the Nayaka Clan grow faster<br>is worth doing.<br>Right now, every power great and small in the surrounding cities is doing the same thing.<br>It is not easy for us to claim more than others,<br>and there is no time to grieve for those refugees.",
+                text: "Koko, all your sister knows is<br>that anything that helps the Nya Clan grow faster<br>is worth doing.<br>Right now, every power great and small in the surrounding cities is doing the same thing.<br>It is not easy for us to claim more than others,<br>and there is no time to grieve for those refugees.",
                 unlocks: {
                     textlines: [{dialogue: "纳娜米(废墟)", lines: ["fx7"]}],
                 },
@@ -1166,7 +1166,7 @@ class Textline {
             "fx8": new Textline({ 
                 is_unlocked: false,
                 name: "......Are you thirsty? Let me go find you some water.",
-                text: "Thank you, little girl, but there's no need.<br>Thanks to this disaster, I no longer have to repay my debts to the City Lord's Mansion.<br>In a little while, I'll head back into the city —<br>the Sky Rank and Sky-Cloud Rank fortunes left behind in there<br>are quite considerable.<br>Even just a portion of one powerful cultivator's belongings<br>would be enough to keep me comfortable for the rest of my life, hahaha——",
+                text: "Thank you, little girl, but there's no need.<br>Thanks to this disaster, I no longer have to repay my debts to the City Lord's Mansion.<br>In a little while, I'll head back into the city —<br>the Sky Rank and Cloud Rank fortunes left behind in there<br>are quite considerable.<br>Even just a portion of one powerful cultivator's belongings<br>would be enough to keep me comfortable for the rest of my life, hahaha——",
                 unlocks: {
                     textlines: [{dialogue: "声律城难民", lines: ["fx9"]}],
                 },
@@ -1339,7 +1339,7 @@ class Textline {
             "nnm4": new Textline({ 
                 is_unlocked: false,
                 name: "Sister, you said these puppets are called 'Techno-Constructs' by the Extraterrestrial Clan? And the ones we encountered along the way, many of them are 'A9' and 'B1' grade?",
-                text: "[Nanami] Yes, if the records in these books are accurate,<br>the three grades A, B, and C correspond to Earth, Sky, and Sky-Cloud Rank,<br>and the numbers that follow correspond to minor cultivation stages in order.<br>[Neko] So 'A9' grade is the ninth stage of Earth Rank?<br>But the ones I encountered along the way, like that blue-skinned creature...<br>they must be equivalent to early Sky Rank combat power.<br>[Nanami] One can only conclude... the Extraterrestrial Clan's classification is far stricter.<br>More than half a rank above the Xuelo World standard.<br>Koko, you've become so strong.<br>Without my laser rifle, the me of today<br>would be completely helpless against those Techno-Constructs.",
+                text: "[Nanami] Yes, if the records in these books are accurate,<br>the three grades A, B, and C correspond to Earth, Sky, and Cloud Rank,<br>and the numbers that follow correspond to minor cultivation stages in order.<br>[Neko] So 'A9' grade is the ninth stage of Earth Rank?<br>But the ones I encountered along the way, like that blue-skinned creature...<br>they must be equivalent to early Sky Rank combat power.<br>[Nanami] One can only conclude... the Extraterrestrial Clan's classification is far stricter.<br>More than half a rank above the Xuelo World standard.<br>Koko, you've become so strong.<br>Without my laser rifle, the me of today<br>would be completely helpless against those Techno-Constructs.",
 
                 unlocks: {
                     textlines: [{dialogue: "纳娜米(飞船)", lines: ["nnm5"]}],
@@ -1380,7 +1380,7 @@ class Textline {
             "zz1": new Textline({ 
                 is_unlocked: true,
                 name: "...",
-                text: "No one could have anticipated<br>that the radiation from the Sky-Outsider vessel's crash<br>would cause so many Wild Beasts to mutate.<br>Perhaps this is the outsider's final act of revenge...<br>These Wild Beasts have become stronger and more ferocious than before.<br>A vast number of Sky Rank and even Sky-Cloud Rank Wild Beasts have emerged — a Beast Tide has formed.",
+                text: "No one could have anticipated<br>that the radiation from the Sky-Outsider vessel's crash<br>would cause so many Wild Beasts to mutate.<br>Perhaps this is the outsider's final act of revenge...<br>These Wild Beasts have become stronger and more ferocious than before.<br>A vast number of Sky Rank and even Cloud Rank Wild Beasts have emerged — a Beast Tide has formed.",
                 unlocks: {
                     textlines: [{dialogue: "纳布(沼泽)", lines: ["zz2"]}],
                 },
@@ -1408,7 +1408,7 @@ class Textline {
             "zz4": new Textline({ 
                 is_unlocked: false,
                 name: "......Understood",
-                text: "Alright, it's about time —<br>the next Nayaka Clan contingent has already set out.<br>Get your head in the game and let's move.<br>With the elite cultivators of Yangang City's main force leading the way,<br>there's no need to worry about encountering wandering Domain or Sky-Cloud Rank Beast Kings.",
+                text: "Alright, it's about time —<br>the next Nya Clan contingent has already set out.<br>Get your head in the game and let's move.<br>With the elite cultivators of Yangang City's main force leading the way,<br>there's no need to worry about encountering wandering Domain or Cloud Rank Beast Kings.",
                 unlocks: {
                     
                     locations: ["赫尔沼泽"],

@@ -26,8 +26,7 @@ const weapon_type_to_skill = {
     "wand": "Wands"
 };
 
-const units=['','W','E','Z','J','G','e24','e28','e32','e36','e40','e44','e48'];
-// after 2.72 (scientific notation available), change this to W E Z J G Zi Rn Go Jn Zn Za Ji
+const units=['','W','E','Z','J','G','e24','e28','e32','e36','e40','e44','e48']; // after 2.72 (scientific notation available), change this to W E Z J G Zi Rn Go Jn Zn Za Ji
 
 function format_number(some_number)
 {
@@ -649,7 +648,7 @@ function format_skill_rewards(milestone){
                                     }
                                 });
      skills["StarDestruction"] = new Skill({skill_id: "StarDestruction", 
-                                    names: {0: "Star-Dissolution Technique", 1: "Star-Dissolution: Minor", 2: "Star-Dissolution: Proficient", 3: "Star-Dissolution: Major", 4: "Star-Dissolution: Perfect"}, 
+                                    names: {0: "Star Destruction Technique", 1: "Star Destruction: Minor", 2: "Star Destruction: Proficient", 3: "Star Destruction: Major", 4: "Star Destruction: Perfect"}, 
                                     parent_skill: "Stance mastery",
                                     description: "An extraterrestrial visualization method with tremendous benefits to comprehension and energy accumulation", 
                                     max_level_coefficient: 1.25,

@@ -4988,7 +4988,7 @@ class Enemy {
     });
     
     enemy_templates["黑森异惑之花"] = new Enemy({
-        name: "Black Forest Bewildering Flower",
+        name: "Dark Forest Bewildering Flower",
         description: "Sounds like the XOR Flower. Is there an OR Flower or an AND Flower?",
         xp_value: 14930352, 
         rank: 3202,
@@ -5006,7 +5006,7 @@ class Enemy {
         ],
     });
     enemy_templates["黑森镔铁战士"] = new Enemy({
-        name: "Black Forest Iron Warrior",
+        name: "Dark Forest Iron Warrior",
         description: "Unfortunately there's no Tower Gate Battle Armor B3 here to summon a whole nest at once. Otherwise it'd be quite a headache.",
         xp_value: 14930352, 
         rank: 3203,
@@ -5023,7 +5023,7 @@ class Enemy {
         ],
     });
     enemy_templates["黑森骸骨"] = new Enemy({
-        name: "Black Forest Skeleton",
+        name: "Dark Forest Skeleton",
         description: "Nothing like any of the previous skeletons in aesthetic. 99^2, 2^12, 7^4... gone mad studying math?",
         xp_value: 14930352, 
         rank: 3204,
@@ -5056,7 +5056,7 @@ class Enemy {
         ],
     });
     enemy_templates["黑森僵尸茸茸"] = new Enemy({
-        name: "Black Forest Zombie Fluffy",
+        name: "Dark Forest Zombie Fluffy",
         description: "So Fluffies can undergo corpse transformation too! I thought they were the type that would just dissolve when they died...",
         xp_value: 24157817, 
         rank: 3206,
@@ -5073,7 +5073,7 @@ class Enemy {
         ],
     });
     enemy_templates["黑森猿人战士"] = new Enemy({
-        name: "Black Forest Ape Warrior",
+        name: "Dark Forest Ape Warrior",
         description: "Why is it only humans that can't be made into steaks?",
         xp_value: 24157817, 
         rank: 3207,
@@ -5122,7 +5122,7 @@ class Enemy {
         ],
     });
     enemy_templates["黑森蝎龙"] = new Enemy({
-        name: "Black Forest Scorpion Dragon",
+        name: "Dark Forest Scorpion Dragon",
         description: "Do you remember the terror of being dominated by that burst-attack Scorpion Dragon deep in the secret realm? From here on, normal enemy HP is doubled!",
         xp_value: 24157817, 
         rank: 3210,
@@ -5140,7 +5140,7 @@ class Enemy {
     });
 
     enemy_templates["黑森猎兵"] = new Enemy({
-        name: "Black Forest Hunter",
+        name: "Dark Forest Hunter",
         description: "Hey, and here comes the burst-attack type~",
         xp_value: 24157817, 
         rank: 3211,
@@ -5982,7 +5982,7 @@ B5 6324'5986 /1'0233'4155exp
         ],
     });
     enemy_templates["蛮咕兽[BOSS]"] = new Enemy({
-        name: "Brute Goo Beast [BOSS]",
+        name: "Mangu Beast [BOSS]",
         description: "A tough-skinned and thick-fleshed wild beast. What is that reckless fellow over there doing!",
         xp_value: 24157817, 
         rank: 3298,

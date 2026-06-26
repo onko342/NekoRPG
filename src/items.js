@@ -2417,9 +2417,9 @@ item_templates["Twist liek a snek"] = new Book({
 
     
     item_templates["摩羽巨币"] = new Props({
-        name: "Mota Giant Coin",
+        name: "Moyu Giant Coin",
         id: "摩羽巨币",
-        description: "Unfortunately, the Mota Star doesn't have traditions like Shenghuang City. This money can only serve as a giant shield.",
+        description: "Unfortunately, the Moyu Star doesn't have traditions like Shenghuang City. This money can only serve as a giant shield.",
         value: 0.999e12,
         stats: {
             attack_speed: {
@@ -2509,7 +2509,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["星解之术"] = new Method({
-        name: "Star-Dissolution Technique",
+        name: "Star Destruction Technique",
         id: "星解之术",
         description: "Unleashes the genetic primal force within the body to dissolve the brilliant stars of the cosmos. Increases overall XP gain rate, with particular promotion of domain comprehension.",
         value: 9090909090909,
@@ -3617,8 +3617,8 @@ item_templates["Twist liek a snek"] = new Book({
         },
     });
     item_templates["黑森帽子"] = new Armor({
-        name: "Black Forest Hat",
-        description: "Inner armor made from black forest fabric. Body armor won't become obsolete as quickly as weapons for now.",
+        name: "Dark Forest Hat",
+        description: "Inner armor made from dark forest fabric. Body armor won't become obsolete as quickly as weapons for now.",
         value: 480e9,
         component_type: "helmet interior",
         base_defense: 810000,
@@ -3630,8 +3630,8 @@ item_templates["Twist liek a snek"] = new Book({
         },
     });
     item_templates["黑森背心"] = new Armor({
-        name: "Black Forest Vest",
-        description: "Inner armor made from black forest fabric. Body armor won't become obsolete as quickly as weapons for now.",
+        name: "Dark Forest Vest",
+        description: "Inner armor made from dark forest fabric. Body armor won't become obsolete as quickly as weapons for now.",
         value: 640e9,
         component_type: "chestplate interior",
         base_defense: 1080000,
@@ -3643,8 +3643,8 @@ item_templates["Twist liek a snek"] = new Book({
         },
     });
     item_templates["黑森裤子"] = new Armor({
-        name: "Black Forest Pants",
-        description: "Inner armor made from black forest fabric. Body armor won't become obsolete as quickly as weapons for now.",
+        name: "Dark Forest Pants",
+        description: "Inner armor made from dark forest fabric. Body armor won't become obsolete as quickly as weapons for now.",
         value: 640e9,
         component_type: "leg armor interior",
         base_defense: 1080000,
@@ -3656,8 +3656,8 @@ item_templates["Twist liek a snek"] = new Book({
         },
     });
     item_templates["黑森袜子"] = new Armor({
-        name: "Black Forest Socks",
-        description: "Inner armor made from black forest fabric. Body armor won't become obsolete as quickly as weapons for now.",
+        name: "Dark Forest Socks",
+        description: "Inner armor made from dark forest fabric. Body armor won't become obsolete as quickly as weapons for now.",
         value: 320e9,
         component_type: "shoes interior",
         base_defense: 540000,
@@ -4251,7 +4251,7 @@ item_templates["Twist liek a snek"] = new Book({
     });
     item_templates["万载冰髓锭"] = new Material({
         id: "万载冰髓锭",
-        name: "Eternal Ice Marrow Ingot",
+        name: "Myriad Year Ice Marrow Ingot",
         description: "A phase-change product of [Arctic Superfluid]. Note: workbench recipe efficiency is extremely low, recommend using [Extreme Cold Phase Engine] for production.",
         value: 1.92e12,
         material_type: "metal",
@@ -4519,7 +4519,7 @@ item_templates["Twist liek a snek"] = new Book({
     });
 
     item_templates["能量冰沙"] = new UsableItem({
-        name: "Energy Ice Smoothie",
+        name: "Energy Smoothie",
         description: "Conceals a portion of life, thereby increasing life [capacity].",
         value: 3e12,
         realmcap:27,
@@ -4543,7 +4543,7 @@ item_templates["Twist liek a snek"] = new Book({
         description: "Reflects 50% of damage back to the enemy, ignoring defense! At the cost of -30% normal attack multiplier, and enemies killed by reflected damage yield no experience. (Still drop loot)",
         value: 8.4e12,
         realmcap:27,
-        effects: [{effect: "Reversal B9", duration: 120}],
+        effects: [{effect: "Retaliate B9", duration: 120}],
         image: "image/item/B9_reflect.png",
     });
     item_templates["B9·灵闪药剂"] = new UsableItem({
@@ -4563,11 +4563,11 @@ item_templates["Twist liek a snek"] = new Book({
         image: "image/item/B9_sublimhealth.png",
     });
     item_templates["B9·异界药剂"] = new UsableItem({
-        name: "B9·Other Realm Potion",
-        description: "Base attack multiplier becomes 20%, but increases by 40%, 60%... with each hit. Choose this for long-term battles!",
+        name: "B9·Dimensional Gate Potion",
+        description: "Base attack multiplier becomes 20%, but increases to 40%, 60%... with each hit. Choose this for long-term battles!",
         value: 8.4e12,
         realmcap:27,
-        effects: [{effect: "Void Gate B9", duration: 120}],
+        effects: [{effect: "Dimensional Gate B9", duration: 120}],
         image: "image/item/B9_portal.png",
     });
     /*

@@ -1441,7 +1441,7 @@ function do_enemy_attack_loop(enemy_id, count, E_round = 1,isnew = false) {//E_r
                 }
                 else  if(current_enemies[enemy_id].spec.includes(15))
                 {
-                    do_enemy_combat_action(enemy_id,"[Void Gate]"+Spec_S,1,E_round * 2 - 1);//异界
+                    do_enemy_combat_action(enemy_id,"[Dimensional Gate]"+Spec_S,1,E_round * 2 - 1);//异界
                 }
                 else do_enemy_combat_action(enemy_id,Spec_S,1);//普攻
 
@@ -1889,7 +1889,7 @@ function do_enemy_combat_action(enemy_id,spec_hint,E_atk_mul = 1,E_dmg_mul = 1) 
     }//回春
 
     if(fainted) faint(" was defeated");
-    else if(active_effects["Reversal B9"]!=undefined){
+    else if(active_effects["Retaliate B9"]!=undefined){
         attacker.stats.health -= damage_taken * 0.50;
         log_message(attacker.name + " took " + format_number(damage_taken * 0.50) + " rebound damage","hero_attacked");
         //attacker受到damage_taken点伤害
@@ -2055,14 +2055,14 @@ function do_character_combat_action({target, attack_power}, target_num,c_atk_mul
             sdmg_mul *= Math.min(character.stats.full.defense / (target.stats.defense + 0.0001) * 0.6,10);
             Spec_E += "[Restraining]";
         }
-        if(active_effects["Void Gate B9"]!=undefined)
+        if(active_effects["Dimensional Gate B9"]!=undefined)
         {
             target.stats.spec_value ||= {};
             
             target.stats.spec_value[-1] ||= 1;
             sdmg_mul *= target.stats.spec_value[-1];
             target.stats.spec_value[-1] += 1;
-            Spec_E += "[Void Gate]";
+            Spec_E += "[Dimensional Gate]";
         }
 
 

@@ -832,7 +832,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
     });
     
     crafting_recipes.items2["摩羽巨币"] = new ItemRecipe({
-        name: "Giant Mo-Feather Coin",
+        name: "Moyu Giant Coin",
         id: "摩羽巨币",
         recipe_type: "items",
         materials: [{material_id: "B1·能量核心", count: 99},{material_id:"摩羽币",count:999}],
@@ -1409,7 +1409,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
         recipe_skill: "Alchemy",
     });
     alchemy_recipes.items3["黑森织料"] = new ItemRecipe({
-        name: "Black Forest Fabric",
+        name: "Dark Forest Fabric",
         recipe_type: "material",
         materials: [{material_id: "黑森叶片", count: 1},{material_id: "荧光精华", count: 1},{material_id: "沼泽兽油", count: 2}], 
         result: {result_id: "黑森织料", count: 1},
@@ -1428,7 +1428,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
         recipe_skill: "Alchemy",
     });
     alchemy_recipes.items3["进阶炼金药剂-反戈"] = new ItemRecipe({
-        name: "Advanced Alchemical Potion - Reversal",
+        name: "Advanced Alchemical Potion - Retaliation",
         recipe_type: "material",
         materials: [{material_id: "黑白枝丫", count: 10},{material_id: "荧光精华", count: 20},{material_id: "沼泽兽油",count:20}], 
         result: {result_id: "B9·反戈药剂", count: 1},
@@ -1446,7 +1446,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
         recipe_skill: "Alchemy",
     });
     alchemy_recipes.items3["进阶炼金药剂-异界"] = new ItemRecipe({
-        name: "Advanced Alchemical Potion - Void Gate",
+        name: "Advanced Alchemical Potion - Dimensional Gate",
         recipe_type: "material",
         materials: [{material_id: "黑白枝丫", count: 10},{material_id: "荧光精华", count: 20},{material_id: "沼泽兽油",count:20}], 
         result: {result_id: "B9·异界药剂", count: 1},
