@@ -4021,7 +4021,7 @@ function load(save_data) {
         
         add_bestiary_lines(11);
         Object.keys(save_data["enemy_killcount"]).forEach(enemy_name => {
-            const resolved_enemy_killcount_key = resolve_enemy_killcount(enemy_name);
+            //const resolved_enemy_killcount_key = resolve_enemy_killcount(enemy_name);
             enemy_killcount[enemy_name] = save_data["enemy_killcount"][enemy_name];
             create_new_bestiary_entry(enemy_name);
             add_bestiary_zones(enemy_name);
