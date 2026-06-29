@@ -295,7 +295,7 @@ function resolve_enemy_killcount(saved_key) {
         return aliased_key;
     }
 
-    const enemy_killcount_by_name = Object.keys(enemy_killcount).find((enemy_killcount_key) => enemy_killcount[enemy_killcount_key].index === saved_key);
+    const enemy_killcount_by_name = Object.keys(enemy_killcount).find((enemy_killcount_key) => enemy_killcount[enemy_killcount_key].id === saved_key);
     return enemy_killcount_by_name || null;
 }
 
@@ -4016,9 +4016,9 @@ function load(save_data) {
         add_bestiary_lines(11);
         Object.keys(save_data["enemy_killcount"]).forEach(enemy_name => {
             const resolved_enemy_killcount_key = resolve_enemy_killcount(enemy_name);
-            enemy_killcount[enemy_name] = save_data["enemy_killcount"][resolved_enemy_killcount_key];
-            create_new_bestiary_entry(enemy_name);
-            add_bestiary_zones(enemy_name);
+            enemy_killcount[enemy_name] = save_data["enemy_killcount"][enemy_name];
+            create_new_bestiary_entry(resolved_enemy_killcount_key);
+            add_bestiary_zones(resolved_enemy_killcount_key);
 
         });
     }
