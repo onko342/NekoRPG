@@ -295,7 +295,7 @@ function resolve_enemy_killcount(saved_key) {
         return aliased_key;
     }
 
-    const enemy_killcount_by_name = Object.keys(enemy_killcount).find((enemy_killcount_key) => enemy_killcount[enemy_killcount_key].id === saved_key);
+    const enemy_killcount_by_name = Object.keys(enemy_killcount).find((enemy_killcount_key) => enemy_killcount[enemy_killcount_key].name === saved_key);
     return enemy_killcount_by_name || null;
 }
 
