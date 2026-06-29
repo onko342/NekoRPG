@@ -889,7 +889,7 @@ class Weapon extends Equippable {
 
     getName() {
         if(!this.name) {
-            let WTM = {"sword":"sword","trident":"trident","moonwheel":"moonwheel","spear":"spear","axe":"axe","dagger":"dagger"}
+            let WTM = {"sword":"Sword","trident":"Trident","moonwheel":"Moonwheel","spear":"Spear","axe":"Axe","dagger":"Dagger"}
             this.name = `${item_templates[this.components.head].name_prefix} ${this.weapon_type === "hammer" ? "war hammer" : WTM[this.weapon_type]}`;
         }
         return this.name;
