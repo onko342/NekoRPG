@@ -5,7 +5,7 @@ import { item_templates, getItem, book_stats, setLootSoldCount, loot_sold_count,
 import { locations } from "./locations.js";
 import { skills, weapon_type_to_skill, which_skills_affect_skill } from "./skills.js";
 import { dialogues } from "./dialogues.js";
-import { enemy_killcount } from "./enemies.js";
+import { enemy_killcount, enemy_templates } from "./enemies.js";
 import { traders } from "./traders.js";
 import { is_in_trade, start_trade, cancel_trade, accept_trade, exit_trade, add_to_trader_inventory,
          add_to_buying_list, remove_from_buying_list, add_to_selling_list, remove_from_selling_list} from "./trade.js";
@@ -284,26 +284,24 @@ function resolve_stance_key(saved_key) {
     const stance_by_name_or_id = Object.keys(stances).find((stance_key) => stances[stance_key].id === saved_key || stances[stance_key].name === saved_key);
     return stance_by_name_or_id || null;
 }
-/*
-function resolve_enemy_killcount(saved_key) {
-    if(enemy_killcount[saved_key]) {
 
-    }
-    
-    if(enemy_killcount[saved_key]) {
+function resolve_enemy_killcount(saved_key) {
+    const enemy = Object.values(enemy_templates).find((template_enemy) => template_enemy.name === saved_key);
+    if(enemy) {
         return saved_key;
     }
 
     const aliased_key = enemy_killcount_save_key_aliases[saved_key];
-    if(aliased_key && enemy_killcount[aliased_key]) {
+    const enemy2 = Object.values(enemy_templates).find((template_enemy) => template_enemy.name === aliased_key);
+    if(aliased_key && enemy2) {
         return aliased_key;
     }
-
-    const enemy_killcount_by_name = Object.keys(enemy_killcount).find((enemy_killcount_key) => enemy_killcount[enemy_killcount_key] === saved_key);
+    /*
+    const enemy_killcount_by_name = Object.keys(enemy_killcount).find((enemy_killcount_key) => enemy_killcount[enemy_killcount_key].id === saved_key);
     return enemy_killcount_by_name || null;
-    
+    */
 }
-*/
+
 
 const tickrate = 1;
 //how many ticks per second
@@ -4021,11 +4019,17 @@ function load(save_data) {
         
         add_bestiary_lines(11);
         Object.keys(save_data["enemy_killcount"]).forEach(enemy_name => {
-            //const resolved_enemy_killcount_key = resolve_enemy_killcount(enemy_name);
-            enemy_killcount[enemy_name] = save_data["enemy_killcount"][enemy_name];
-            create_new_bestiary_entry(enemy_name);
-            add_bestiary_zones(enemy_name);
-
+            const resolved_enemy_killcount_key = resolve_enemy_killcount(enemy_name);
+            const enemy = enemy_templates[enemy_name] || Object.values(enemy_templates).find((template_enemy) => template_enemy.name === enemy_name);
+            if(!enemy) {
+                enemy_killcount[resolved_enemy_killcount_key] = save_data["enemy_killcount"][enemy_name];
+                create_new_bestiary_entry(resolved_enemy_killcount_key);
+                add_bestiary_zones(resolved_enemy_killcount_key);
+            } else {
+                enemy_killcount[enemy_name] = save_data["enemy_killcount"][enemy_name];
+                create_new_bestiary_entry(enemy_name);
+                add_bestiary_zones(enemy_name);
+            }
         });
     }
 
