@@ -223,6 +223,31 @@ const skill_save_key_aliases = {
     "讨价还价": "Haggling",
 };
 
+const enemy_killcount_save_key_aliases = {
+    "Na Family Attendant [BOSS]": "Nya Family Attendant [BOSS]",
+    "Na Family Attendant": "Nya Family Attendant",
+    "Na Family Statue": "Nya Family Statue",
+    "Hundred Clans Pawn [BOSS]": "Bai Family Pawn [BOSS]",
+    "Hundred Clans Pawn": "Bai Family Pawn",
+    "Bai Lan [BOSS]": "Bailan [BOSS]",
+    "Yangang Domain Follower": "Yangang Territory Follower",
+    "Yangang Domain Mercenary": "Yangang Territory Mercenary",
+    "Yangang Domain Mercenary [BOSS]": "Yangang Territory Mercenary [BOSS]",
+    "Horned Tribe": "Horned Tribe Member",
+    "Hundred Clans Guard": "Bai Family Guard",
+    "Na Family Treasure Hunter": "Nya Family Treasure Hunter",
+    "Na Family Ice and Snow Royal Guard": "Nya Family Ice and Snow Royal Guard",
+    "Armored Horned Tribe": "Armored Horned Tribe Member",
+    "Black Forest Iron Warrior": "Dark Forest Iron Warrior",
+    "Black Forest Bewildering Flower": "Dark Forest Bewildering Flower",
+    "Black Forest Zombie Fluffy": "Dark Forest Zombie Fluffy",
+    "Black Forest Ape Warrior": "Dark Forest Ape Warrior",
+    "Black Forest Skeleton": "Dark Forest Skeleton",
+    "Brute Goo Beast [BOSS]": "Mangu Beast [BOSS]",
+    "Black Forest Hunter": "Dark Forest Hunter",
+    "Black Forest Scorpion Dragon": "Dark Forest Scorpion Dragon",
+}
+
 function resolve_trader_key(saved_key) {
     if(traders[saved_key]) {
         return saved_key;
@@ -258,6 +283,20 @@ function resolve_stance_key(saved_key) {
 
     const stance_by_name_or_id = Object.keys(stances).find((stance_key) => stances[stance_key].id === saved_key || stances[stance_key].name === saved_key);
     return stance_by_name_or_id || null;
+}
+
+function resolve_enemy_killcount(saved_key) {
+    if(enemy_killcount[saved_key]) {
+        return saved_key;
+    }
+
+    const aliased_key = enemy_killcount_save_key_aliases[saved_key];
+    if(aliased_key && enemy_killcount[aliased_key]) {
+        return aliased_key;
+    }
+
+    const enemy_killcount_by_name = Object.keys(enemy_killcount).find((enemy_killcount_key) => enemy_killcount[enemy_killcount_key].name === saved_key);
+    return enemy_killcount_by_name || null;
 }
 
 const tickrate = 1;
@@ -893,7 +932,7 @@ function textline_special(t_key){
             if(a4_realm >= 12) displayed_text = `You've already reached mid-Earth Rank and you're still not going?<br>If you keep acting like this, don't call yourself my daughter!<br>` ;
             else displayed_text = `Your self-created sword technique<br>is enough to let you demonstrate strength beyond Earth Rank Stage 5.<br>` ;
 
-            if(enemy_killcount["百方[荒兽森林 ver.][BOSS]"]) displayed_text += "...Wait, you already beat Baifang to tears???<br>";
+            if(enemy_killcount["Baifang [Wild Beast Forest ver.] [BOSS]"]) displayed_text += "...Wait, you already beat Baifang to tears???<br>";
             else displayed_text += "Once your training bears fruit, that mere Baifang will be nothing to fear!<br>";
 
             displayed_text += "The family secret realm opens once every half year.<br>During this time, stay with the family<br>and consolidate your current domain strength.";
@@ -2159,7 +2198,7 @@ function do_character_combat_action({target, attack_power}, target_num,c_atk_mul
                     remove_from_character_inventory([{item_key:"{\"id\":\"纳娜米\",\"quality\":100}"}]);
                     log_message(`Sis in the inventory has gone home!`,"enemy_enhanced");
                 }
-                else if(enemy_killcount["地宫养殖者[BOSS]"] <= 1)
+                else if(enemy_killcount["Dungeon Breeder [BOSS]"] <= 1)
                 {
                     log_message(`[Sayuki] Huh? Sis is nowhere to be found.`,"sayuki");
                     log_message(`[Sayuki] You actually beat that dungeon boss with 100x stats! Amazing!`,"sayuki");
@@ -2191,7 +2230,7 @@ function do_character_combat_action({target, attack_power}, target_num,c_atk_mul
                     remove_from_character_inventory([{item_key:"{\"id\":\"纳娜米(飞船)\",\"quality\":130}"}]);
                     log_message(`Sis in the inventory has gone home!`,"enemy_enhanced");
                 }
-                else if(enemy_killcount["舰船中枢B6[BOSS]"] <= 1)
+                else if(enemy_killcount["Ship Core B6 [BOSS]"] <= 1)
                 {
                     log_message(`[Sayuki] Huh? Sis is nowhere to be found.`,"sayuki");
                     log_message(`[Sayuki] You really beat that core with 420 billion HP! Incredible!`,"sayuki");
@@ -2201,7 +2240,7 @@ function do_character_combat_action({target, attack_power}, target_num,c_atk_mul
                 
                 update_displayed_character_inventory({was_anything_new_added:true});
                 //unlock_location("荒兽森林营地");
-                if(enemy_killcount["舰船中枢B6[BOSS]"] <= 1){
+                if(enemy_killcount["Ship Core B6 [BOSS]"] <= 1){
                     current_game_time.go_up(1080000);
                     //2年
                 }
@@ -3976,7 +4015,8 @@ function load(save_data) {
         
         add_bestiary_lines(11);
         Object.keys(save_data["enemy_killcount"]).forEach(enemy_name => {
-            enemy_killcount[enemy_name] = save_data["enemy_killcount"][enemy_name];
+            const resolved_enemy_killcount_key = resolve_enemy_killcount(key);
+            enemy_killcount[enemy_name] = save_data["enemy_killcount"][resolved_enemy_killcount_key];
             create_new_bestiary_entry(enemy_name);
             add_bestiary_zones(enemy_name);
 

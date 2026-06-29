@@ -238,7 +238,7 @@ class Combat_zone {
             }
             if(newEnemy.id == "地宫养殖者[BOSS]")//特判地宫养殖者
             {
-                if(enemy_killcount["地宫养殖者[BOSS]"]) console.log("试图再次击杀");
+                if(enemy_killcount["Dungeon Breeder [BOSS]"]) console.log("试图再次击杀");
                 else{
                     if(character.equipment.special?.name == "Nanami")//姐姐在！
                     {

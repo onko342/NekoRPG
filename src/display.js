@@ -3858,21 +3858,21 @@ function clear_bestiary() {
 
 function add_bestiary_zones(enemy_name)
 {
-    if(enemy_name == "纳家待从") add_bestiary_lines(12);
-    if(enemy_name == "腐蚀质石精") add_bestiary_lines(13);
-    if(enemy_name == "夜行幽灵") add_bestiary_lines(14);
-    if(enemy_name == "行走树妖") add_bestiary_lines(15);
-    if(enemy_name == "妖灵飞蛾") add_bestiary_lines(21);
-    if(enemy_name == "百家近卫") add_bestiary_lines(22);
-    if(enemy_name == "大门派杂役") add_bestiary_lines(23);
-    if(enemy_name == "威武武士") add_bestiary_lines(24);
-    if(enemy_name == "废墟猎兵") add_bestiary_lines(25);
-    if(enemy_name == "废墟虫卒") add_bestiary_lines(26);
-    if(enemy_name == "荒兽电法兵") add_bestiary_lines(27);
-    if(enemy_name == "塔门战甲B1") add_bestiary_lines(28);
-    if(enemy_name == "无面修者") add_bestiary_lines(31);
-    if(enemy_name == "有角族壮年") add_bestiary_lines(32);
-    if(enemy_name == "冰原之痕") add_bestiary_lines(33);
+    if(enemy_name == "Nya Family Attendant") add_bestiary_lines(12);
+    if(enemy_name == "Corrosive Stone Spirit") add_bestiary_lines(13);
+    if(enemy_name == "Night-Stalking Ghost") add_bestiary_lines(14);
+    if(enemy_name == "Walking Tree Fiend") add_bestiary_lines(15);
+    if(enemy_name == "Specter Moth") add_bestiary_lines(21);
+    if(enemy_name == "Bai Family Guard") add_bestiary_lines(22);
+    if(enemy_name == "Major Sect Handyman") add_bestiary_lines(23);
+    if(enemy_name == "Majestic Warrior") add_bestiary_lines(24);
+    if(enemy_name == "Ruin Hunter") add_bestiary_lines(25);
+    if(enemy_name == "Ruin Bug Soldier") add_bestiary_lines(26);
+    if(enemy_name == "Wild Beast Lightning Mage Soldier") add_bestiary_lines(27);
+    if(enemy_name == "Tower Gate Battle Armor B1") add_bestiary_lines(28);
+    if(enemy_name == "Faceless Cultivator") add_bestiary_lines(31);
+    if(enemy_name == "Horned Tribe Adult") add_bestiary_lines(32);
+    if(enemy_name == "Glacial Plain Trace") add_bestiary_lines(33);
 }
 
 function reload_bestiary(){
