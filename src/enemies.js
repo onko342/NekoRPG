@@ -398,7 +398,7 @@ class Enemy {
 
     enemy_templates["废弃傀儡"] = new Enemy({
         name: "Abandoned Golem",
-        description: "A rock Golem with nearly depleted energy, only retaining Dust Rank Advanced strength",
+        description: "A rock Golem with nearly depleted energy, only retaining Dust Rank Expert strength",
         xp_value: 3, 
         rank: 1109,
         image: "image/enemy/E1109.png",
@@ -1129,7 +1129,7 @@ class Enemy {
         ],
     });
     enemy_templates["燕岗领从者"] = new Enemy({
-        name: "Yangang Domain Follower",
+        name: "Yangang Territory Follower",
         description: "A common cultivator found everywhere. Modest in cultivation, modest in wealth.",
         xp_value: 34, 
         rank: 1306,
@@ -1186,7 +1186,7 @@ class Enemy {
     });
     enemy_templates["司雍世界修士"] = new Enemy({
         name: "Siyong World Cultivator",
-        description: "A slightly rarer ordinary cultivator, considered strong among Tidal Rank Advanced.",
+        description: "A slightly rarer ordinary cultivator, considered strong among Tidal Rank Expert.",
         xp_value: 34, 
         rank: 1309,
         image: "image/enemy/E1309.png",
@@ -1316,7 +1316,7 @@ class Enemy {
         ],
     });
     enemy_templates["燕岗领佣兵"] = new Enemy({
-        name: "Yangang Domain Mercenary",
+        name: "Yangang Territory Mercenary",
         description: "The first Earth Rank enemy. Friendly reminder: EXP gain rate doubles for Earth Rank and above!",
         xp_value: 144, 
         rank: 1316,
@@ -2168,7 +2168,7 @@ class Enemy {
         ],
     });
     enemy_templates["有角一族"] = new Enemy({
-        name: "Horned Tribe",
+        name: "Horned Tribe Member",
         description: "A wild beast that seems far stronger than the others nearby. Its charging horns let it deal damage in two hits!",
         xp_value: 4181, 
         rank: 2105,
@@ -2261,7 +2261,7 @@ class Enemy {
     });
     enemy_templates["人立茸茸"] = new Enemy({
         name: "Upright Fluffy",
-        description: "The Budding Green Fluffy's evolution path stalled at the third tier of the Earth Rank. So it resolutely decided to grow arms and legs...",
+        description: "The Budding Green Fluffy's evolution path stalled at the third stage of the Earth Rank. So it resolutely decided to grow arms and legs...",
         xp_value: 4181, 
         rank: 2110,
         image: "image/enemy/E2110.png",
@@ -2359,7 +2359,7 @@ class Enemy {
     });
     enemy_templates["银杖茸茸"] = new Enemy({
         name: "Silver Staff Fluffy",
-        description: "A Fluffy that chose to study magic when faced with the fourth-tier bottleneck. But the magic is just way too weak!",
+        description: "A Fluffy that chose to study magic when faced with the fourth-stage bottleneck. But the magic is just way too weak!",
         xp_value: 4181, 
         rank: 2115,
         image: "image/enemy/E2115.png",
@@ -2721,7 +2721,7 @@ class Enemy {
     });
     enemy_templates["清野江盗匪"] = new Enemy({
         name: "Qingye River Bandit",
-        description: "Years of picking on the weak have left it far less powerful than wild beasts, monsters, or humans of the same rank. Still, it can push around fifth-tier sailors.",
+        description: "Years of picking on the weak have left it far less powerful than wild beasts, monsters, or humans of the same rank. Still, it can push around fifth-stage sailors.",
         xp_value: 17711, 
         rank: 2215,
         image: "image/enemy/E2215.png",
@@ -2998,7 +2998,7 @@ class Enemy {
     });
     enemy_templates["秘境帕芙之灵"] = new Enemy({
         name: "Secret Realm Paf Spirit",
-        description: "A \"Spirit\" that naturally grew within the Boundary Lake. After accumulating energy for years, it has reached the seventh tier of the Earth Rank.",
+        description: "A \"Spirit\" that naturally grew within the Boundary Lake. After accumulating energy for years, it has reached the seventh stage of the Earth Rank.",
         xp_value: 46368, 
         rank: 2403,
         image: "image/enemy/E2403.png",
@@ -3076,7 +3076,7 @@ class Enemy {
         ],
     });
     enemy_templates["有甲有角族"] = new Enemy({
-        name: "Armored Horned Tribe",
+        name: "Armored Horned Tribe Member",
         description: "Why did the Horned Tribe and the Bai Family guards get drunk too... People can't — or at least shouldn't!",
         xp_value: 46368, 
         rank: 2407,
@@ -3153,7 +3153,7 @@ class Enemy {
     });
     enemy_templates["人立金茸茸"] = new Enemy({
         name: "Upright Gold Fluffy",
-        description: "A Fluffy that switched evolution paths halfway through. The end of this road is the second tier of the Sky Rank, but the secret realm's energy is already running thin.",
+        description: "A Fluffy that switched evolution paths halfway through. The end of this road is the second stage of the Sky Rank, but the secret realm's energy is already running thin.",
         xp_value: 46368, 
         rank: 2411,
         image: "image/enemy/E2411.png",
@@ -3366,7 +3366,7 @@ class Enemy {
     });
     enemy_templates["声律城骸骨"] = new Enemy({
         name: "Shenglv City Skeleton",
-        description: "Its bones have been tempered to the [Blue Jade] tier. You could pick them up and use them directly as entwining crystals!",
+        description: "Its bones have been tempered to the [Blue Jade] tier. You could pick them up and use them directly as binding crystals!",
         xp_value: 121393, 
         rank: 2504,
         image: "image/enemy/E2504.png",
@@ -3386,7 +3386,7 @@ class Enemy {
     });
     enemy_templates["声律城难民"] = new Enemy({
         name: "Shenglv City Refugee",
-        description: "Has a decent set of mechanics, but has been starving for days and its HP is nearly depleted. The Otherworld Gate can't do much in this state.",
+        description: "Has a decent set of mechanics, but has been starving for days and its HP is nearly depleted. The Dimensional Gate can't do much in this state.",
         xp_value: 121393, 
         rank: 2505,
         image: "image/enemy/E2505.png",
@@ -4433,7 +4433,7 @@ class Enemy {
     });
     enemy_templates["鲜血之锋B1"] = new Enemy({
         name: "Blood Edge B1",
-        description: "What? That much HP? Scattered Blossom? Would anyone believe it's only Sky Tier One? Go fetch the magic-attack Restraining grandmaster, quick!",
+        description: "What? That much HP? Scattered Blossom? Would anyone believe it's only Sky Stage One? Go fetch the magic-attack Restraining grandmaster, quick!",
         xp_value: 5702887, 
         rank: 2808,
         image: "image/enemy/E2808.png",
@@ -4510,7 +4510,7 @@ class Enemy {
     });
     enemy_templates["光子石像B1"] = new Enemy({
         name: "Photon Stone Statue B1",
-        description: "Be wary of anything related to [light]. Sky Tier One and arc's constant 10.6 have become the same tier...",
+        description: "Be wary of anything related to [light]. Sky Stage One and arc's constant 10.6 have become the same tier...",
         xp_value: 5702887, 
         rank: 2812,
         image: "image/enemy/E2812.png",
@@ -4613,7 +4613,7 @@ class Enemy {
     });
     enemy_templates["深邃之暗B2"] = new Enemy({
         name: "Abyssal Darkness B2",
-        description: "Its base stats are tremendously powerful, but thankfully it doesn't have the bizarre masteries that those Tier One specialized robots have.",
+        description: "Its base stats are tremendously powerful, but thankfully it doesn't have the bizarre masteries that those Stage One specialized robots have.",
         xp_value: 3524578, 
         rank: 2817,
         image: "image/enemy/E2817.png",
@@ -4632,7 +4632,7 @@ class Enemy {
     });
     enemy_templates["无面修者"] = new Enemy({
         name: "Faceless Cultivator",
-        description: "Curious why there are so few Sky Tier Two enemies? The answer is that the classification among the Beyond-Sky tribes is very strict — many B2-grade ones were classified as B1...",
+        description: "Curious why there are so few Sky Stage Two enemies? The answer is that the classification among the Beyond-Sky tribes is very strict — many B2-grade ones were classified as B1...",
         xp_value: 5702887, 
         rank: 3101,
         image: "image/enemy/E3101.png",
@@ -4681,7 +4681,7 @@ class Enemy {
     });
     enemy_templates["淳羽家族近卫"] = new Enemy({
         name: "Chunyu Family Guard",
-        description: "As the number one family in the Yangang Domain, why use poison? *I won't tell you anything!*",
+        description: "As the number one family in the Yangang Territory, why use poison? *I won't tell you anything!*",
         xp_value: 5702887, 
         rank: 3104,
         image: "image/enemy/E3104.png",
@@ -4816,7 +4816,7 @@ class Enemy {
     });
     enemy_templates["沉陷死者"] = new Enemy({
         name: "Sunken Corpse",
-        description: "The 1-4 Explorer's Vengeful Spirit also had the Otherworld Gate. It seems to be some kind of death-related mastery...",
+        description: "The 1-4 Explorer's Vengeful Spirit also had the Dimensional Gate. It seems to be some kind of death-related mastery...",
         xp_value: 9227465, 
         rank: 3112,
         image: "image/enemy/E3112.png",
@@ -5156,7 +5156,7 @@ class Enemy {
     });
     enemy_templates["石风家族队长"] = new Enemy({
         name: "Shifeng Family Captain",
-        description: "To this day we still don't know why the Shifeng Family would put Sky Tier Four and Earth Tier One in the same team. The nouveau riche family's lack of depth is plain to see.",
+        description: "To this day we still don't know why the Shifeng Family would put Sky Stage Four and Earth Stage One in the same team. The nouveau riche family's lack of depth is plain to see.",
         xp_value: 39088169, 
         rank: 3212,
         image: "image/enemy/E3212.png",
@@ -5442,7 +5442,7 @@ class Enemy {
     });
     enemy_templates["冰山石灵"] = new Enemy({
         name: "Iceberg Stone Spirit",
-        description: "Finally something with more normal stats. Armored is so much more approachable than those that rush up and freeze you right at the start……yes, this is the bonus stage!",
+        description: "Finally something with more normal stats. Armored is so much more approachable than those that rush up and freeze you right at the start... yes, this is the bonus stage!",
         xp_value: 102334155, 
         rank: 3314,
         image: "image/enemy/E3314.png",
@@ -5565,7 +5565,7 @@ B5 6324'5986 /1'0233'4155exp
         ],
     });
     enemy_templates["百兰[BOSS]"] = new Enemy({
-        name: "Bai Lan [BOSS]",
+        name: "Bailan [BOSS]",
         description: "The man outside the city. He looks down on Neko, but his strength isn't much greater than Neko's.",
         add_to_bestiary: true,
         xp_value: 34, 
@@ -5582,7 +5582,7 @@ B5 6324'5986 /1'0233'4155exp
         ],
     });
     enemy_templates["燕岗领佣兵[BOSS]"] = new Enemy({
-        name: "Yangang Domain Mercenary [BOSS]",
+        name: "Yangang Territory Mercenary [BOSS]",
         description: "A mercenary guarding the dungeon entrance, waiting for the right moment. Has already ambushed many cultivators and amassed considerable reserves.",
         add_to_bestiary: true,
         xp_value: 144, 
@@ -5848,7 +5848,7 @@ B5 6324'5986 /1'0233'4155exp
     
     enemy_templates["初级卫兵A9[BOSS]"] = new Enemy({
         name: "Junior Guard A9 [BOSS]",
-        description: "Sublimation is such a troublesome insight... Crescent Moon Blessing or Magic Attack Potion, which do you prefer~",
+        description: "Scatter is such a troublesome insight... Crescent Moon Blessing or Magic Attack Potion, which do you prefer~",
         xp_value: 514229, 
         rank: 2699,
         image: "image/boss/B2601.png",

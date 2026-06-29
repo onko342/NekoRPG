@@ -2280,7 +2280,7 @@ item_templates["Twist liek a snek"] = new Book({
 
     
     item_templates["精钢镐"] = new Tool({
-        name: "Steel Pickaxe",
+        name: "Fine Steel Pickaxe",
         description: "An ordinary steel pickaxe, capable of mining copper ore.",
         value: 1000,
         equip_slot: "pickaxe",
@@ -2289,7 +2289,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["紫铜镐"] = new Tool({
-        name: "Copper Pickaxe",
+        name: "Purple Copper Pickaxe",
         description: "A copper pickaxe with greatly enhanced mining capability.",
         value: 66666,
         equip_slot: "pickaxe",
@@ -2359,7 +2359,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["巨剑徽章"] = new Props({
-        name: "Giant Sword Badge",
+        name: "Greatsword Emblem",
         id: "巨剑徽章",
         description: "Few people realize that the blade-coins of the Xuelo Continent contain extraordinary power. However, the backlash force within them should not be underestimated.",
         value: 23456789,
@@ -2387,7 +2387,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["水火徽章"] = new Props({
-        name: "Water-Fire Badge",
+        name: "Water-Fire Emblem",
         id: "水火徽章",
         description: "A badge that forms an energy cycle using the essence of two elemental beast types. Greatly increases regeneration speed and also boosts health slightly.",
         value: 720000000,
@@ -2401,9 +2401,9 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["三相徽章"] = new Props({
-        name: "Tri-Aspect Badge",
+        name: "Three-Phase Emblem",
         id: "三相徽章",
-        description: "A badge that forms an energy cycle using the essence of three elemental beast types. Just a little wind-attribute energy short of perfection...",
+        description: "An emblem that forms an energy cycle using the essence of three elemental beast types. Just a little wind-attribute energy short of perfection...",
         value: 9.9e9,
         stats: {
             health_regeneration_flat: {
@@ -2419,7 +2419,7 @@ item_templates["Twist liek a snek"] = new Book({
     item_templates["摩羽巨币"] = new Props({
         name: "Moyu Giant Coin",
         id: "摩羽巨币",
-        description: "Unfortunately, the Moyu Star doesn't have traditions like Shenghuang City. This money can only serve as a giant shield.",
+        description: "Unfortunately, the Moyu Planet doesn't have traditions like Shenghuang City. This money can only serve as a giant shield.",
         value: 0.999e12,
         stats: {
             attack_speed: {
@@ -2475,7 +2475,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["冰刺装甲"] = new Props({
-        name: "Ice Spike Armor",
+        name: "Ice-Thorn Armor",
         id: "冰刺装甲",
         description: "Sure, enemies can spot you from two miles away — but the ice spikes covering your body make for an all-in-one offensive and defensive treasure! (Agility? What agility?)",
         value: 120e12,
@@ -2761,7 +2761,7 @@ item_templates["Twist liek a snek"] = new Book({
 //武器部件
 (function(){
     item_templates["铁剑刃"] = new WeaponComponent({
-        name: "Iron sword blade", description: "A sword blade forged from iron ingots, the core component of an iron sword.",
+        name: "Iron Sword Blade", description: "A sword blade forged from iron ingots, the core component of an iron sword.",
         component_type: "long blade",
         value: 125,
         component_tier: 0,
@@ -2778,7 +2778,7 @@ item_templates["Twist liek a snek"] = new Book({
     });
     
     item_templates["精钢剑刃"] = new WeaponComponent({
-        name: "Steel sword blade", description: "A sword blade forged from steel ingots, far sharper than an iron blade.",
+        name: "Steel Sword Blade", description: "A sword blade forged from steel ingots, far sharper than an iron blade.",
         component_type: "long blade",
         value: 900,
         component_tier: 1,
@@ -2795,7 +2795,7 @@ item_templates["Twist liek a snek"] = new Book({
     });
     
     item_templates["紫铜剑刃"] = new WeaponComponent({
-        name: "Copper sword blade", description: "A sword blade forged from copper ingots, combining sharpness with agility.",
+        name: "Copper Sword Blade", description: "A sword blade forged from copper ingots, combining sharpness with agility.",
         component_type: "long blade",
         value: 40000,
         component_tier: 2,
@@ -2811,7 +2811,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["宝石剑刃"] = new WeaponComponent({
-        name: "Gem sword blade", description: "A forged gem-infused sword blade. Imbued with magic power, critical hit rate increased.",
+        name: "Gem Sword Blade", description: "A forged gem-infused sword blade. Imbued with magic power, critical hit rate increased.",
         component_type: "long blade",
         value: 500e3,
         component_tier: 3,
@@ -2827,7 +2827,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["地宫剑刃"] = new WeaponComponent({
-        name: "Dungeon sword blade", description: "A sword blade made of dungeon metal. The market is saturated so it can't be sold, but it's still great for personal use.",
+        name: "Dungeon Sword Blade", description: "A sword blade made of dungeon metal. The market is saturated so it can't be sold, but it's still great for personal use.",
         component_type: "long blade",
         value: 120e3,
         component_tier: 3,
@@ -2846,7 +2846,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["暗影剑刃"] = new WeaponComponent({
-        name: "Shadow sword blade", description: "A sword blade made of shadow steel ingots. Powerful and forceful, though a bit heavy.",
+        name: "Shadow Sword Blade", description: "A sword blade made of shadow steel ingots. Powerful and forceful, though a bit heavy.",
         component_type: "long blade",
         value: 2.8e6,
         component_tier: 4,
@@ -2865,7 +2865,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["充能剑刃"] = new WeaponComponent({
-        name: "Charged sword blade", description: "A sword blade made of charged alloy ingots. No negative stats — only pure sharpness.",
+        name: "Charged Sword Blade", description: "A sword blade made of charged alloy ingots. No negative stats — only pure sharpness.",
         component_type: "long blade",
         value: 1.5e7,
         component_tier: 5,
@@ -2881,7 +2881,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["充能戟头"] = new WeaponComponent({
-        name: "Charged trident head", description: "A trident head made of charged alloy ingots. It can pierce three holes at once, but is somewhat difficult to pull out...",
+        name: "Charged Trident Head", description: "A trident head made of charged alloy ingots. It can pierce three holes at once, but is somewhat difficult to pull out...",
         component_type: "triple blade",
         value: 4.5e7,
         component_tier: 5,
@@ -2901,7 +2901,7 @@ item_templates["Twist liek a snek"] = new Book({
     });
     
     item_templates["脉冲剑刃"] = new WeaponComponent({
-        name: "Pulse sword blade", description: "A sword blade made of pulse alloy ingots. Later sword blade tiers primarily increase critical hit rate and attack speed.",
+        name: "Pulse Sword Blade", description: "A sword blade made of pulse alloy ingots. Later sword blade tiers primarily increase critical hit rate and attack speed.",
         component_type: "long blade",
         value: 60e6,
         component_tier: 6,
@@ -2917,7 +2917,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["脉冲戟头"] = new WeaponComponent({
-        name: "Pulse trident head", description: "A trident head made of pulse alloy ingots. Normal attack multiplier slightly better than the charged trident head?",
+        name: "Pulse Trident Head", description: "A trident head made of pulse alloy ingots. Normal attack multiplier slightly better than the charged trident head?",
         component_type: "triple blade",
         value: 180e6,
         component_tier: 6,
@@ -2937,7 +2937,7 @@ item_templates["Twist liek a snek"] = new Book({
     });
     
     item_templates["蓝金剑刃"] = new WeaponComponent({
-        name: "Blue-Gold sword blade", description: "A sword blade made of blue-gold ingots. Attack speed and critical rate improved another notch.",
+        name: "Blue-Gold Sword Blade", description: "A sword blade made of blue-gold ingots. Attack speed and critical rate improved another notch.",
         component_type: "long blade",
         value: 480e6,
         component_tier: 7,
@@ -2953,7 +2953,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["蓝金戟头"] = new WeaponComponent({
-        name: "Blue-Gold trident head", description: "A trident head made of blue-gold ingots. Normal attack multiplier improved another notch.",
+        name: "Blue-Gold Trident Head", description: "A trident head made of blue-gold ingots. Normal attack multiplier improved another notch.",
         component_type: "triple blade",
         value: 1440e6,
         component_tier: 7,
@@ -2973,7 +2973,7 @@ item_templates["Twist liek a snek"] = new Book({
     });
     
     item_templates["海绿剑刃"] = new WeaponComponent({
-        name: "Sea Green sword blade", description: "A sword blade made of sea green ingots.",
+        name: "Sea Green Sword Blade", description: "A sword blade made of sea green ingots.",
         component_type: "long blade",
         value: 1200e6,
         component_tier: 8,
@@ -2989,7 +2989,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["海绿戟头"] = new WeaponComponent({
-        name: "Sea Green trident head", description: "A trident head made of sea green ingots.",
+        name: "Sea Green Trident Head", description: "A trident head made of sea green ingots.",
         component_type: "triple blade",
         value: 3600e6,
         component_tier: 8,
@@ -3009,7 +3009,7 @@ item_templates["Twist liek a snek"] = new Book({
     });
     
     item_templates["红钢剑刃"] = new WeaponComponent({
-        name: "Red Steel sword blade", description: "A sword blade made of red steel ingots.",
+        name: "Red Steel Sword Blade", description: "A sword blade made of red steel ingots.",
         component_type: "long blade",
         value: 3200e6,
         component_tier: 9,
@@ -3025,7 +3025,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["红钢戟头"] = new WeaponComponent({
-        name: "Red Steel trident head", description: "A trident head made of red steel ingots.",
+        name: "Red Steel Trident Head", description: "A trident head made of red steel ingots.",
         component_type: "triple blade",
         value: 9600e6,
         component_tier: 9,
@@ -3044,7 +3044,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["秘银剑刃"] = new WeaponComponent({
-        name: "Mithril sword blade", description: "A sword blade made of mithril ingots.",
+        name: "Mithril Sword Blade", description: "A sword blade made of mithril ingots.",
         component_type: "long blade",
         value: 40e9,
         component_tier: 10,
@@ -3060,7 +3060,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["秘银戟头"] = new WeaponComponent({
-        name: "Mithril trident head", description: "A trident head made of mithril ingots.",
+        name: "Mithril Trident Head", description: "A trident head made of mithril ingots.",
         component_type: "triple blade",
         value: 120e9,
         component_tier: 10,
@@ -3079,7 +3079,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["旋律剑刃"] = new WeaponComponent({
-        name: "Melody sword blade", description: "A sword blade made of melody alloy ingots. The potential of cold weapons has been fully unlocked — their bonus stats will not continue to improve.",
+        name: "Melody Sword Blade", description: "A sword blade made of melody alloy ingots. The potential of cold weapons has been fully unlocked — their bonus stats will not continue to improve.",
         component_type: "long blade",
         value: 600e9,
         component_tier: 11,
@@ -3091,7 +3091,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["旋律戟头"] = new WeaponComponent({
-        name: "Melody trident head", description: "A trident head made of melody alloy ingots. The potential of cold weapons has been fully unlocked — their bonus stats will not continue to improve.",
+        name: "Melody Trident Head", description: "A trident head made of melody alloy ingots. The potential of cold weapons has been fully unlocked — their bonus stats will not continue to improve.",
         component_type: "triple blade",
         value: 1800e9,
         component_tier: 11,
@@ -3105,7 +3105,7 @@ item_templates["Twist liek a snek"] = new Book({
     });
     
     item_templates["冰髓剑刃"] = new WeaponComponent({
-        name: "Ice Marrow sword blade", description: "A sword blade made of ten-thousand-year ice marrow. This is a genuinely 【cold】 weapon.",
+        name: "Ice Marrow Sword Blade", description: "A sword blade made of ten-thousand-year ice marrow. This is a genuinely 【cold】 weapon.",
         component_type: "long blade",
         value: 1800e9,
         component_tier: 12,
@@ -3117,7 +3117,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["冰髓戟头"] = new WeaponComponent({
-        name: "Ice Marrow trident head", description: "A trident head made of ten-thousand-year ice marrow. This is a genuinely 【cold】 weapon.",
+        name: "Ice Marrow Trident Head", description: "A trident head made of ten-thousand-year ice marrow. This is a genuinely 【cold】 weapon.",
         component_type: "triple blade",
         value: 5400e9,
         component_tier: 12,
@@ -3130,7 +3130,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["骨剑柄"] = new WeaponComponent({
-        name: "Bone sword hilt", description: "A sword hilt made from white bone. Brittle, so it affects the wielder when used.",
+        name: "Bone Sword Hilt", description: "A sword hilt made from white bone. Brittle, so it affects the wielder when used.",
         component_type: "short handle",
         value: 15,
         component_tier: 0,
@@ -3144,7 +3144,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["铜骨剑柄"] = new WeaponComponent({
-        name: "Copper Bone sword hilt", description: "A sword hilt made from copper bone. Sturdy and practical!",
+        name: "Copper Bone Sword Hilt", description: "A sword hilt made from copper bone. Sturdy and practical!",
         component_type: "short handle",
         value: 50,
         component_tier: 1,
@@ -3155,7 +3155,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["改良剑柄"] = new WeaponComponent({
-        name: "Improved sword hilt", description: "A sword hilt composed of multiple materials. Provides compound stat bonuses!",
+        name: "Improved Sword Hilt", description: "A sword hilt composed of multiple materials. Provides compound stat bonuses!",
         component_type: "short handle",
         value: 25000,
         component_tier: 2,
@@ -3169,7 +3169,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["柳木剑柄"] = new WeaponComponent({
-        name: "Willow sword hilt", description: "A sword hilt made of activated willow wood. Genetic primal energy conduction has never been smoother!",
+        name: "Willow Sword Hilt", description: "A sword hilt made of activated willow wood. Genetic primal energy conduction has never been smoother!",
         component_type: "short handle",
         value: 5.0e6,
         component_tier: 4,
@@ -3186,7 +3186,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["水晶剑柄"] = new WeaponComponent({
-        name: "Crystal sword hilt", description: "A sword hilt made of wrapped crystal. The transparent appearance helps analyze primal energy flow and optimize force delivery!",
+        name: "Crystal Sword Hilt", description: "A sword hilt made of wrapped crystal. The transparent appearance helps analyze primal energy flow and optimize force delivery!",
         component_type: "short handle",
         value: 475e6,
         component_tier: 6,
@@ -3204,7 +3204,7 @@ item_templates["Twist liek a snek"] = new Book({
     });
     
     item_templates["凝胶剑柄"] = new WeaponComponent({
-        name: "Gel sword hilt", description: "A sword hilt made of waxy solid gel, lightweight with excellent energy conduction and grip.",
+        name: "Gel Sword Hilt", description: "A sword hilt made of waxy solidified gel, lightweight with excellent energy conduction and grip.",
         component_type: "short handle",
         value: 1.2e9,
         component_tier: 9,
@@ -3221,7 +3221,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["光暗剑柄"] = new WeaponComponent({
-        name: "Light-Dark sword hilt", description: "This is the final sword hilt. Looks decent, but it may not actually beat 300% gel..",
+        name: "Light-Dark Sword Hilt", description: "This is the final sword hilt. Looks decent, but it may not actually beat 300% gel..",
         component_type: "short handle",
         value: 400e9,
         component_tier: 11,
@@ -3240,7 +3240,7 @@ item_templates["Twist liek a snek"] = new Book({
 
     
     item_templates["凝胶轮芯"] = new WeaponComponent({
-        name: "Gel wheel core", description: "The basic version of the 【Moonwheel】 core. Barely functional at best...",
+        name: "Gel Wheel Core", description: "The basic version of the [Moonwheel] core. Barely functional at best...",
         component_type: "wheel core",
         value: 7.2e9,
         component_tier: 9,
@@ -3251,7 +3251,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["秘银轮锋"] = new WeaponComponent({
-        name: "Mithril wheel blade", description: "A 【Moonwheel】 coating made of mithril ingots. Clearly insufficient as a third-tier mental weapon material, but still sturdy enough for the first two stages.",
+        name: "Mithril Wheel Blade", description: "A [Moonwheel] coating made of mithril ingots. Clearly insufficient as a third-tier mental weapon material, but still sturdy enough for the first two stages.",
         component_type: "wheel head",
         value: 360e9,
         component_tier: 10,
@@ -3267,7 +3267,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["光暗轮芯"] = new WeaponComponent({
-        name: "Light-Dark wheel core", description: "An entry-level 【Moonwheel】 core component. Compared to forcibly controlled gel, light-dark branches are truly orthodox mental energy-sensing materials.",
+        name: "Light-Dark Wheel Core", description: "An entry-level [Moonwheel] core component. Compared to forcibly controlled gel, light-dark branches are truly orthodox mental energy-sensing materials.",
         component_type: "wheel core",
         value: 2400e9,
         component_tier: 11,
@@ -3281,7 +3281,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["旋律轮锋"] = new WeaponComponent({
-        name: "Melody wheel blade", description: "A 【Moonwheel】 coating made of melody alloy ingots. At B6 grade, it qualifies as a second-tier mental weapon and won't impede speed increases.",
+        name: "Melody Wheel Blade", description: "A [Moonwheel] coating made of melody alloy ingots. At B6 grade, it qualifies as a second-tier mental weapon and won't impede speed increases.",
         component_type: "wheel head",
         value: 5400e9,
         component_tier: 11,
@@ -3297,7 +3297,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["冰髓轮锋"] = new WeaponComponent({
-        name: "Ice Marrow wheel blade", description: "A 【Moonwheel】 coating made of ten-thousand-year ice marrow. A flash of cold light — I mean a genuine 【cold light】!",
+        name: "Ice Marrow Wheel Blade", description: "A [Moonwheel] coating made of ten-thousand-year ice marrow. A flash of cold light — I mean a genuine 【cold light】!",
         component_type: "wheel head",
         value: 16200e9,
         component_tier: 12,
@@ -3669,7 +3669,7 @@ item_templates["Twist liek a snek"] = new Book({
         },
     });
     item_templates["铁制头盔"] = new ArmorComponent({
-        name: "Iron helmet shell",
+        name: "Iron Helmet Shell",
         description: "A standard iron helmet shell. Slightly reduces attack speed as it obstructs vision.",
         component_type: "helmet exterior",
         value: 187,
@@ -3678,7 +3678,7 @@ item_templates["Twist liek a snek"] = new Book({
         defense_value: 3,
     });
     item_templates["铁制胸甲"] = new ArmorComponent({
-        name: "Iron chestplate shell",
+        name: "Iron Chestplate Shell",
         description: "A standard iron chestplate shell.",
         component_type: "chestplate exterior",
         value: 250,
@@ -3687,7 +3687,7 @@ item_templates["Twist liek a snek"] = new Book({
         defense_value: 5,
     });
     item_templates["铁制腿甲"] = new ArmorComponent({
-        name: "Iron leg armor shell",
+        name: "Iron Leg Armor Shell",
         description: "A standard iron leg armor shell.",
         component_type: "leg armor exterior",
         value: 250,
@@ -3696,7 +3696,7 @@ item_templates["Twist liek a snek"] = new Book({
         defense_value: 4,
     });
     item_templates["铁制战靴"] = new ArmorComponent({
-        name: "Iron battle boots shell",
+        name: "Iron Battle Boots Shell",
         description: "A standard iron battle boots shell. Slightly affects movement.",
         component_type: "shoes exterior",
         value: 125,
@@ -3705,7 +3705,7 @@ item_templates["Twist liek a snek"] = new Book({
         defense_value: 2,
     });
     item_templates["紫铜头盔"] = new ArmorComponent({
-        name: "Copper helmet",
+        name: "Copper Helmet",
         description: "A1-grade armor, lightweight yet hard.",
         component_type: "helmet exterior",
         value: 60000,
@@ -3719,7 +3719,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["紫铜胸甲"] = new ArmorComponent({
-        name: "Copper chestplate",
+        name: "Copper Chestplate",
         description: "A1-grade armor, lightweight yet hard.",
         component_type: "chestplate exterior",
         value: 80000,
@@ -3733,7 +3733,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["紫铜腿甲"] = new ArmorComponent({
-        name: "Copper leg armor",
+        name: "Copper Leg Armor",
         description: "A1-grade armor, lightweight yet hard.",
         component_type: "leg armor exterior",
         value: 80000,
@@ -3747,7 +3747,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["紫铜战靴"] = new ArmorComponent({
-        name: "Copper battle boots",
+        name: "Copper Battle Boots",
         description: "A1-grade armor, lightweight yet hard.",
         component_type: "shoes exterior",
         value: 40000,
@@ -3761,7 +3761,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["地宫头盔"] = new ArmorComponent({
-        name: "Dungeon helmet",
+        name: "Dungeon Helmet",
         description: "Mildly toxic, but that's irrelevant in a sea of wild beasts.",
         component_type: "helmet exterior",
         value: 270e3,
@@ -3775,7 +3775,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["地宫胸甲"] = new ArmorComponent({
-        name: "Dungeon chestplate",
+        name: "Dungeon Chestplate",
         description: "Mildly toxic, but that's irrelevant in a sea of wild beasts.",
         component_type: "chestplate exterior",
         value: 360e3,
@@ -3789,7 +3789,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["地宫腿甲"] = new ArmorComponent({
-        name: "Dungeon leg armor",
+        name: "Dungeon Leg Armor",
         description: "Mildly toxic, but that's irrelevant in a sea of wild beasts.",
         component_type: "leg armor exterior",
         value: 360e3,
@@ -3803,7 +3803,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["地宫战靴"] = new ArmorComponent({
-        name: "Dungeon battle boots",
+        name: "Dungeon Battle Boots",
         description: "Mildly toxic, but that's irrelevant in a sea of wild beasts.",
         component_type: "shoes exterior",
         value: 180e3,
@@ -3817,7 +3817,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["充能头盔"] = new ArmorComponent({
-        name: "Charged helmet",
+        name: "Charged Helmet",
         description: "A6-grade armor, fits the body perfectly just like the vitalized inner armor.",
         component_type: "helmet exterior",
         value: 2.1e7,
@@ -3831,7 +3831,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["充能胸甲"] = new ArmorComponent({
-        name: "Charged chestplate",
+        name: "Charged Chestplate",
         description: "A6-grade armor, fits the body perfectly just like the vitalized inner armor.",
         component_type: "chestplate exterior",
         value: 2.8e7,
@@ -3845,7 +3845,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["充能腿甲"] = new ArmorComponent({
-        name: "Charged leg armor",
+        name: "Charged Leg Armor",
         description: "A6-grade armor, fits the body perfectly just like the vitalized inner armor.",
         component_type: "leg armor exterior",
         value: 2.8e7,
@@ -3859,7 +3859,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["充能战靴"] = new ArmorComponent({
-        name: "Charged battle boots",
+        name: "Charged Battle Boots",
         description: "A6-grade armor, fits the body perfectly just like the vitalized inner armor.",
         component_type: "shoes exterior",
         value: 1.4e7,
@@ -3874,7 +3874,7 @@ item_templates["Twist liek a snek"] = new Book({
     });
     
     item_templates["脉冲头盔"] = new ArmorComponent({
-        name: "Pulse helmet",
+        name: "Pulse Helmet",
         description: "A8-grade armor, can buffer energy impacts.",
         component_type: "helmet exterior",
         value: 2.4e8,
@@ -3888,7 +3888,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["脉冲胸甲"] = new ArmorComponent({
-        name: "Pulse chestplate",
+        name: "Pulse Chestplate",
         description: "A8-grade armor, can buffer energy impacts.",
         component_type: "chestplate exterior",
         value: 3.2e8,
@@ -3902,7 +3902,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["脉冲腿甲"] = new ArmorComponent({
-        name: "Pulse leg armor",
+        name: "Pulse Leg Armor",
         description: "A8-grade armor, can buffer energy impacts.",
         component_type: "leg armor exterior",
         value: 3.2e8,
@@ -3916,7 +3916,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["脉冲战靴"] = new ArmorComponent({
-        name: "Pulse battle boots",
+        name: "Pulse Battle Boots",
         description: "A8-grade armor, can buffer energy impacts.",
         component_type: "shoes exterior",
         value: 1.6e8,
@@ -3932,7 +3932,7 @@ item_templates["Twist liek a snek"] = new Book({
 
     
     item_templates["海绿头盔"] = new ArmorComponent({
-        name: "Sea Green helmet",
+        name: "Sea Green Helmet",
         description: "B1-grade armor, can buffer energy impacts.",
         component_type: "helmet exterior",
         value: 2.0e9,
@@ -3946,7 +3946,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["海绿胸甲"] = new ArmorComponent({
-        name: "Sea Green chestplate",
+        name: "Sea Green Chestplate",
         description: "B1-grade armor, can buffer energy impacts.",
         component_type: "chestplate exterior",
         value: 2.7e9,
@@ -3960,7 +3960,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["海绿腿甲"] = new ArmorComponent({
-        name: "Sea Green leg armor",
+        name: "Sea Green Leg Armor",
         description: "B1-grade armor, can buffer energy impacts.",
         component_type: "leg armor exterior",
         value: 2.7e9,
@@ -3974,7 +3974,7 @@ item_templates["Twist liek a snek"] = new Book({
         }
     });
     item_templates["海绿战靴"] = new ArmorComponent({
-        name: "Sea Green battle boots",
+        name: "Sea Green Battle Boots",
         description: "B1-grade armor, can buffer energy impacts.",
         component_type: "shoes exterior",
         value: 1.35e9,
@@ -4216,7 +4216,7 @@ item_templates["Twist liek a snek"] = new Book({
     
     item_templates["固态凝胶"] = new Material({
         id: "固态凝胶",
-        name: "Solid Gel",
+        name: "Solidified Gel",
         description: "A stable waxy substance created when lightning strikes high-energy gel. More uniform conductivity than Binding Crystal, much better to the touch.",
         value: 800e6,
         material_type: "metal",
@@ -4372,7 +4372,7 @@ item_templates["Twist liek a snek"] = new Book({
     
     item_templates["符文工作台套件"] = new UsableItem({
         id: "符文工作台套件",
-        name: "Rune Workbench Kit",
+        name: "Runic Workbench Kit",
         description: "A workbench carved from massive quantities of sea green ingots and ruin runes. [Use] this item to unlock the T8 workbench! (By the way, crafting recipes require terrifyingly large amounts of materials, so buying directly is recommended)",
         value: 500e9,
         spec:"T8-table",
@@ -4473,7 +4473,7 @@ item_templates["Twist liek a snek"] = new Book({
     });
     
     item_templates["废墟恢复药水"] = new UsableItem({
-        name: "Ruin Recovery Potion",
+        name: "Ruins Recovery Potion",
         description: "A potion commonly kept by Lanling City explorers. Seemingly brewed in a cauldron.",
         value: 180e6,
         effects: [{effect: "Recovery A8", duration: 60}],
@@ -4481,7 +4481,7 @@ item_templates["Twist liek a snek"] = new Book({
         image: "image/item/A8_medicine.png",
     });
     item_templates["废墟狂暴药水"] = new UsableItem({
-        name: "Ruin Frenzy Potion",
+        name: "Ruins Frenzy Potion",
         description: "A potion commonly kept by Lanling City explorers. Why use a cauldron? Because high-energy gel would destroy fragile alchemy equipment.",
         value: 360e6,
         realmcap:21,
@@ -4511,7 +4511,7 @@ item_templates["Twist liek a snek"] = new Book({
 
     item_templates["血气升腾药剂"] = new UsableItem({
         name: "Rising Vitality Potion",
-        description: "A potion that temporarily suppresses [Sublimation] by releasing vitality outward. To prevent fatal overdose, it also includes a vitality recovery function.",
+        description: "A potion that temporarily suppresses [Scatter] by releasing vitality outward. To prevent fatal overdose, it also includes a vitality recovery function.",
         value: 3e9,
         realmcap:24,
         effects: [{effect: "Recovery B1", duration: 90}],
@@ -4555,7 +4555,7 @@ item_templates["Twist liek a snek"] = new Book({
         image: "image/item/B9_spiritdodge.png",
     });
     item_templates["B9·散华药剂"] = new UsableItem({
-        name: "B9·Sublimation Potion",
+        name: "B9·Scatter Potion",
         description: "The enemy's attack is weakened by (character HP / enemy HP)^0.5 × 10 (in %), but causes 1% HP drain. This effect cannot reduce enemy base attack below 0.",
         value: 8.4e12,
         realmcap:27,
@@ -4579,13 +4579,13 @@ item_templates["Twist liek a snek"] = new Book({
 //炼金
 (function(){
     item_templates["粘合织料"] = new OtherItem({
-        name: "Binding Fabric",
+        name: "Adhesive Fabric",
         description: "A combination of gel-coated moth wings, suitable for close contact with skin.",
         value: 12,
         image: "image/item/mixed_comp01.png",
     });
     item_templates["润灵铜骨"] = new OtherItem({
-        name: "Aura-Infused Copper Bones",
+        name: "Spirit-Infused Copper Bone",
         description: "The product of fusing copper bones and sky silk with spirit fluid.",
         value: 10000,
         image: "image/item/aura_bone.png",

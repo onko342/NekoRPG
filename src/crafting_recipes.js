@@ -729,7 +729,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
 //trinkets
 (function(){
     crafting_recipes.items["宝石吊坠"] = new ItemRecipe({
-        name: "Gemstone Pendant",
+        name: "Gem Pendant",
         id: "宝石吊坠",
         recipe_type: "items",
         materials: [{material_id: "宝石锭", count: 4},{material_id:"A1·能量核心",count:1}],
@@ -749,7 +749,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
         recipe_skill: "Crafting",
     });
     crafting_recipes.items["人造茸茸"] = new ItemRecipe({
-        name: "Artificial Fluffball",
+        name: "Artificial Fluffling",
         id: "人造茸茸",
         recipe_type: "items",
         materials: [{material_id: "流动凝胶", count: 20},{material_id:"大地级魂魄",count:10},{material_id:"A1·能量核心",count:5}],
@@ -770,7 +770,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
     });
     
     crafting_recipes.items2["柳木注灵"] = new ItemRecipe({
-        name: "Spirit-Infused Willow",
+        name: "Willow Spirit-Infusing",
         recipe_type: "material",
         materials: [{material_id: "百年柳木", count: 2},{material_id: "荒兽精华", count: 1},{material_id:"流动凝胶", count: 2}], 
         result: {result_id: "活化柳木", count: 2},
@@ -855,7 +855,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
     });
     
     crafting_recipes.items2["飞船之心"] = new ItemRecipe({
-        name: "Vessel Heart",
+        name: "Spaceship Heart",
         id: "飞船之心",
         recipe_type: "items",
         materials: [{material_id: "结界湖之心·材", count: 1},{material_id:"B6·飞船核心",count:1},{material_id:"红钢锭",count:99},{material_id:"固态凝胶",count:99}],
@@ -937,7 +937,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
         recipe_skill: "Smelting",
     });
     smelting_recipes.items["地宫合金"] = new ItemRecipe({
-        name: "Underground Palace Alloy",
+        name: "Dungeon Alloy",
         recipe_type: "material",
         materials: [{material_id: "紫铜锭", count: 1},{material_id: "断剑", count: 3},{material_id:"A1·能量核心", count: 1}], 
         result: {result_id: "地宫金属锭", count: 1},
@@ -965,7 +965,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
     });
     
     smelting_recipes.items2["充能合金·粗制"] = new ItemRecipe({
-        name: "Energized Alloy: Crude",
+        name: "Charged Alloy: Crude",
         recipe_type: "material",
         materials: [{material_id: "黑色刀币", count: 1},{material_id: "甲壳碎片", count: 4},{material_id:"A4·能量核心", count: 2}], 
         result: {result_id: "充能合金锭", count: 1},
@@ -974,7 +974,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
         recipe_skill: "Smelting",
     });
     smelting_recipes.items2["充能合金·精制(x4)"] = new ItemRecipe({
-        name: "Energized Alloy: Refined",
+        name: "Charged Alloy: Refined (x4)",
         recipe_type: "material",
         materials: [{material_id: "水溶精华", count: 1},{material_id: "甲壳碎片", count: 4},{material_id:"A4·能量核心", count: 1}], 
         result: {result_id: "充能合金锭", count: 4},
@@ -1021,7 +1021,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
     });
     
     smelting_recipes.items2["重铸飞船核心"] = new ItemRecipe({
-        name: "Recast Vessel Core",
+        name: "Recast Spaceship Core",
         recipe_type: "material",
         materials: [{material_id: "重甲残骸", count: 999},{material_id: "红黑印记", count: 999},{material_id: "B1·能量核心", count: 999},{material_id: "初等进化结晶", count:1}], 
         result: {result_id: "B6·飞船核心", count: 1},
@@ -1053,7 +1053,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
 (function(){
     
     cooking_recipes.items["微尘级·烤肉"] = new ItemRecipe({
-        name: "Dust-Grade: Grilled Meat",
+        name: "Dust-Rank: Grilled Meat",
         recipe_type: "material",
         materials: [{material_id: "微尘·凶兽肉块", count: 1},{material_id: "魔力碎晶", count: 1}], 
         result: {result_id: "微尘·凶兽肉排", count: 1},
@@ -1061,7 +1061,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
         recipe_level: [0,3],
         recipe_skill: "Cooking",
     });cooking_recipes.items["万物级·烤肉"] = new ItemRecipe({
-        name: "World-Grade: Grilled Meat",
+        name: "Myriad-Rank: Grilled Meat",
         recipe_type: "material",
         materials: [{material_id: "万物·凶兽肉块", count: 1},{material_id: "魔力碎晶", count: 3}], 
         result: {result_id: "万物·凶兽肉排", count: 1},
@@ -1070,7 +1070,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
         recipe_skill: "Cooking",
     });
     cooking_recipes.items["潮汐级·烤肉"] = new ItemRecipe({
-        name: "Tide-Grade: Grilled Meat",
+        name: "Tidal-Rank: Grilled Meat",
         recipe_type: "material",
         materials: [{material_id: "潮汐·凶兽肉块", count: 1},{material_id: "煤炭", count: 1}], 
         result: {result_id: "潮汐·凶兽肉排", count: 1},
@@ -1079,7 +1079,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
         recipe_skill: "Cooking",
     });
     cooking_recipes.items["大地级·烤肉"] = new ItemRecipe({
-        name: "Earth-Grade: Grilled Meat",
+        name: "Earth-Rank: Grilled Meat",
         recipe_type: "material",
         materials: [{material_id: "地宫·荒兽肉块", count: 1},{material_id: "A1·能量核心", count: 1}], 
         result: {result_id: "地宫·荒兽肉排", count: 1},
@@ -1088,7 +1088,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
         recipe_skill: "Cooking",
     });
     cooking_recipes.items2["大地级·烤肉 II"] = new ItemRecipe({
-        name: "Earth-Grade: Grilled Meat II",
+        name: "Earth-Rank: Grilled Meat II",
         recipe_type: "material",
         materials: [{material_id: "森林·荒兽肉块", count: 1},{material_id: "A4·能量核心", count: 1}], 
         result: {result_id: "森林·荒兽肉排", count: 1},
@@ -1117,7 +1117,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
     });
     
     cooking_recipes.items2["大地级·烤肉 III"] = new ItemRecipe({
-        name: "Earth-Grade: Grilled Meat III",
+        name: "Earth-Rank: Grilled Meat III",
         recipe_type: "material",
         materials: [{material_id: "战场·荒兽肉块", count: 1},{material_id: "A7·能量核心", count: 1}], 
         result: {result_id: "战场·荒兽肉排", count: 1},
@@ -1145,7 +1145,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
         recipe_skill: "Cooking",
     });
     cooking_recipes.items3["天空级·炸肉"] = new ItemRecipe({
-        name: "Sky-Grade: Fried Meat",
+        name: "Sky-Rank: Fried Meat",
         recipe_type: "material",
         materials: [{material_id: "沼泽·荒兽肉块", count: 1},{material_id: "沼泽兽油", count: 1},{material_id: "B1·能量核心", count: 2}], 
         result: {result_id: "沼泽·荒兽肉排", count: 1},
@@ -1196,7 +1196,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
         recipe_skill: "Forging",
     });
     forging_recipes.items["充能斧"] = new ItemRecipe({
-        name: "Energized Axe",
+        name: "Charged Axe",
         recipe_type: "material",
         materials: [{material_id: "充能合金锭", count: 3},{material_id: "活化柳木", count: 1}], 
         result: {result_id: "充能斧", count: 1},
@@ -1205,7 +1205,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
         recipe_skill: "Forging",
     });
     forging_recipes.items["缠绕水晶"] = new ItemRecipe({
-        name: "Entwined Crystal",
+        name: "Binding Crystal",
         recipe_type: "material",
         materials: [{material_id: "透明水晶", count: 1},{material_id: "秘境芦苇", count: 2}],
         result: {result_id: "缠绕水晶", count: 1},
@@ -1214,7 +1214,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
         recipe_skill: "Forging",
     });
     forging_recipes.items["缠绕水晶-精制[x5]"] = new ItemRecipe({
-        name: "Entwined Crystal: Refined [x5]",
+        name: "Binding Crystal: Refined [x5]",
         recipe_type: "material",
         materials: [{material_id: "透明水晶", count: 1},{material_id: "废墟符文", count: 1}],
         result: {result_id: "缠绕水晶", count: 5},
@@ -1287,7 +1287,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
     });
     
     alchemy_recipes.items["地宫恢复药水"] = new ItemRecipe({
-        name: "Underground Palace Recovery Potion",
+        name: "Dungeon Recovery Potion",
         recipe_type: "material",
         materials: [{material_id: "大地级魂魄", count: 1},{material_id: "巨型眼球", count: 1}], 
         result: {result_id: "地宫恢复药水", count: 1},
@@ -1296,7 +1296,7 @@ function get_recipe_xp_value({category, subcategory, recipe_id, material_count, 
         recipe_skill: "Alchemy",
     });
     alchemy_recipes.items["地宫狂暴药水"] = new ItemRecipe({
-        name: "Underground Palace Frenzy Potion",
+        name: "Dungeon Frenzy Potion",
         recipe_type: "material",
         materials: [{material_id: "大地级魂魄", count: 3},{material_id: "A1·能量核心", count: 1}], 
         result: {result_id: "地宫狂暴药水", count: 1},

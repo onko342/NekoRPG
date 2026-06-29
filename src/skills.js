@@ -1049,7 +1049,7 @@ function format_skill_rewards(milestone){
                                   parent_skill: "Weapon mastery",
                                   names: {0: "Silver Frost Moonwheel: Untrained", 20: "Silver Frost Moonwheel: Stage 1", 40: "Silver Frost Moonwheel: Stage 2", 60: "Silver Frost Moonwheel: Stage 3", 80: "Silver Frost Moonwheel: Stage 4", 100: "Silver Frost Moonwheel: Stage 5", 120: "Silver Frost Moonwheel: Perfect"}, 
                                   category: "Weapon",
-                                  description: "Ability to wield the [Silver Frost Moonwheel] psychic weapon. Evolves every 20 levels, greatly boosting Normal Attack Multiplier.", rewards: {
+                                  description: "Ability to wield the [Silver Frost Moonwheel] mental weapon. Evolves every 20 levels, greatly boosting Normal Attack Multiplier.", rewards: {
                                     milestones: {
                                     }
                                  },

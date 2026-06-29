@@ -240,7 +240,7 @@ character.add_xp = function ({xp_to_add, use_bonus = true},ignore_cap) {
                         gains += `Major Realm Breakthrough, obtained special ability <span style="color:#ff8080">[Micro Flame]</span>!<br>`;
                         gains += `Character stat <span style="color:#66ccff">[Normal Attack Multiplier]</span> is now unlocked!<br>`;
                         add_to_character_inventory([{item: item_templates["微火"], count: 1}]);
-                        gains += `Heart-Realm Stage 1 - Gem Devourer is now unlocked!<br>`;
+                        gains += `Mind Realm Stage 1 - Gem Devourer is now unlocked!<br>`;
                 }
                 if(this_realm[0]>=9 && this_realm[0]<=17)
                 {
@@ -256,14 +256,14 @@ character.add_xp = function ({xp_to_add, use_bonus = true},ignore_cap) {
                         }
                         else{
                                 gains += `Major Realm Breakthrough, [Fire Spirit Illusion Sea] gained 9999T XP...?<br>`;
-                                gains += `You've already broken through this threshold. Way too much grinding.<br>`;
+                                gains += `You've already broken through this threshold? Way too much grinding.<br>`;
                         }
                         add_xp_to_skill({skill: skills["Neko_Realm"], xp_to_add: 9999e12,should_info:true,use_bonus:false,add_to_parent:false},);
                         gains += `Character stat <span style="color:#ffee11">[Luck]</span> is now unlocked!<br>`;
                         gains += `Also, [Crit] stats have been concentrated!<br>[Crit Rate] reduced to one-quarter, [Crit Damage] quadrupled!<br>`;
                         character.stats.multiplier.level.crit_rate = 0.25;
                         character.stats.multiplier.level.crit_multiplier = 4;
-                        gains += `Heart-Realm Stage 2 - God of Greed is now unlocked!<br>`;
+                        gains += `Mind Realm Stage 2 - God of Greed is now unlocked!<br>`;
                 }
 
 

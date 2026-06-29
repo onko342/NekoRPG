@@ -2164,7 +2164,7 @@ function do_character_combat_action({target, attack_power}, target_num,c_atk_mul
                     log_message(`[Sayuki] Huh? Sis is nowhere to be found.`,"sayuki");
                     log_message(`[Sayuki] You actually beat that dungeon boss with 100x stats! Amazing!`,"sayuki");
                     log_message(`[Sayuki] Well then, as a small reward for the victor,`,"sayuki");
-                    log_message(`[Sayuki] have this -9999 quintillion experience.`,"sayuki");
+                    log_message(`[Sayuki] have this -9.999 sexdecillion experience.`,"sayuki");
                     //character.xp.total_xp = -9.999e51;
                     character.xp.current_xp = -9.999e51;
                     character.xp.xp_level = 0;
@@ -2890,7 +2890,7 @@ function use_item(item_key,stated = false) {
         if(item_templates[id].spec == "T8-table"){
             //unlock 符文之屋
             unlock_location(locations["符文之屋"]);
-            log_message(`As the rune workbench set is placed, a small cottage rises from the ground. In these ruins, ${character.name} has found a warm haven.`,"gather_loot")
+            log_message(`As the runic workbench set is placed, a small cottage rises from the ground. In these ruins, ${character.name} has found a warm haven.`,"gather_loot")
         }
     }
     if(item_templates[id].realmcap!=-1)
@@ -4452,7 +4452,7 @@ function extract_reactor()
         let RB_quality = Math.round(Math.log(inf_combat.RT.rad + 1) * 15 + 100);
         inf_combat.RT.rad = 0;
         let result =  new WeaponComponent({...item_templates["凝胶剑柄"], quality: RB_quality});
-        log_message("Obtained Gel Sword Handle (Quality " + RB_quality + " )","combat_loot");
+        log_message("Obtained Gel Sword Hilt (Quality " + RB_quality + " )","combat_loot");
         add_to_character_inventory([{item: result}]);
         //获取一个凝胶剑柄
         //getresult的结果

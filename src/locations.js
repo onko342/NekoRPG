@@ -335,7 +335,7 @@ class Combat_zone {
                 key_cnt = Math.min(key_cnt,5);
                 if(key_cnt != 0)
                 {
-                    log_message(`Due to holding ${key_cnt} Micro-Petal Fragments, the aura is weakened: 140% -> ${140-key_cnt*8}%!`,"enemy_enhanced");
+                    log_message(`Due to holding ${key_cnt} Micro-Flower Fragments, the aura is weakened: 140% -> ${140-key_cnt*8}%!`,"enemy_enhanced");
                     halo_fix -= 0.08*key_cnt;
                 }
             }
@@ -345,7 +345,7 @@ class Combat_zone {
                 key_cnt = Math.min(key_cnt,4);
                 if(key_cnt != 0)
                 {
-                    log_message(`Due to holding ${key_cnt} Micro-Petal Fragments, the aura is weakened: 132% -> ${132-key_cnt*8}%!`,"enemy_enhanced");
+                    log_message(`Due to holding ${key_cnt} Micro-Flower Fragments, the aura is weakened: 132% -> ${132-key_cnt*8}%!`,"enemy_enhanced");
                     halo_fix -= 0.08*key_cnt;
                 }
             }
@@ -1659,7 +1659,7 @@ function get_location_type_penalty(type, stage, stat) {
         repeatable_reward: {
             locations: [{location: "地宫深层"}],
         },
-        unlock_text: "Earth Rank Tier 2, and clearly not a fresh breakthrough. Is this the leader of these wild beasts?"
+        unlock_text: "Earth Rank Stage 2, and clearly not a fresh breakthrough. Is this the leader of these wild beasts?"
     });
     
     locations["地宫 - 石壁"] = new Challenge_zone({
@@ -1681,7 +1681,7 @@ function get_location_type_penalty(type, stage, stat) {
     locations["地宫浅层"].connected_locations.push({location: locations["地宫 - 2"]});
     locations["地宫浅层"].connected_locations.push({location: locations["地宫 - 3"]});
     locations["地宫浅层"].connected_locations.push({location: locations["地宫 - 4"]});
-    locations["地宫浅层"].connected_locations.push({location: locations["地宫 - 石壁"], custom_text: "Clear the Tier 2 wild beasts around the stone wall"});
+    locations["地宫浅层"].connected_locations.push({location: locations["地宫 - 石壁"], custom_text: "Clear the Stage 2 wild beasts around the stone wall"});
     locations["地宫浅层"].connected_locations.push({location: locations["地宫 - X"], custom_text: "Battle the wild beast leader"});
     
     
@@ -1757,7 +1757,7 @@ function get_location_type_penalty(type, stage, stat) {
         },
     });
     locations["地宫核心 - 4"] = new Combat_zone({
-        description: "The deep area beyond the floating platforms. Wild beasts here have commonly reached Earth Rank Tier 3.",
+        description: "The deep area beyond the floating platforms. Wild beasts here have commonly reached Earth Rank Stage 3.",
         enemy_count: 20, 
         enemies_list: ["地宫执法者","地宫看门人","凶戾骨将","巨型蜘蛛","出芽绿茸茸","地穴飞鸟"],
         enemy_group_size: [1,1],
@@ -1797,7 +1797,7 @@ function get_location_type_penalty(type, stage, stat) {
         },
     });
     locations["地宫核心 - 6"] = new Combat_zone({
-        description: "This is it! Beyond the sea of Tier 3 wild beasts, the source of everything...",
+        description: "This is it! Beyond the sea of Stage 3 wild beasts, the source of everything...",
         enemy_count: 20, 
         enemies_list: ["踏地荒兽","扭曲菇菇","喵咕哩","温热飞蛾","苍白之触","燕岗城守卫"],
         enemy_group_size: [2,2],
@@ -2148,7 +2148,7 @@ function get_location_type_penalty(type, stage, stat) {
     });
     
     locations["清野江畔 - 歧路"] = new Challenge_zone({
-        description: "A chance encounter with a Tier 7 warrior that can't be defeated at full effort... don't forget about this encounter later (x",
+        description: "A chance encounter with a Stage 7 warrior that can't be defeated at full effort... don't forget about this encounter later (x",
         enemy_count: 1, 
         enemies_list: ["威武武士[BOSS]"],
         enemy_group_size: [1,1],
@@ -2362,7 +2362,7 @@ function get_location_type_penalty(type, stage, stat) {
     });
     
     locations["纳家秘境 - X"] = new Challenge_zone({
-        description: "The innermost sprite of the secret realm is here. Defeat it to take control of the entire realm!",
+        description: "The innermost spirit of the secret realm is here. Defeat it to take control of the entire realm!",
         enemy_count: 1, 
         enemies_list: ["秘境心火精灵[BOSS]"],
         enemy_group_size: [1,1],
@@ -2386,7 +2386,7 @@ function get_location_type_penalty(type, stage, stat) {
     locations["纳家秘境 - 战斗区"].connected_locations.push({location: locations["纳家秘境 - 4"]});
     locations["纳家秘境 - 战斗区"].connected_locations.push({location: locations["纳家秘境 - 5"]});
     locations["纳家秘境 - 战斗区"].connected_locations.push({location: locations["纳家秘境 - ∞"]});
-    locations["纳家秘境 - 战斗区"].connected_locations.push({location: locations["纳家秘境 - X"], custom_text:"Challenge the realm's guardian sprite"});
+    locations["纳家秘境 - 战斗区"].connected_locations.push({location: locations["纳家秘境 - X"], custom_text:"Challenge the realm's guardian spirit"});
 
     
     
@@ -2680,7 +2680,7 @@ function get_location_type_penalty(type, stage, stat) {
     
     locations["符文之屋"] = new Location({
         connected_locations: [{location: locations["声律城废墟"], custom_text: "Return to fight in the ruins"}],
-        description: "The rune workbench set even comes with a box, a bed, and an energy-gathering array! Truly great value...",
+        description: "The runic workbench set even comes with a box, a bed, and an energy-gathering array! Truly great value...",
         name: "Rune House",
         is_unlocked: false,
         bgm: 10,
@@ -2691,7 +2691,7 @@ function get_location_type_penalty(type, stage, stat) {
         },
             crafting: {
                 is_unlocked: true,
-                use_text: "Use the Rune Workbench [Tier+8]",
+                use_text: "Use the Runic Workbench [Tier+8]",
                 tiers: {
                     crafting: 8,
                     forging: 8,
@@ -2903,7 +2903,7 @@ function get_location_type_penalty(type, stage, stat) {
         },
     });
     locations["天外飞船 - 4"] = new Combat_zone({
-        description: "The interior of the B9-class spaceship. All the biggest enemies are in floor -5...",
+        description: "The interior of the B9-class spaceship. All the biggest enemies are in floor 5...",
         enemy_count: 20, 
         types: [{type: "stress", stage: 1, xp_gain: 1}],
         enemies_list: ["白银之锋A9","持盾战士A9","红桃重工B1","燕岗狂战傀儡","激光炮塔A9"],
@@ -3012,7 +3012,7 @@ function get_location_type_penalty(type, stage, stat) {
     locations["天外飞船"].connected_locations.push({location: locations["飞船核心"]});
 
     locations["飞船核心 - 1"] = new Combat_zone({
-        description: "The core of the B9-class spaceship. The suppression field is even more powerful; B1-class machinery is everywhere.",
+        description: "The core of the B9-class spaceship. The oppression field is even more powerful; B1-class machinery is everywhere.",
         enemy_count: 20, 
         types: [{type: "stress", stage: 2, xp_gain: 2}],
         enemies_list: ["塔门战甲B1","万象天引B1","万象天引B1","镭射步兵B1","空间三角B1"],
@@ -3031,7 +3031,7 @@ function get_location_type_penalty(type, stage, stat) {
         },
     });
     locations["飞船核心 - 2"] = new Combat_zone({
-        description: "The core of the B9-class spaceship. The suppression field is even more powerful. Experience resisting the suppression field is accumulating faster and faster.",
+        description: "The core of the B9-class spaceship. The oppression field is even more powerful. Experience resisting the oppression field is accumulating faster and faster.",
         enemy_count: 20, 
         types: [{type: "stress", stage: 2, xp_gain: 4}],
         enemies_list: ["镭射步兵B1","空间三角B1","异化者B1","核爆能源","剧毒恐怖B1"],
@@ -3139,7 +3139,7 @@ function get_location_type_penalty(type, stage, stat) {
     });
     locations["飞船宿舍"] = new Location({
         connected_locations: [{location: locations["飞船核心"], custom_text: "Return to the Spaceship Core"}],
-        description: "Lucky for those who didn't buy the rune workbench! Outer-space technology - both the energy-gathering arrays and workbenches are a tier better than the Rune House.",
+        description: "Lucky for those who didn't buy the runic workbench! Outer-space technology - both the energy-gathering arrays and workbenches are a tier better than the Rune House.",
         name: "Spaceship Dormitory",
         is_unlocked: false,
         bgm: 13,
@@ -3207,7 +3207,7 @@ function get_location_type_penalty(type, stage, stat) {
         bgm: 14,
     });//3-1
     locations["赫尔沼泽 - 1"] = new Combat_zone({
-        description: "The swamp swept by the [Beast Tide]. Beast kings above the Ascendant Rank have been cleared, but early Sky Rank wild beasts are still quite common.",
+        description: "The swamp swept by the [Beast Tide]. Beast kings above the Cloud Rank have been cleared, but early Sky Rank wild beasts are still quite common.",
         enemy_count: 20,
         enemies_list: ["无面修者","大教掌灯人","单眼蝠幼体","淳羽家族近卫","赫尔沼泽野火"],
         enemy_group_size: [2.5,3.5],
@@ -3226,7 +3226,7 @@ function get_location_type_penalty(type, stage, stat) {
         },
     });
     locations["赫尔沼泽 - 2"] = new Combat_zone({
-        description: "The swamp swept by the [Beast Tide]. Beast kings above the Ascendant Rank have been cleared, but early Sky Rank wild beasts are still quite common.",
+        description: "The swamp swept by the [Beast Tide]. Beast kings above the Cloud Rank have been cleared, but early Sky Rank wild beasts are still quite common.",
         enemy_count: 20,
         enemies_list: ["地龙成长期","圣荒杀手傀儡","小门派供奉","化灵蝶","沼泽石灵"],
         enemy_group_size: [3,3],
@@ -3245,7 +3245,7 @@ function get_location_type_penalty(type, stage, stat) {
         },
     });
     locations["赫尔沼泽 - 3"] = new Combat_zone({
-        description: "The swamp swept by the [Beast Tide]. Beast kings above the Ascendant Rank have been cleared, but early Sky Rank wild beasts are still quite common.",
+        description: "The swamp swept by the [Beast Tide]. Beast kings above the Cloud Rank have been cleared, but early Sky Rank wild beasts are still quite common.",
         enemy_count: 20,
         enemies_list: ["冈崎猫妖","沉陷死者","赫尔沼泽飞鼠","赫尔沼泽蝠","不瞑之目"],
         enemy_group_size: [3.5,4.5],
@@ -3264,7 +3264,7 @@ function get_location_type_penalty(type, stage, stat) {
         },
     });
     locations["赫尔沼泽 - 4"] = new Combat_zone({
-        description: "The swamp swept by the [Beast Tide]. Beast kings above the Ascendant Rank have been cleared, but early Sky Rank wild beasts are still quite common.",
+        description: "The swamp swept by the [Beast Tide]. Beast kings above the Cloud Rank have been cleared, but early Sky Rank wild beasts are still quite common.",
         enemy_count: 20,
         enemies_list: ["兰陵天空骑士","大教外门弟子","燕岗精英佣兵","凌空级魔法师","飞龙成长期"],
         enemy_group_size: [4,4],
@@ -3424,7 +3424,7 @@ function get_location_type_penalty(type, stage, stat) {
             locations: [{location: "飞云阁"}],
             money:216,
         },
-        unlock_text : "[Leidong] Ahead is a mutated wild beast - it's probably reached Peak Tier 4."
+        unlock_text : "[Leidong] Ahead is a mutated wild beast - it's probably reached Peak Stage 4."
     });
 
     locations["黑暗森林"].connected_locations.push({location: locations["黑暗森林 - 1"]});

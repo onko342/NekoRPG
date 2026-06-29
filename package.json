@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.41.0",
+    "eslint": "^10.6.0",
     "serve": "^14.2.0"
   }
 }
