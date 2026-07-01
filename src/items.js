@@ -2568,7 +2568,7 @@ item_templates["Twist liek a snek"] = new Book({
         value: 4310344e6,//10B
         stats: {
             attack_power: {
-                multiplier: 1.08,
+                multiplier: 1.08,//WIP!!!
             },
             defense: {
                 multiplier: 1.08,
@@ -2732,6 +2732,26 @@ item_templates["Twist liek a snek"] = new Book({
             },
             max_health: {
                 multiplier: 1.03,
+            }
+        }
+    });
+    item_templates["冰原之心"] = new Special({
+        name: "Arctic Tundra Heart",
+        id: "冰原之心",
+        description: "Another upgrade of the Barrier Lake Heart. Are you having fun with the Freezing Air Phase Transformation Engine~",
+        value: 160e12,
+        stats: {
+            attack_power: {
+                multiplier: 1.06,
+            },
+            defense: {
+                multiplier: 1.06,
+            },
+            agility: {
+                multiplier: 1.06,
+            },
+            max_health: {
+                multiplier: 1.06,
             }
         }
     });
@@ -4252,7 +4272,7 @@ item_templates["Twist liek a snek"] = new Book({
     item_templates["万载冰髓锭"] = new Material({
         id: "万载冰髓锭",
         name: "Myriad Year Ice Marrow Ingot",
-        description: "A phase-change product of [Arctic Superfluid]. Note: workbench recipe efficiency is extremely low, recommend using [Extreme Cold Phase Engine] for production.",
+        description: "A phase-change product of [Arctic Superfluid]. Note: workbench recipe efficiency is extremely low, recommend using [Freezing Air Phase Transformation Engine] for production.",
         value: 1.92e12,
         material_type: "metal",
         image: "image/item/icesteel_ingot.png",
@@ -4289,6 +4309,14 @@ item_templates["Twist liek a snek"] = new Book({
         value: 2.4e9,
         material_type: "metal",
         image: "image/item/barrierlake_heart.png",
+    });
+    item_templates["飞船之心·材"] = new Material({
+        id: "飞船之心·材",
+        name: "Spaceship Heart · Material",
+        description: "Can no longer be worn, just a temporary solution for crafting [Arctic Tundra Heart].",
+        value: 4.8e12,
+        material_type: "metal",
+        image: "image/item/spaceship_heart.png",
     });
     
 })();
@@ -4377,6 +4405,14 @@ item_templates["Twist liek a snek"] = new Book({
         value: 500e9,
         spec:"T8-table",
         image: "image/item/rune_workingtable.png",
+    });
+    item_templates["极寒相变引擎"] = new UsableItem({
+        id: "极寒相变引擎",
+        name: "Freezing Air Phase Transformation Engine",
+        description: "Uses a multistep compression-expansion process to create cold, has insulation equipment included. <br>Can be used to produce Myriad Year Ice Marrow and Mystic Ice Fruit·Awakened.<br>For specifics, please consult the help menu on the lower-left corner (question mark button)!",
+        value: 96e12,
+        spec: "freezing_engine",
+        image: "image/item/freezing_engine.png",
     });
 })();
 
@@ -4524,7 +4560,7 @@ item_templates["Twist liek a snek"] = new Book({
         value: 3e12,
         realmcap:27,
         effects: [{effect: "Recovery B4", duration: 90}],
-        image: "image/item/B4_life_medicine.png",
+        image: "image/item/B4_medicine.png",
     });
     
     item_templates["沼泽·荒兽肉排"] = new UsableItem({
@@ -5156,7 +5192,7 @@ item_templates["Twist liek a snek"] = new Book({
     });
     item_templates["玄冰果实"] = new Loot({
         name: "Mystic Ice Fruit",
-        description: "When cooled to a sufficiently low temperature, a frost core will condense.<br>Must dissipate heat to [Arctic Superfluid] in the [Extreme Cold Phase Engine]! (WIP)",
+        description: "When cooled to a sufficiently low temperature, a frost core will condense.<br>Must dissipate heat to [Arctic Superfluid] in the [Freezing Air Phase Transformation Engine]! (WIP)",
         value: 28.8e12,
         image: "image/item/ice_fruit.png",
     });

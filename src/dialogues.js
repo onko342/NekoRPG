@@ -1663,6 +1663,20 @@ class Textline {
     });
 
 
+    dialogues["极寒相变引擎"] = new Dialogue({
+        name: "Freezing Air Phase Transformation Engine",
+        starting_text: "Use [Freezing Air Phase Transformation Engine]",
+        textlines: {
+            "engine": new Textline({
+                is_unlocked: false,
+                name: "Use [Freezing Air Phase Transformation Engine]",
+                text: "...",
+                unlocks: {
+                    spec: "freezing-engine",
+                },
+            }),
+        }
+    });
 
 
 

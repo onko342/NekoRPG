@@ -1,3 +1,47 @@
+<br>V2.23a-V2.23e:Freezing Air Engine bug fixes [2026-03-05]
+<br>·There is way too much, it needs an independent section.
+<br>·Fixed a LaTeX wrong parenthesis bug and the bug where Tundra Heart still has 1.03 stats.
+<br>·Fixed the unrenderable Energy Smoothie image bug
+<br>·Fixed the bug where Frost Sky doesn't show up when using Stage 3 Domain.
+<br>·[Leave Freezing Air Phase Transformation Engine] uses a more noticeable button.
+<br>·Fixed the bug where entering resets the [Freezing Air Phase Transformation Engine].
+<br>·Fixed the bug where when the Spaceship Heart fails to convert, a console error occurs and nothing is logged.
+<br>·Fixed the bug where superfluid heat change doesn't take into account heat radiation
+<br>·Fixed the bug where a temperature that's too high will cause the infinitesimal elements to malfunction and instantly Nan. (Every logic frame limits temperature change to 10%, you probably won't notice the restriction)
+<br>·The two above bugs haven't been really fixed. The heat radiation mechanic is too unstable... it has been removed for now.
+<br>·The engine now refreshes when NaN is encountered, to prevent being unable to enter.
+<br>·Fixed the bug where ice element cap and fruit absorption checking were in the wrong places. This caused the optimal solution to be only using one superfluid...
+<br>·I forgot to change back the 10x modifier to domain stage 1 attack I added!!
+<br>
+<br>
+<br>V2.23: Freezing Air Phase Transformation Engine~ [2026-03-05]
+<br>·Added the item version of [Freezing Air Phase Transformation Engine], Lv. 59 crafting recipe/108 Melody Alloy Ingot + 25 Arctic Superfluid + 15 Porous Ice Crystal.
+<br>·Added [Freezing Air Phase Transformation Engine] UI borders. It will occupy the tags of [Area] and [Skills].
+<br>·Added the basic icons of [Freezing Air Phase Transformation Engine], and buttons for changing the location of the piston.
+<br>·A little animation with transitions was added for piston movement. This is Sayuki's best animation ever (bushi)
+<br>·Added [Compress] [Expand] [Pump Air] [Release Air] 4 piston actions.
+<br>·One thing to note is that under low-pressure conditions, you can't fully utilize Neko's power:
+<br>·To prevent errors from infinitesimal elements not being infinitely small from getting too large, the logic runs on 200 frames per second, and all numerical changes have been restricted to 100 million times per second.
+<br>·Added piston pull in and pull out visuals, inner gas color change.
+<br>·At 10mol/L it is completely transparent, 10Mmol/L makes it completely opaque. 0K blue, 240K white, 960K orange, 2240K red.
+<br>·Added piston and environment heat exchange settings.
+<br>·Added a bunch of insulated bag buttons and UI options. Just see for yourself, there really is a lot of stuff.
+<br>·Added mechanic for piston and insulated bag heat exchange and insulated bag and environment heat exchange.
+<br>·Added ice element accumulation mechanism and expected time viewing.
+<br>·Added LaTeX to help.html. I know this is strange, but the air pump formulas are really complex.
+<br>·Added insulated bag temperature view, just like the air inside the piston.
+<br>·Added take [Arctic Superfluid/Myriad Year Ice Marrow Ingot] button. At least one Arctic Superfluid will be left in the engine,
+<br>·and Myriad Year Ice Marrow Ingots can only be taken when the ice element progress bar is over 99.99%.
+<br>·Added insert and take Mystic Ice Fruit button. Mystic Ice Fruits need 1,000,000 ice element to awaken, taking it out prematurely will cause a loss of progress.
+<br>·Added button for switching between [Flame Sea] and [Frost Sky]. Unlocked by having Stage 2 Domain.
+<br>·The latter can decrease environment temperature to 180K, the former can... increase temperature to 960K?
+<br>·They also affect outside pressure, though this is only needed when pumping air.
+<br>·Added [-ALL] button to [Porous Ice Crystal]. This will be useful, mark my words.
+<br>·Added [Spaceship Heart·Material] and [Arctic Tundra Heart]. It has already surpassed Act 3 sister!
+<br>·Changed the Myriad Year Ice Marrow Ancient Method formula. Combined price hasn't increased, but 3-2 material weighting was increased(really don't recommend mass production using the ancient method!)
+<br>·For more, please check out help.html~must have written 6000 characters approx.)
+<br>
+<br>
 <br>V2.22: Pure White Tundra - Drops [2026-03-01]
 <br>·Put up the bracket I missed in the Feng confiscating dialogue
 <br>·Now weapon ATK, equipment DEF, item qualities, etc. are all formatted
@@ -81,7 +125,7 @@
 <br>·Fixed the bug where chestplates give the same amount of XP as boots. Now XP is based on the amount of material used, it will match the previous rates when using 3 materials.
 <br>·Added 4 new drops, added drops to 3-2 enemies
 <br>·Added [Dark Forest Fabric] [Melody Alloy Ingot] [Light-Dark Branch], as Tier 11 inner armor/sword blade/sword hilt.
-<br>·Note: Sword blades and sword hilts will also serve as moonwheel blades and moonwheel cores. 
+<br>·Note: Sword blades and sword hilts will also serve as moonwheel blades and moonwheel cores.
 <br>·Added wheel blades from mythril to melody, wheel cores from gel to light-dark
 <br>·Moonwheel crafting is only unlocked after clearing the story. Also, right after clearing the story, the recipe will be at the bottom. Reload to put it in the right place.
 <br>
@@ -179,7 +223,7 @@
 <br>·Now if your realm is over [Sky Rank Stage 1], the effect of Basic Evolution Crystals will be severely weakened.
 <br>·Usage hints have been added for Basic Evolution Crystals and the [Wild Beast Forest Insight]
 <br>·I prepared some other uses for it, but there's not enough space here
-<br>·Added [Spaceship Core·B6], used to upgrade the [Barrier Lake Heart] into [Spaceship Heart] 
+<br>·Added [Spaceship Core·B6], used to upgrade the [Barrier Lake Heart] into [Spaceship Heart]
 <br>·[Spaceship Core·B6] drop rate ignores Luck, its drop rate is logged as [Fixed] in the Current column
 <br>·To prevent the problem where you can't have equipment in crafting recipes, you can first use the converter in [Hel Swamp Entrance] to convert the [Lake Barrier Heart] into [Barrier Lake Heart · Material]
 <br>·Added a reforging recipe for the [Spaceship Core·B6]. If you accidentally sold it, you can make another one... though it's a bit expensive.
@@ -431,7 +475,7 @@
 <br>·Added [Fishing] skill/action
 <br>·Added Lake Carp, Blue Flower Fish, and Ice Pillar Fish
 <br>·Added formula for processing Lake Carp into flesh and blue gold, Blue Flower Fish and Ice Pillar Fish eating effects, [Lake Barrier Heart]
-<br>·Added brand new [Fishing System] 
+<br>·Added brand new [Fishing System]
 <br>·Added the fishing system's own tips, mouse listening events, etc.
 <br>·Fishing XP gain etc. is different from other skills! (help.html has been updated)
 <br>·Added mechanism where crafting items have their own quality. Not to fuck with you, just to express their rarity.

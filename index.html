@@ -36,515 +36,517 @@
 
         <div id = "main_content">
 
-            <div id = "global_content"> <!-- stuff that needs to be available in both area page and character page-->
+            <div id="global_content">
+                <!-- stuff that needs to be available in both area page and character page-->
                 <!-- basic character info (name, title, hp)-->
-                <div id = "basic_character_info_div" class = "box_div">
-                    <div id = "character_name_div"> 
-                        <input type = "text" id = "character_name_field"> 
+                <div id="basic_character_info_div" class="box_div">
+                    <div id="character_name_div">
+                        <input type="text" id="character_name_field">
                     </div>
 
-                    <div id = "character_xp_div">
-                        <div id ="character_xp_bar_max">
-                            <div id = "character_xp_bar_current">
+                    <div id="character_xp_div">
+                        <div id="character_xp_bar_max">
+                            <div id="character_xp_bar_current">
                             </div>
                         </div>
-                        <div id = "character_xp_value">
+                        <div id="character_xp_value">
                         </div>
                     </div>
-                    
 
-                    <div id = "character_health_div"> 
-                        <div id = "character_healthbar_max"> 
-                            <div id = "character_healthbar_current">
+
+                    <div id="character_health_div">
+                        <div id="character_healthbar_max">
+                            <div id="character_healthbar_current">
                             </div>
                         </div>
-                        <div id = "character_health_value">
+                        <div id="character_health_value">
                         </div>
                     </div>
 
-                    <div id = "character_rank_div">
+                    <div id="character_rank_div">
                         Yangang Territory Ranking: 9999,9999,9999,9999,9999
                     </div>
 
                 </div>
 
-                <div id = "time_and_location" class = "box_div">
-                    <div id = "time_div"> </div>
-                    
-                    <div id = "location_name_div">
-                        <span id = "location_name_span"></span>
-                        <span id = "location_name_tooltip"></span>
+                <div id="time_and_location" class="box_div">
+                    <div id="time_div"> </div>
+
+                    <div id="location_name_div">
+                        <span id="location_name_span"></span>
+                        <span id="location_name_tooltip"></span>
                     </div>
-                    <div id = "location_types_div">
-                        
+                    <div id="location_types_div">
+
                     </div>
                 </div>
 
                 <!-- inventory list -->
-                <div id = "inventory_div" class = "box_div"> 
-                    <div id = "money_div">  </div>
-                    <div id = "inventory_content_div"> </div>
+                <div id="inventory_div" class="box_div">
+                    <div id="money_div">  </div>
+                    <div id="inventory_content_div"> </div>
 
-                    <div id = "inventory_sorting_div" class="activable_buttons">
-                        <div id = "inventory_sort_by_price" class = "character_sorting_button active_selection_button" onclick='sortCharacterInventory("price")'> Sort by Value</div>
-                        <div id = "inventory_sort_by_name" class = "character_sorting_button " onclick='sortCharacterInventory("name")'> Sort by Name </div>
+                    <div id="inventory_sorting_div" class="activable_buttons">
+                        <div id="inventory_sort_by_price" class="character_sorting_button active_selection_button" onclick='sortCharacterInventory("price")'> Sort by Value</div>
+                        <div id="inventory_sort_by_name" class="character_sorting_button " onclick='sortCharacterInventory("name")'> Sort by Name </div>
                     </div>
-                    <div id = "inventory_control_div" class="activable_buttons">
-                        <div id = "inventory_show_all" class = "inventory_control_button active_selection_button" onclick = "showAllItems()"> All </div>
-                        <div id = "inventory_show_equipment" class = "inventory_control_button" onclick = "showOnlyEquipment()"> Equipment </div>
-                        <div id = "inventory_show_consumable" class = "inventory_control_button" onclick = "showOnlyConsumables()"> Consumables </div>
-                        <div id = "inventory_show_loot" class = "inventory_control_button" onclick = "showOnlyLoot()"> Drops </div>
-                        <div id = "inventory_show_other" class = "inventory_control_button" onclick = "showOnlyOther()"> Misc </div> 
+                    <div id="inventory_control_div" class="activable_buttons">
+                        <div id="inventory_show_all" class="inventory_control_button active_selection_button" onclick="showAllItems()"> All </div>
+                        <div id="inventory_show_equipment" class="inventory_control_button" onclick="showOnlyEquipment()"> Equipment </div>
+                        <div id="inventory_show_consumable" class="inventory_control_button" onclick="showOnlyConsumables()"> Consumables </div>
+                        <div id="inventory_show_loot" class="inventory_control_button" onclick="showOnlyLoot()"> Drops </div>
+                        <div id="inventory_show_other" class="inventory_control_button" onclick="showOnlyOther()"> Misc </div>
                     </div>
                 </div>
 
-                <div id = "character_combat_management" class = "box_div">            
-                    <div id = "attack_stats">
-                        <div class = "attack_stat attack_stat_long">
+                <div id="character_combat_management" class="box_div">
+                    <div id="attack_stats">
+                        <div class="attack_stat attack_stat_long">
 
                         </div>
                         |
-                        <div class = "attack_stat attack_stat_long">
-                            
+                        <div class="attack_stat attack_stat_long">
+
                         </div>
                         |
-                        <div class = "attack_stat attack_stat_short">
-                            
+                        <div class="attack_stat attack_stat_short">
+
                         </div>
                         |
-                        <div class = "attack_stat attack_stat_short">
-                            
+                        <div class="attack_stat attack_stat_short">
+
                         </div>
                         |
-                        <div class = "attack_stat attack_stat_short">
-                            
+                        <div class="attack_stat attack_stat_short">
+
                         </div>
                     </div>
-                    <div id = "character_stance_name">
+                    <div id="character_stance_name">
                         <span>Normal stance</span>
-                        <div id = "character_stance_selection">
-                        
+                        <div id="character_stance_selection">
+
                         </div>
                     </div>
-                    <div id = "character_attack_bar">
+                    <div id="character_attack_bar">
 
                     </div>
                 </div>
 
-                <div id = "inventory_combat_switch_selection" class="activable_buttons box_div">
-                    <div id="switch_to_inventory" class="active_selection_button" onclick="switchToInventory()"> Inventory
+                <div id="inventory_combat_switch_selection" class="activable_buttons box_div">
+                    <div id="switch_to_inventory" class="active_selection_button" onclick="switchToInventory()">
+                        Inventory
                     </div>
                     <div id="switch_to_combat" onclick="switchToCombat()">Combat</div>
                 </div>
 
                 <!-- location info (name, type[safe/combat], weather, time, etc?)-->
-                <div id = "location_div" class = "box_div"> 
-                    <div id = "location_description_div">
-                        
+                <div id="location_div" class="box_div">
+                    <div id="location_description_div">
+
                     </div>
                 </div>
 
-                <div id = "combat_div" class = "box_div">
-                    <div id = "enemies_div">
-                        <div id = "enemy_0_div" class = "enemy_div">
+                <div id="combat_div" class="box_div">
+                    <div id="enemies_div">
+                        <div id="enemy_0_div" class="enemy_div">
                             <div>
-                                <div class = "enemy_name">
-                                    
+                                <div class="enemy_name">
+
                                 </div>
-                                <div class = "enemy_stats">
-                                    <div class = "enemy_stat enemy_stat_long">
-                                    
+                                <div class="enemy_stats">
+                                    <div class="enemy_stat enemy_stat_long">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_long">
-                                        
+                                    <div class="enemy_stat enemy_stat_long">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                    
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                 </div>
-                                <div class = "enemy_health_div">
-                                    <div class = "enemy_healthbar_max">
-                                        <div class = "enemy_healthbar_current">
+                                <div class="enemy_health_div">
+                                    <div class="enemy_healthbar_max">
+                                        <div class="enemy_healthbar_current">
 
                                         </div>
                                     </div>
-                                    <div class = "enemy_health_value">
-                                            
+                                    <div class="enemy_health_value">
+
                                     </div>
 
                                 </div>
-                                
-                                <div class = "enemy_attack_bar">
+
+                                <div class="enemy_attack_bar">
 
                                 </div>
-                                <div id="E0_effect" class= "enemy_effect"></div>
+                                <div id="E0_effect" class="enemy_effect"></div>
                             </div>
                         </div>
-                        <div id = "enemy_1_div" class = "enemy_div">
+                        <div id="enemy_1_div" class="enemy_div">
                             <div>
-                                <div class = "enemy_name">
+                                <div class="enemy_name">
 
                                 </div>
-                                <div class = "enemy_stats">
-                                    <div class = "enemy_stat enemy_stat_long">
+                                <div class="enemy_stats">
+                                    <div class="enemy_stat enemy_stat_long">
 
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_long">
-                                        
+                                    <div class="enemy_stat enemy_stat_long">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                 </div>
-                                <div class = "enemy_health_div">
-                                    <div class = "enemy_healthbar_max">
-                                        <div class = "enemy_healthbar_current">
+                                <div class="enemy_health_div">
+                                    <div class="enemy_healthbar_max">
+                                        <div class="enemy_healthbar_current">
 
                                         </div>
                                     </div>
-                                    <div class = "enemy_health_value">
-                                        
+                                    <div class="enemy_health_value">
+
                                     </div>
 
                                 </div>
-                                
-                                <div class = "enemy_attack_bar">
+
+                                <div class="enemy_attack_bar">
 
                                 </div>
-                                <div id="E1_effect" class= "enemy_effect"></div>
+                                <div id="E1_effect" class="enemy_effect"></div>
                             </div>
                         </div>
-                        <div id = "enemy_2_div" class = "enemy_div">
+                        <div id="enemy_2_div" class="enemy_div">
                             <div>
-                                <div class = "enemy_name">
+                                <div class="enemy_name">
 
                                 </div>
-                                <div class = "enemy_stats">
-                                    <div class = "enemy_stat enemy_stat_long">
+                                <div class="enemy_stats">
+                                    <div class="enemy_stat enemy_stat_long">
 
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_long">
-                                        
+                                    <div class="enemy_stat enemy_stat_long">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                 </div>
-                                <div class = "enemy_health_div">
-                                    <div class = "enemy_healthbar_max">
-                                        <div class = "enemy_healthbar_current">
+                                <div class="enemy_health_div">
+                                    <div class="enemy_healthbar_max">
+                                        <div class="enemy_healthbar_current">
 
                                         </div>
                                     </div>
-                                    <div class = "enemy_health_value">
-                                        
+                                    <div class="enemy_health_value">
+
                                     </div>
 
                                 </div>
-                                
-                                <div class = "enemy_attack_bar">
+
+                                <div class="enemy_attack_bar">
 
                                 </div>
-                                
-                                <div id="E2_effect" class= "enemy_effect"></div>
+
+                                <div id="E2_effect" class="enemy_effect"></div>
                             </div>
                         </div>
-                        <div id = "enemy_3_div" class = "enemy_div">
+                        <div id="enemy_3_div" class="enemy_div">
                             <div>
-                                <div class = "enemy_name">
+                                <div class="enemy_name">
 
                                 </div>
-                                <div class = "enemy_stats">
-                                    <div class = "enemy_stat enemy_stat_long">
+                                <div class="enemy_stats">
+                                    <div class="enemy_stat enemy_stat_long">
 
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_long">
-                                        
+                                    <div class="enemy_stat enemy_stat_long">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                 </div>
-                                <div class = "enemy_health_div">
-                                    <div class = "enemy_healthbar_max">
-                                        <div class = "enemy_healthbar_current">
+                                <div class="enemy_health_div">
+                                    <div class="enemy_healthbar_max">
+                                        <div class="enemy_healthbar_current">
 
                                         </div>
                                     </div>
-                                    <div class = "enemy_health_value">
-                                        
+                                    <div class="enemy_health_value">
+
                                     </div>
 
                                 </div>
-                                
-                                <div class = "enemy_attack_bar">
+
+                                <div class="enemy_attack_bar">
 
                                 </div>
-                                
-                                <div id="E3_effect" class= "enemy_effect"></div>
+
+                                <div id="E3_effect" class="enemy_effect"></div>
                             </div>
                         </div>
-                        <div id = "enemy_4_div" class = "enemy_div">
+                        <div id="enemy_4_div" class="enemy_div">
                             <div>
-                                <div class = "enemy_name">
+                                <div class="enemy_name">
 
                                 </div>
-                                <div class = "enemy_stats">
-                                    <div class = "enemy_stat enemy_stat_long">
+                                <div class="enemy_stats">
+                                    <div class="enemy_stat enemy_stat_long">
 
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_long">
-                                        
+                                    <div class="enemy_stat enemy_stat_long">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                 </div>
-                                <div class = "enemy_health_div">
-                                    <div class = "enemy_healthbar_max">
-                                        <div class = "enemy_healthbar_current">
+                                <div class="enemy_health_div">
+                                    <div class="enemy_healthbar_max">
+                                        <div class="enemy_healthbar_current">
 
                                         </div>
                                     </div>
-                                    <div class = "enemy_health_value">
-                                        
+                                    <div class="enemy_health_value">
+
                                     </div>
 
                                 </div>
-                                
-                                <div class = "enemy_attack_bar">
+
+                                <div class="enemy_attack_bar">
 
                                 </div>
-                                
-                                <div id="E4_effect" class= "enemy_effect"></div>
+
+                                <div id="E4_effect" class="enemy_effect"></div>
                             </div>
                         </div>
-                        <div id = "enemy_5_div" class = "enemy_div">
+                        <div id="enemy_5_div" class="enemy_div">
                             <div>
-                                <div class = "enemy_name">
+                                <div class="enemy_name">
 
                                 </div>
-                                <div class = "enemy_stats">
-                                    <div class = "enemy_stat enemy_stat_long">
+                                <div class="enemy_stats">
+                                    <div class="enemy_stat enemy_stat_long">
 
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_long">
-                                        
+                                    <div class="enemy_stat enemy_stat_long">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                 </div>
-                                <div class = "enemy_health_div">
-                                    <div class = "enemy_healthbar_max">
-                                        <div class = "enemy_healthbar_current">
+                                <div class="enemy_health_div">
+                                    <div class="enemy_healthbar_max">
+                                        <div class="enemy_healthbar_current">
 
                                         </div>
                                     </div>
-                                    <div class = "enemy_health_value">
-                                        
+                                    <div class="enemy_health_value">
+
                                     </div>
 
                                 </div>
-                                
-                                <div class = "enemy_attack_bar">
+
+                                <div class="enemy_attack_bar">
 
                                 </div>
-                                
-                                <div id="E5_effect" class= "enemy_effect"></div>
+
+                                <div id="E5_effect" class="enemy_effect"></div>
                             </div>
                         </div>
-                        <div id = "enemy_6_div" class = "enemy_div">
+                        <div id="enemy_6_div" class="enemy_div">
                             <div>
-                                <div class = "enemy_name">
+                                <div class="enemy_name">
 
                                 </div>
-                                <div class = "enemy_stats">
-                                    <div class = "enemy_stat enemy_stat_long">
+                                <div class="enemy_stats">
+                                    <div class="enemy_stat enemy_stat_long">
 
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_long">
-                                        
+                                    <div class="enemy_stat enemy_stat_long">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                 </div>
-                                
-                                <div class = "enemy_health_div">
-                                    <div class = "enemy_healthbar_max">
-                                        <div class = "enemy_healthbar_current">
+
+                                <div class="enemy_health_div">
+                                    <div class="enemy_healthbar_max">
+                                        <div class="enemy_healthbar_current">
 
                                         </div>
                                     </div>
-                                    <div class = "enemy_health_value">
-                                        
+                                    <div class="enemy_health_value">
+
                                     </div>
 
                                 </div>
 
-                                
-                                <div class = "enemy_attack_bar">
+
+                                <div class="enemy_attack_bar">
 
                                 </div>
-                                
-                                <div id="E6_effect" class= "enemy_effect"></div>
+
+                                <div id="E6_effect" class="enemy_effect"></div>
                             </div>
                         </div>
-                        <div id = "enemy_7_div" class = "enemy_div">
+                        <div id="enemy_7_div" class="enemy_div">
                             <div>
-                                <div class = "enemy_name">
+                                <div class="enemy_name">
 
                                 </div>
-                                <div class = "enemy_stats">
-                                    <div class = "enemy_stat enemy_stat_long">
+                                <div class="enemy_stats">
+                                    <div class="enemy_stat enemy_stat_long">
 
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_long">
-                                        
+                                    <div class="enemy_stat enemy_stat_long">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                     |
-                                    <div class = "enemy_stat enemy_stat_short">
-                                        
+                                    <div class="enemy_stat enemy_stat_short">
+
                                     </div>
                                 </div>
-                                <div class = "enemy_health_div">
-                                    <div class = "enemy_healthbar_max">
-                                        <div class = "enemy_healthbar_current">
+                                <div class="enemy_health_div">
+                                    <div class="enemy_healthbar_max">
+                                        <div class="enemy_healthbar_current">
 
                                         </div>
                                     </div>
-                                    <div class = "enemy_health_value">
-                                        
+                                    <div class="enemy_health_value">
+
                                     </div>
 
                                 </div>
-                                
-                                <div class = "enemy_attack_bar">
+
+                                <div class="enemy_attack_bar">
 
                                 </div>
-                                
-                                <div id="E7_effect" class= "enemy_effect"></div>
+
+                                <div id="E7_effect" class="enemy_effect"></div>
                             </div>
                         </div>
                     </div>
-                    <div id = "enemy_count_div">
-                        <div id = "enemy_count_content">
-                            <div style = "display:inline-block;"> 
+                    <div id="enemy_count_div">
+                        <div id="enemy_count_content">
+                            <div style="display:inline-block;">
                                 Waves remaining:
                             </div>
-                            <div id = "enemies_left_div">
-                                
+                            <div id="enemies_left_div">
+
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- actions and stuff-->
-                <div id = "location_related_div" class = "box_div">
-                    <div id = "fish_div">
-                        <div id = "fish_background_div">
-                            <div id = "neko_fish_div">
+                <div id="location_related_div" class="box_div">
+                    <div id="fish_div">
+                        <div id="fish_background_div">
+                            <div id="neko_fish_div">
                                 <img src="image/spec/neko.png">
-                                <div id = "fish_progress_div">
-                                    <div id = "fish_progress_bar">
+                                <div id="fish_progress_div">
+                                    <div id="fish_progress_bar">
                                     </div>
                                 </div>
-                                
-                                <div id = "fish_mark_div">
+
+                                <div id="fish_mark_div">
                                     <img src="image/spec/fishmark.png">
                                 </div>
 
                             </div>
-                            <div id = "fish_minigame_div">
-                                <div id = "fish_rod_div">
+                            <div id="fish_minigame_div">
+                                <div id="fish_rod_div">
                                 </div>
-                                
-                                <div id = "fish_game_div">
+
+                                <div id="fish_game_div">
                                     <img src="image/spec/fishmark.png">
                                 </div>
                             </div>
                         </div>
-                        <div id = "fish_font_div">
+                        <div id="fish_font_div">
                             F<br><br>
                             &emsp; I<br><br>
                             &emsp; &emsp; S<br><br>
@@ -553,165 +555,165 @@
                             &emsp; &emsp; &emsp; &emsp; &emsp; ...
                         </div>
                     </div>
-                    
-                    <div id = "reactor_div">
-                        <div id = "reactor_info_div">
+
+                    <div id="reactor_div">
+                        <div id="reactor_info_div">
                             <b>= Core Reactor = </b> The best way to craft ultra-high-quality Gel Sword Hilts!<br>
                             <span style="color:red">WARNING: The reactor will melt down at 9999°C, destroying everything inside.</span><br>
                         </div>
-                        <div id = "B1_core_div">
-                            <div id = "reactor_B1_bar_max"> 
-                                <div id = "reactor_B1_bar_current">
+                        <div id="B1_core_div">
+                            <div id="reactor_B1_bar_max">
+                                <div id="reactor_B1_bar_current">
                                 </div>
                             </div>
                             <span style="color:#CFFEE3">
                                 <b>B1 Energy Core</b>:<span id="B1_core_num">0</span>
-                            <span id="B1_core_diff">0</span>
-                            <br>
-                                <span class="money_button" onclick = "reactor(1,1)">[+1]</span>
-                                <span class="money_button" onclick = "reactor(1,10)">[+10]</span>
-                                <span class="money_button" onclick = "reactor(1,100)">[+100]</span>
-                                <span class="money_button" onclick = "reactor(1,1000)">[+1K]</span>
+                                <span id="B1_core_diff">0</span>
+                                <br>
+                                <span class="money_button" onclick="reactor(1,1)">[+1]</span>
+                                <span class="money_button" onclick="reactor(1,10)">[+10]</span>
+                                <span class="money_button" onclick="reactor(1,100)">[+100]</span>
+                                <span class="money_button" onclick="reactor(1,1000)">[+1K]</span>
 
-                            </span> 
+                            </span>
                         </div>
-                        <div id = "A7_core_div">
-                            <div id = "reactor_A7_bar_max"> 
-                                <div id = "reactor_A7_bar_current">
+                        <div id="A7_core_div">
+                            <div id="reactor_A7_bar_max">
+                                <div id="reactor_A7_bar_current">
                                 </div>
                             </div>
                             <span style="color:#FBD6FB">
                                 <b>A7 Energy Core</b>:<span id="A7_core_num">0</span>
-                            <span id="A7_core_diff">0</span>
-                            <br>
-                                <span class="money_button" onclick = "reactor(2,1)">[+1]</span>
-                                <span class="money_button" onclick = "reactor(2,10)">[+10]</span>
-                                <span class="money_button" onclick = "reactor(2,100)">[+100]</span>
-                                <span class="money_button" onclick = "reactor(2,1000)">[+1K]</span>
-                            </span> 
+                                <span id="A7_core_diff">0</span>
+                                <br>
+                                <span class="money_button" onclick="reactor(2,1)">[+1]</span>
+                                <span class="money_button" onclick="reactor(2,10)">[+10]</span>
+                                <span class="money_button" onclick="reactor(2,100)">[+100]</span>
+                                <span class="money_button" onclick="reactor(2,1000)">[+1K]</span>
+                            </span>
                         </div>
-                        <div id = "LD_core_div">
-                            <div id = "reactor_LD_bar_max"> 
-                                <div id = "reactor_LD_bar_current">
+                        <div id="LD_core_div">
+                            <div id="reactor_LD_bar_max">
+                                <div id="reactor_LD_bar_current">
                                 </div>
                             </div>
                             <span style="color:#0066FF">
                                 <b>Thunder Shield</b>:<span id="LD_core_num">0</span>
-                                <span class="money_button" onclick = "reactor(3,1)">[+1]</span>
-                                <span class="money_button" onclick = "reactor(3,10)">[+10]</span>
-                                <span class="money_button" onclick = "reactor(3,100)">[+100]</span>
-                                <span class="money_button" onclick = "reactor(3,1000)">[+1K]</span>
-                            </span> 
+                                <span class="money_button" onclick="reactor(3,1)">[+1]</span>
+                                <span class="money_button" onclick="reactor(3,10)">[+10]</span>
+                                <span class="money_button" onclick="reactor(3,100)">[+100]</span>
+                                <span class="money_button" onclick="reactor(3,1000)">[+1K]</span>
+                            </span>
                             <br>
                         </div>
-                        <div id = "ER_core_div">
-                            <div id = "reactor_ER_bar_max"> 
-                                <div id = "reactor_ER_bar_current">
+                        <div id="ER_core_div">
+                            <div id="reactor_ER_bar_max">
+                                <div id="reactor_ER_bar_current">
                                 </div>
                             </div>
                             <span style="color:#808080">
                                 <b>High-Energy Gel </b>:<span id="ER_core_num">0</span>
-                                <span class="money_button" onclick = "reactor(4,1)">[+1]</span>
-                                <span class="money_button" onclick = "reactor(4,10)">[+10]</span>
-                                <span class="money_button" onclick = "reactor(4,100)">[+100]</span>
-                                <span class="money_button" onclick = "reactor(4,1000)">[+1K]</span>
-                            </span> 
+                                <span class="money_button" onclick="reactor(4,1)">[+1]</span>
+                                <span class="money_button" onclick="reactor(4,10)">[+10]</span>
+                                <span class="money_button" onclick="reactor(4,100)">[+100]</span>
+                                <span class="money_button" onclick="reactor(4,1000)">[+1K]</span>
+                            </span>
                             <br>
                         </div>
-                        
-                        <div id = "temp_div">
-                            <div id = "temp_bar_max"> 
-                                <div id = "temp_bar_current">
+
+                        <div id="temp_div">
+                            <div id="temp_bar_max">
+                                <div id="temp_bar_current">
                                 </div>
                             </div>
                             <span style="color:#ffb0b0">
                                 <b>Reactor Temperature </b>:<span id="temp_num">5600</span>°C
-                                
+
                                 <span id="temp_diff">0</span>
-                            </span> 
+                            </span>
                             <br>
                         </div>
-                        <div id = "rad_div">
-                            <div id = "rad_bar_max"> 
-                                <div id = "rad_bar_current">
+                        <div id="rad_div">
+                            <div id="rad_bar_max">
+                                <div id="rad_bar_current">
                                 </div>
                             </div>
                             <span style="color:#d0ffc0">
                                 <b>Total Absorbed Energy </b>:<span id="rad_num">0</span>
                                 <span id="rad_diff">0</span>
-                                 (Quality:<span id="rad_quality">160</span>%)
-                            </span> 
+                                (Quality:<span id="rad_quality">160</span>%)
+                            </span>
                             <br>
                         </div>
 
                         <div id="reactor_exit">
-                            <span class="money_button_wide" onclick = "extract_reactor()" style="color:#808080"><b>[Extract Gel Sword Hilt]</b></span>
-                            <span class="money_button_wider" onclick = "extract_evolve()" style="color:#80FF80" id="reactor_evolve"><b>[Condense Evolution Crystal (1M Energy)]</b></span>
-                            <span class="money_button" onclick = "leave_reactor()"><b>[Leave]</b></span>
+                            <span class="money_button_wide" onclick="extract_reactor()" style="color:#808080"><b>[Extract Gel Sword Hilt]</b></span>
+                            <span class="money_button_wider" onclick="extract_evolve()" style="color:#80FF80" id="reactor_evolve"><b>[Condense Evolution Crystal (1M Energy)]</b></span>
+                            <span class="money_button" onclick="leave_reactor()"><b>[Leave]</b></span>
                         </div>
 
 
 
 
                     </div>
-                    <div id = "location_actions_div">	
-                        
+                    <div id="location_actions_div">
+
                     </div>
 
 
-                    <div id = "trade_div">
-                        <div id = "trader_sorting_buttons" class="activable_buttons"> 
-                            <div id = "trader_sort_by_price" class = "trader_sorting_button active_selection_button" onclick='sortTraderInventory("price")'>
+                    <div id="trade_div">
+                        <div id="trader_sorting_buttons" class="activable_buttons">
+                            <div id="trader_sort_by_price" class="trader_sorting_button active_selection_button" onclick='sortTraderInventory("price")'>
                                 Sort by Value
                             </div>
-                            <div id = "trader_sort_by_name" class = "trader_sorting_button " onclick='sortTraderInventory("name")'>
+                            <div id="trader_sort_by_name" class="trader_sorting_button " onclick='sortTraderInventory("name")'>
                                 Sort by Name
                             </div>
                         </div>
-                        <div id = "trader_category_buttons" class="activable_buttons">
-                            <div id = "trader_category_all" class = "trader_category_button active_selection_button" onclick='showAllTraderItems()'>
+                        <div id="trader_category_buttons" class="activable_buttons">
+                            <div id="trader_category_all" class="trader_category_button active_selection_button" onclick='showAllTraderItems()'>
                                 All
                             </div>
-                            <div id = "trader_category_equipment" class = "trader_category_button" onclick="showOnlyTraderEquipment()">
+                            <div id="trader_category_equipment" class="trader_category_button" onclick="showOnlyTraderEquipment()">
                                 Equipment
                             </div>
-                            <div id = "trader_category_usable" class = "trader_category_button" onclick="showOnlyTraderConsumables()">
+                            <div id="trader_category_usable" class="trader_category_button" onclick="showOnlyTraderConsumables()">
                                 Consumables
                             </div>
-                            <div id = "trader_category_other" class = "trader_category_button" onclick="showOnlyTraderOther()">
+                            <div id="trader_category_other" class="trader_category_button" onclick="showOnlyTraderOther()">
                                 Misc
                             </div>
                         </div>
 
 
-                        <div id = "trader_inventory_div">
+                        <div id="trader_inventory_div">
 
                         </div>
-                        <div id = "trade_control_div">
+                        <div id="trade_control_div">
 
-                            <div id = "trader_cost_mult">
-                                <div id = "trader_cost_mult_text"> Price: </div>
-                                <div id = "trader_cost_mult_value"> </div>
-                            </div>
-                            
-                            <div id = "trade_price_div">
-                                <div id = "trade_price_text"> Total: </div>
-                                <div id = "trade_price_value"> 0C </div>
+                            <div id="trader_cost_mult">
+                                <div id="trader_cost_mult_text"> Price: </div>
+                                <div id="trader_cost_mult_value"> </div>
                             </div>
 
-                            <div id = "accept_trade_button" onclick = "acceptTrade()">
+                            <div id="trade_price_div">
+                                <div id="trade_price_text"> Total: </div>
+                                <div id="trade_price_value"> 0C </div>
+                            </div>
+
+                            <div id="accept_trade_button" onclick="acceptTrade()">
                                 Trade
                             </div>
-                            <div id = "cancel_trade_button" onclick = "cancelTrade()">
+                            <div id="cancel_trade_button" onclick="cancelTrade()">
                                 Cancel
                             </div>
-                            <div id = "exit_trade_button" onclick = "exitTrade()">
+                            <div id="exit_trade_button" onclick="exitTrade()">
                                 Leave
                             </div>
                         </div>
                     </div>
 
-                    <div id = "crafting_window" class="crafting_window">
+                    <div id="crafting_window" class="crafting_window">
                         <div id="crafting_mainpage_buttons" class="activable_buttons crafting_mainpage_buttons">
                             <div class="crafting_mainpage_button active_selection_button" onclick="switchCraftingRecipesPage('crafting')">Crafting</div>
                             <div class="crafting_mainpage_button" onclick="switchCraftingRecipesPage('cooking')">Cooking</div>
@@ -728,32 +730,32 @@
                                 <div class="crafting_subpage_button crafting_subpage_button_5" onclick="switchCraftingRecipesSubpage('crafting', 'equipment')">Equipment</div>
                             </div>
                             <div class="crafting_category crafting_recipe_list" data-crafting_category="crafting" data-crafting_subcategory="items">
-                                
+
                             </div>
                             <div class="crafting_category crafting_recipe_list" data-crafting_category="crafting" data-crafting_subcategory="components">
-                                
+
                             </div>
                             <div class="crafting_category crafting_recipe_list" data-crafting_category="crafting" data-crafting_subcategory="equipment">
-                                
+
                             </div>
                             <div class="crafting_category crafting_recipe_list" data-crafting_category="crafting" data-crafting_subcategory="items2">
                             </div>
                             <div class="crafting_category crafting_recipe_list" data-crafting_category="crafting" data-crafting_subcategory="items3">
                             </div>
                         </div>
-                        <div class="crafting_category" data-crafting_category="cooking"  style="display:none">
+                        <div class="crafting_category" data-crafting_category="cooking" style="display:none">
                             <div class="crafting_subpage_buttons activable_buttons">
                                 <div class="crafting_subpage_button crafting_subpage_button_3 active_selection_button" onclick="switchCraftingRecipesSubpage('cooking', 'items')">Act I</div><div class="crafting_subpage_button crafting_subpage_button_3 active_selection_button" onclick="switchCraftingRecipesSubpage('cooking', 'items2')">Act II</div><div class="crafting_subpage_button crafting_subpage_button_3 active_selection_button" onclick="switchCraftingRecipesSubpage('cooking', 'items3')">Act III</div>
                             </div>
                             <div class="crafting_category crafting_recipe_list" data-crafting_category="cooking" data-crafting_subcategory="items">
-                                
+
                             </div>
                             <div class="crafting_category crafting_recipe_list" data-crafting_category="cooking" data-crafting_subcategory="items2">
                             </div>
                             <div class="crafting_category crafting_recipe_list" data-crafting_category="cooking" data-crafting_subcategory="items3">
                             </div>
                         </div>
-                        <div class="crafting_category" data-crafting_category="smelting"  style="display:none">
+                        <div class="crafting_category" data-crafting_category="smelting" style="display:none">
                             <div class="crafting_subpage_buttons activable_buttons">
                                 <div class="crafting_subpage_button crafting_subpage_button_3 active_selection_button" onclick="switchCraftingRecipesSubpage('smelting', 'items')">Act I</div>
                                 <div class="crafting_subpage_button crafting_subpage_button_3" onclick="switchCraftingRecipesSubpage('smelting', 'items2')">Act II</div>
@@ -766,24 +768,24 @@
                             <div class="crafting_category crafting_recipe_list" data-crafting_category="smelting" data-crafting_subcategory="items3">
                             </div>
                         </div>
-                        <div class="crafting_category" data-crafting_category="forging"  style="display:none">
+                        <div class="crafting_category" data-crafting_category="forging" style="display:none">
                             <div class="crafting_subpage_buttons activable_buttons">
-                                <div class="crafting_subpage_button crafting_subpage_button_2 active_selection_button"  onclick="switchCraftingRecipesSubpage('forging', 'items')">Items/Accessories</div>
-                                <div class="crafting_subpage_button crafting_subpage_button_2"  onclick="switchCraftingRecipesSubpage('forging', 'components')">Components</div>
+                                <div class="crafting_subpage_button crafting_subpage_button_2 active_selection_button" onclick="switchCraftingRecipesSubpage('forging', 'items')">Items/Accessories</div>
+                                <div class="crafting_subpage_button crafting_subpage_button_2" onclick="switchCraftingRecipesSubpage('forging', 'components')">Components</div>
                             </div>
 
                             <div class="crafting_category crafting_recipe_list" data-crafting_category="forging" data-crafting_subcategory="items">
 
                             </div>
                             <div class="crafting_category crafting_recipe_list" data-crafting_category="forging" data-crafting_subcategory="components">
-                                
+
                             </div>
                             <div class="crafting_category crafting_recipe_list" data-crafting_category="forging" data-crafting_subcategory="items2">
                             </div>
                             <div class="crafting_category crafting_recipe_list" data-crafting_category="forging" data-crafting_subcategory="items3">
                             </div>
                         </div>
-                        <div class="crafting_category" data-crafting_category="alchemy"  style="display:none">
+                        <div class="crafting_category" data-crafting_category="alchemy" style="display:none">
                             <div class="crafting_subpage_buttons activable_buttons">
                                 <div class="crafting_subpage_button crafting_subpage_button_3 active_selection_button" onclick="switchCraftingRecipesSubpage('alchemy', 'items')">Act I</div>
                                 <div class="crafting_subpage_button crafting_subpage_button_3" onclick="switchCraftingRecipesSubpage('alchemy', 'items2')">Act II</div>
@@ -804,23 +806,23 @@
                 </div>
 
                 <div id="skills_and_stances_div" class="box_div">
-                    <div id = "skill_list_div">
-                            <div id = "skill_list">
+                    <div id="skill_list_div">
+                        <div id="skill_list">
+                        </div>
+                        <div id="skill_sorting_buttons" class="activable_buttons">
+                            <div id="skill_sort_by_name" class="skill_sorting_button active_selection_button" onclick='sortSkills({sort_by:"name"})'>
+                                Sort by Name
                             </div>
-                            <div id = "skill_sorting_buttons" class="activable_buttons"> 
-                                <div id = "skill_sort_by_name" class = "skill_sorting_button active_selection_button" onclick='sortSkills({sort_by:"name"})'>
-                                    Sort by Name
-                                </div>
-                                <div id = "skill_sort_by_level" class = "skill_sorting_button" onclick='sortSkills({sort_by:"level"})'>
-                                    Sort by Level
-                                </div>
+                            <div id="skill_sort_by_level" class="skill_sorting_button" onclick='sortSkills({sort_by:"level"})'>
+                                Sort by Level
                             </div>
+                        </div>
                     </div>
-                    <div id = "stance_list_div">
-                        <table id = "stance_list">
+                    <div id="stance_list_div">
+                        <table id="stance_list">
                         </table>
                     </div>
-                    <div id = "skill_and_stance_control_div" class="activable_buttons">
+                    <div id="skill_and_stance_control_div" class="activable_buttons">
                         <div id="show_skills" class="skill_stance_control_button active_selection_button" onclick="showSkills()">
                             Skills
                         </div>
@@ -829,65 +831,159 @@
                         </div>
                     </div>
                 </div>
-
-                <div id = "journal_div" class = "box_div">
-                    <div id = "journal_control_div" class="activable_buttons">
-                        <div id = "journal_show_quests" class = "journal_control_button" onclick = "showQuests()"> Realm </div>
-                        <div id = "journal_show_bestiary" class = "journal_control_button active_selection_button" onclick = "showBestiary()"> Bestiary </div>
-                        <div id = "journal_show_levelary" class = "journal_control_button" onclick = "showLevelary()"> Zone Guide </div>
-                        <div id = "journal_show_data" class = "journal_control_button" onclick = "showData()"> Stats/Bank </div>
+                <div id="engine_div" class="box_div">
+                    <div id="engine_container">
+                        <div id="container_circle"></div>
+                        <img src="image/spec/container.png" style="transform: scale(1.6); transform-origin: top left; image-rendering: pixelated; display: block;">
                     </div>
-                    <div id = "quests_box_div">
-                        <div id = "quests_header">
+                    <div id="engine_container_stats">
+                        <b>
+                            <span style="color:rgb(154, 255, 255)">
+                                A. Superfluid: <span id="container_sf">25</span> m³ / <span id="container_sf_S">25</span> m²
+                                <span class="money_button" onclick="engine(1,5)">[+5]</span>
+                                <span class="money_button" onclick="engine(1,50)">[+50]</span>
+                                <span class="money_button" onclick="engine(1,500)">[+500]</span>
+                                <span class="money_button" onclick="engine(1,-1)">[+ALL]</span>
+                            </span><br>
+                            <span style="color:rgb(94, 255, 207)">
+                                Temperature: <span id="container_temp">240</span> K ( <span id="container_temp_change">0</span> K/s)
+                            </span><br>
+                            <span style="color:rgb(94, 183, 255)">
+                                P. Ice Crystal: <span id="container_isolate">15</span> pts / <span id="container_isolate_thickness">0.0416</span> m
+                                <span class="money_button" onclick="engine(2,10)">[+10]</span>
+                                <span class="money_button" onclick="engine(2,100)">[+100]</span>
+                                <span class="money_button" onclick="engine(2,-1)">[+ALL]</span>
+                                <span class="money_button" onclick="engine(2,-2)">[-ALL]</span>
+                            </span><br>
+                            <span style="color:rgb(94, 124, 255)">
+                                Ice Element: <span id="container_element">0</span> / <span id="container_element_max">25000</span> pts (<span id="container_element_speed">0</span>pts/s) <br>
+
+                                <div id="engine_element_bar_max">
+                                    <div id="engine_element_bar_current">
+                                    </div>
+                                </div>
+                                Estimated Time: <span id="container_element_time">10000 years</span>.
+                            </span><br>
+                        </b>
+                    </div>
+
+                    <div id="engine_result_stats">
+                        <b>
+                            <span style="color:rgb(0, 255, 255)">
+                                Withdraw [<span id="engine_result_name">Arctic Superfluid</span>] : <br>
+                                <span class="money_button" onclick="engine_r(1,5)">[-5]</span>
+                                <span class="money_button" onclick="engine_r(1,50)">[-50]</span>
+                                <span class="money_button" onclick="engine_r(1,500)">[-500]</span>
+                                <span class="money_button" onclick="engine_r(1,-1)">[-ALL]</span>
+                            </span><br>
+                            <span style="color:rgb(0, 4, 255)">
+                                Mystic Ice Fruit: <span id="engine_result_fruit_status">Not added</span>
+                                <span class="money_button" onclick="engine_f(1)">[Add]</span>
+                                <span class="money_button" onclick="engine_f(2)">[Take]</span>
+                            </span><br>
+                            <span style="color:rgb(94, 183, 255)">
+                                Environment: <span id="engine_result_temp">240</span><br>
+                                <span class="environ_button_1" onclick="engine_e(240)" style="color:rgb(209, 255, 240)">[Arctic]</span>
+                                <span id="engine_env1" class="environ_button_2" onclick="engine_e(960)" style="color:rgb(255, 94, 0)">[Flame-Sea]</span>
+                                <span id="engine_env2" class="environ_button_3" onclick="engine_e(180)" style="color:rgb(20, 228, 255)">[Frost Sky]</span>
+                            </span><br>
+
+                            <span style="background: linear-gradient(to bottom right,cyan,white,cyan);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;" onclick="engine_e(-1)">[Convert the Spaceship Heart to material version]</span><br>
+                        </b>
+                    </div>
+                    <div id="engine_piston">
+                        <div id="container_square"></div>
+                        <div id="piston_pt1">
+                            <img src="image/spec/piston_pt1.png" style="transform: scale(1.2); transform-origin: top left; image-rendering: pixelated; display: block;">
+                        </div>
+                        <div id="piston_pt2">
+                            <img src="image/spec/piston_pt2.png" style="transform: scale(1.2); transform-origin: top left; image-rendering: pixelated; display: block;">
+                        </div>
+                        <div id="piston_buttons">
+                            <div id="piston_compress" onclick="changePistonMode(1)">Compress</div>
+                            <div id="piston_expand" onclick="changePistonMode(2)">Expand</div>
+                            <div id="piston_fill" onclick="changePistonMode(3)">Pump Air</div>
+                            <div id="piston_defill" onclick="changePistonMode(4)">Release Air</div>
+                        </div>
+                        <div id="piston_stats">
+                            <b>
+                                <br>
+                                <span style="color:antiquewhite">
+                                    Piston Status: <span id="piston_mode">idling</span>
+                                </span><br><span style="color:lightskyblue">
+                                    Inner Air Temperature: <span id="piston_temp">240</span> K
+                                </span><br><span style="color:pink">
+                                    Inner Air Pressure: <span id="piston_pressure">9977.4MPa</span>
+                                </span><br><span style="color:lemonchiffon">
+                                    Arctic Air Volume: <span id="piston_volume">30</span> / 30.000 m³
+                                </span><br><span style="color:lightsalmon">
+                                    Neko Work Power: <span id="neko_power">0</span> GW
+                                </span><br>
+                            </b>
+                        </div>
+                    </div>
+                    <div id="piston_change" onclick="changePistonStatus()"><i class="material-icons">sync</i>Move Piston</div>
+                    <div id="leave_engine" onclick="engine_l()"><i class="material-icons">directions</i>Leave Engine</div>
+                </div>
+
+                <div id="journal_div" class="box_div">
+                    <div id="journal_control_div" class="activable_buttons">
+                        <div id="journal_show_quests" class="journal_control_button" onclick="showQuests()"> Realm </div>
+                        <div id="journal_show_bestiary" class="journal_control_button active_selection_button" onclick="showBestiary()"> Bestiary </div>
+                        <div id="journal_show_levelary" class="journal_control_button" onclick="showLevelary()"> Zone Guide </div>
+                        <div id="journal_show_data" class="journal_control_button" onclick="showData()"> Stats/Bank </div>
+                    </div>
+                    <div id="quests_box_div">
+                        <div id="quests_header">
                             <b>= Realm =</b>
                         </div>
-                        <div id = "quest_list">
+                        <div id="quest_list">
 
                         </div>
                     </div>
-                    <div id = "bestiary_box_div">
-                        <div id = "bestiary_list">
+                    <div id="bestiary_box_div">
+                        <div id="bestiary_list">
 
                         </div>
-                        
+
                     </div>
-                    <div id = "levelary_box_div" style="display: none">
-                        <div id = "levelary_list" style="display: none">
+                    <div id="levelary_box_div" style="display: none">
+                        <div id="levelary_list" style="display: none">
 
                         </div>
                     </div>
-                    <div id = "data_box_div">
-                        <div id = "data_list">
-                            <div id = "data_xp">
-                                <div id = "character_xp_multiplier" class="data_entry"></div>
-                                <div id = "skills_xp_multiplier" class="data_entry"></div>
+                    <div id="data_box_div">
+                        <div id="data_list">
+                            <div id="data_xp">
+                                <div id="character_xp_multiplier" class="data_entry"></div>
+                                <div id="skills_xp_multiplier" class="data_entry"></div>
                             </div>
-                            
-                            <div id = "data_bank">
-                                
+
+                            <div id="data_bank">
+
                                 <br><b>Yangang Bank - Withdrawal</b><br>
-                                <div id = "data_bankX" class="data_entry">
-                                        <span class="coin coin_moneyK money_button" onclick = "get_money(1,1)">[1  X]</span>
-                                        <span class="coin coin_moneyK money_button" onclick = "get_money(1,10)">[10 X]</span>
-                                        <span class="coin coin_moneyK money_button" onclick = "get_money(1,100)">[100X]</span>
+                                <div id="data_bankX" class="data_entry">
+                                    <span class="coin coin_moneyK money_button" onclick="get_money(1,1)">[1  X]</span>
+                                    <span class="coin coin_moneyK money_button" onclick="get_money(1,10)">[10 X]</span>
+                                    <span class="coin coin_moneyK money_button" onclick="get_money(1,100)">[100X]</span>
                                 </div>
-                                <div id = "data_bankZ" class="data_entry">
-                                        <span class="coin coin_moneyM money_button" onclick = "get_money(2,1)">[1  Z]</span>
-                                        <span class="coin coin_moneyM money_button" onclick = "get_money(2,10)">[10 Z]</span>
-                                        <span class="coin coin_moneyM money_button" onclick = "get_money(2,100)">[100Z]</span>
+                                <div id="data_bankZ" class="data_entry">
+                                    <span class="coin coin_moneyM money_button" onclick="get_money(2,1)">[1  Z]</span>
+                                    <span class="coin coin_moneyM money_button" onclick="get_money(2,10)">[10 Z]</span>
+                                    <span class="coin coin_moneyM money_button" onclick="get_money(2,100)">[100Z]</span>
                                 </div>
-                                <div id = "data_bankD" class="data_entry">
-                                        <span class="coin coin_moneyB money_button" onclick = "get_money(3,1)">[1  D]</span>
-                                        <span class="coin coin_moneyB money_button" onclick = "get_money(3,10)">[10 D]</span>
-                                        <span class="coin coin_moneyB money_button" onclick = "get_money(3,100)">[100D]</span>
+                                <div id="data_bankD" class="data_entry">
+                                    <span class="coin coin_moneyB money_button" onclick="get_money(3,1)">[1  D]</span>
+                                    <span class="coin coin_moneyB money_button" onclick="get_money(3,10)">[10 D]</span>
+                                    <span class="coin coin_moneyB money_button" onclick="get_money(3,100)">[100D]</span>
                                 </div>
-                                <div id = "data_bankB" class="data_entry">
-                                        <span class="coin coin_moneyT money_button" onclick = "get_money(4,1)">[1  B]</span>
-                                        <span class="coin coin_moneyT money_button" onclick = "get_money(4,10)">[10 B]</span>
-                                        <span class="coin coin_moneyT money_button" onclick = "get_money(4,100)">[100B]</span>
-                                        <span class="coin coin_moneyT money_button" onclick = "get_money(4,1000)">[1KB]</span>
-                                        <span class="coin coin_moneyT money_button" onclick = "get_money(4,10000)">[1WB]</span>
-                                        <span class="coin coin_moneyT money_button" onclick = "get_money(4,100000)">[10WB]</span>
+                                <div id="data_bankB" class="data_entry">
+                                    <span class="coin coin_moneyT money_button" onclick="get_money(4,1)">[1  B]</span>
+                                    <span class="coin coin_moneyT money_button" onclick="get_money(4,10)">[10 B]</span>
+                                    <span class="coin coin_moneyT money_button" onclick="get_money(4,100)">[100B]</span>
+                                    <span class="coin coin_moneyT money_button" onclick="get_money(4,1000)">[1KB]</span>
+                                    <span class="coin coin_moneyT money_button" onclick="get_money(4,10000)">[1WB]</span>
+                                    <span class="coin coin_moneyT money_button" onclick="get_money(4,100000)">[10WB]</span>
                                 </div>
                             </div>
 
@@ -896,204 +992,204 @@
                 </div>
 
                 <!-- character stats and equipment-->
-                <div id = "character_div" class = "box_div"> 
-                    <div id = "character_stats_div"> 
-                        <div id = "character_level_div">
+                <div id="character_div" class="box_div">
+                    <div id="character_stats_div">
+                        <div id="character_level_div">
                             Realm: Dust Rank Novice
                         </div>
-                        <div class = "grid_container">
-                            <div class = "stat_slot_div"> 
-                                <div class = "stat_name"> ATK: </div>
-                                <div class = "stat_value" id = "attack_power_slot"></div> 
-                                <div class = "stat_tooltip"> 
+                        <div class="grid_container">
+                            <div class="stat_slot_div">
+                                <div class="stat_name"> ATK: </div>
+                                <div class="stat_value" id="attack_power_slot"></div>
+                                <div class="stat_tooltip">
                                     <div>ATK, affected by level/equipment/skills</div>
                                     <div class="stat_breakdown"></div>
                                 </div>
                             </div>
-                            <div class = "stat_slot_div"> 
-                                <div class = "stat_name"> DEF: </div>
-                                <div class = "stat_value" id = "defense_slot"></div> 
-                                <div class = "stat_tooltip"> 
+                            <div class="stat_slot_div">
+                                <div class="stat_name"> DEF: </div>
+                                <div class="stat_value" id="defense_slot"></div>
+                                <div class="stat_tooltip">
                                     <div>DEF, used to reduce incoming damage</div>
                                     <div class="stat_breakdown"></div>
                                 </div>
                             </div>
-                            
+
                         </div>
-                        <div class = "grid_container">
-                            <div class = "stat_slot_div"> 
-                                <div class = "stat_name"> AGI: </div>
-                                <div class = "stat_value" id = "agility_slot"></div> 
-                                <div class = "stat_tooltip"> 
+                        <div class="grid_container">
+                            <div class="stat_slot_div">
+                                <div class="stat_name"> AGI: </div>
+                                <div class="stat_value" id="agility_slot"></div>
+                                <div class="stat_tooltip">
                                     <div>AGI, affects hit rate/evasion rate</div>
                                     <div class="stat_breakdown"></div>
                                 </div>
                             </div>
-                            <div class = "stat_slot_div"> 
-                                <div class = "stat_name"> SPD: </div>
-                                <div class = "stat_value" id = "attack_speed_slot"></div> 
-                                <div class = "stat_tooltip"> 
+                            <div class="stat_slot_div">
+                                <div class="stat_name"> SPD: </div>
+                                <div class="stat_value" id="attack_speed_slot"></div>
+                                <div class="stat_tooltip">
                                     <div>Attack Speed, affects time between attacks</div>
                                     <div class="stat_breakdown"></div>
                                 </div>
                             </div>
-                            
-                            
+
+
                         </div>
-                        
-                        <div class = "grid_container">
-                            <div class = "stat_slot_div"> 
-                                <div class = "stat_name"> C.rate: </div>
-                                <div class = "stat_value" id = "crit_rate_slot"></div> 
-                                <div class = "stat_tooltip">
+
+                        <div class="grid_container">
+                            <div class="stat_slot_div">
+                                <div class="stat_name"> C.rate: </div>
+                                <div class="stat_value" id="crit_rate_slot"></div>
+                                <div class="stat_tooltip">
                                     <div> Chance to deal a critical hit</div>
                                     <div class="stat_breakdown"></div>
                                 </div>
                             </div>
-                            <div class = "stat_slot_div"> 
-                                <div class = "stat_name"> C.mult: </div>
-                                <div class = "stat_value" id = "crit_multiplier_slot"></div> 
-                                <div class = "stat_tooltip"> 
+                            <div class="stat_slot_div">
+                                <div class="stat_name"> C.mult: </div>
+                                <div class="stat_value" id="crit_multiplier_slot"></div>
+                                <div class="stat_tooltip">
                                     <div> Critical hit damage multiplier </div>
                                     <div class="stat_breakdown"></div>
                                 </div>
                             </div>
-                            
+
                         </div>
-                        <div class = "grid_container">
-                            <div class = "stat_slot_div"> 
-                                <div class = "stat_name"> MaxHP: </div>
-                                <div class = "stat_value" id = "strength_slot"></div> 
-                                <div class = "stat_tooltip"> 
+                        <div class="grid_container">
+                            <div class="stat_slot_div">
+                                <div class="stat_name"> MaxHP: </div>
+                                <div class="stat_value" id="strength_slot"></div>
+                                <div class="stat_tooltip">
                                     <div>Max HP</div>
                                     <div class="stat_breakdown"></div>
-                             </div>
+                                </div>
                             </div>
-                            <div class = "stat_slot_div"> 
-                                <div class = "stat_name"> HP/s: </div>
-                                <div class = "stat_value" id = "intuition_slot"></div> 
-                                <div class = "stat_tooltip"> 
+                            <div class="stat_slot_div">
+                                <div class="stat_name"> HP/s: </div>
+                                <div class="stat_value" id="intuition_slot"></div>
+                                <div class="stat_tooltip">
                                     <div>HP Regen</div>
                                     <div class="stat_breakdown"></div>
                                 </div>
                             </div>
-                            
-                            
+
+
                         </div>
-                        <div class = "grid_container">
-                            <div class = "stat_slot_div"> 
-                                <div class = "stat_name" id="A_mul_slot"> Locked </div>
-                                <div class = "stat_value" id = "dexterity_slot"></div> 
-                                <div class = "stat_tooltip"> 
+                        <div class="grid_container">
+                            <div class="stat_slot_div">
+                                <div class="stat_name" id="A_mul_slot"> Locked </div>
+                                <div class="stat_value" id="dexterity_slot"></div>
+                                <div class="stat_tooltip">
                                     <div id="A_mul_tooltip">Not availiable</div>
                                     <div class="stat_breakdown"></div>
                                 </div>
                             </div>
-                            <div class = "stat_slot_div"> 
-                                <div class = "stat_name" id="Luck_slot"> Locked </div>
-                                <div class = "stat_value" id = "UK1_slot"></div> 
-                                <div class = "stat_tooltip"> 
+                            <div class="stat_slot_div">
+                                <div class="stat_name" id="Luck_slot"> Locked </div>
+                                <div class="stat_value" id="UK1_slot"></div>
+                                <div class="stat_tooltip">
                                     <div id="Luck_tooltip">Not availiable </div>
                                     <div class="stat_breakdown"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class = "grid_container">
-                            <div class = "stat_slot_div"> 
-                                <div class = "stat_name"> Locked </div>
-                                <div class = "stat_value" id = "hit_chance_slot"></div> 
-                                <div class = "stat_tooltip"> 
+                        <div class="grid_container">
+                            <div class="stat_slot_div">
+                                <div class="stat_name"> Locked </div>
+                                <div class="stat_value" id="hit_chance_slot"></div>
+                                <div class="stat_tooltip">
                                     <div> Not availiable </div>
                                     <div class="stat_breakdown"></div>
                                 </div>
                             </div>
-                            <div class = "stat_slot_div" id = "defensive_action_chance"> 
-                                <div class = "stat_name"> Locked </div>
-                                <div class = "stat_value" id = "defensive_action_chance_slot"></div> 
+                            <div class="stat_slot_div" id="defensive_action_chance">
+                                <div class="stat_name"> Locked </div>
+                                <div class="stat_value" id="defensive_action_chance_slot"></div>
 
                                 <!-- tooltip content is set in display.js-->
-                                <div class = "stat_tooltip">
+                                <div class="stat_tooltip">
                                     <div>Not availiable</div>
                                     <div></div>
                                 </div>
                             </div>
                         </div>
 
-                        <div id = "character_effects">
-                            <div id = "effects_div">
+                        <div id="character_effects">
+                            <div id="effects_div">
                                 <div> Active Effects: </div>
-                                <div id = "active_effect_count"> 0 </div>
+                                <div id="active_effect_count"> 0 </div>
                             </div>
                         </div>
 
                     </div>
-                    
-                    <div id = "character_equipment_div"> 
-                        <div class = "grid_container">
-                            <div class = "equipment_slot_div" id = "head_slot"> Head </div>
-                            <div class = "equipment_slot_div" id = "torso_slot"> Torso </div>
+
+                    <div id="character_equipment_div">
+                        <div class="grid_container">
+                            <div class="equipment_slot_div" id="head_slot"> Head </div>
+                            <div class="equipment_slot_div" id="torso_slot"> Torso </div>
                         </div>
-                        <div class = "grid_container">
-                            <div class = "equipment_slot_div" id = "legs_slot"> Legs </div>
-                            <div class = "equipment_slot_div" id = "feet_slot"> Feet </div>
+                        <div class="grid_container">
+                            <div class="equipment_slot_div" id="legs_slot"> Legs </div>
+                            <div class="equipment_slot_div" id="feet_slot"> Feet </div>
                         </div>
-                        <div class = "grid_container">
-                            <div class = "equipment_slot_div" id = "weapon_slot"> Weapon </div>
-                            <div class = "equipment_slot_div" id = "method_slot"> Arcane Art</div>
+                        <div class="grid_container">
+                            <div class="equipment_slot_div" id="weapon_slot"> Weapon </div>
+                            <div class="equipment_slot_div" id="method_slot"> Arcane Art</div>
                         </div>
-                        <div class = "grid_container">
-                            <div class = "equipment_slot_div" id = "realm_slot"> Domain </div>
-                            <div class = "equipment_slot_div" id = "law_slot"> Law </div>
+                        <div class="grid_container">
+                            <div class="equipment_slot_div" id="realm_slot"> Domain </div>
+                            <div class="equipment_slot_div" id="law_slot"> Law </div>
                         </div>
-                        <div class = "grid_container">
-                            <div class = "equipment_slot_div" id = "props_slot"> Props </div>
-                            <div class = "equipment_slot_div" id = "special_slot"> Special </div>
+                        <div class="grid_container">
+                            <div class="equipment_slot_div" id="props_slot"> Props </div>
+                            <div class="equipment_slot_div" id="special_slot"> Special </div>
                         </div>
                     </div>
 
-                    <div id = "character_tools_div">
-                        <div class = "equipment_slot_div" id = "axe_slot"> Axe </div>
-                        <div class = "equipment_slot_div" id = "pickaxe_slot"> Pickaxe </div>
-                        <div class = "equipment_slot_div" id = "sickle_slot"> Sickle </div>
+                    <div id="character_tools_div">
+                        <div class="equipment_slot_div" id="axe_slot"> Axe </div>
+                        <div class="equipment_slot_div" id="pickaxe_slot"> Pickaxe </div>
+                        <div class="equipment_slot_div" id="sickle_slot"> Sickle </div>
                     </div>
 
-                    <div id = "character_control_div" class="activable_buttons">
-                        <div id = "character_show_stats" class = "character_control_button active_selection_button" onclick = "showCharacterStats()"> Stats </div>
-                        <div id = "character_show_equipment" class = "character_control_button" onclick = "showCharacterEquipment()"> Equipment </div>
-                        <div id = "character_show_tools" class = "character_control_button" onclick = "showCharacterTools()"> Tools </div>
+                    <div id="character_control_div" class="activable_buttons">
+                        <div id="character_show_stats" class="character_control_button active_selection_button" onclick="showCharacterStats()"> Stats </div>
+                        <div id="character_show_equipment" class="character_control_button" onclick="showCharacterEquipment()"> Equipment </div>
+                        <div id="character_show_tools" class="character_control_button" onclick="showCharacterTools()"> Tools </div>
                     </div>
                 </div>
 
 
-            <!-- message log -->
-            <div id = "message_log_div" class = "box_div">
-                <div id = "message_box_div">
+                <!-- message log -->
+                <div id="message_log_div" class="box_div">
+                    <div id="message_box_div">
 
-                </div>
-                <div id = "message_controls">
+                    </div>
+                    <div id="message_controls">
 
-                    <div id = "message_show_unlocks" class = "message_control_button active_selection_button" onclick = "showUnlocksMessages()">
-                        Level Up & Unlocks
+                        <div id="message_show_unlocks" class="message_control_button active_selection_button" onclick="showUnlocksMessages()">
+                            Level Up & Unlocks
+                        </div>
+                        <div id="message_show_events" class="message_control_button active_selection_button" onclick="showEventsMessages()">
+                            _Events_
+                        </div>
+                        <div id="message_show_crafting" class="message_control_button active_selection_button" onclick="showCraftingMessages()">
+                            _Crafting_
+                        </div>
+                        <div id="message_show_combat" class="message_control_button active_selection_button" onclick="showCombatMessages()">
+                            _Combat_
+                        </div>
+                        <div id="message_show_loot" class="message_control_button active_selection_button" onclick="showLootMessages()">
+                            _Loot_
+                        </div>
+                        <div id="message_show_background" class="message_control_button active_selection_button" onclick="showBackgroundMessages()">
+                            Background
+                        </div>
+
                     </div>
-                    <div id = "message_show_events" class = "message_control_button active_selection_button" onclick = "showEventsMessages()">
-                        _Events_
-                    </div>
-                    <div id = "message_show_crafting" class = "message_control_button active_selection_button" onclick = "showCraftingMessages()">
-                        _Crafting_
-                    </div>
-                    <div id = "message_show_combat" class = "message_control_button active_selection_button" onclick = "showCombatMessages()">
-                        _Combat_
-                    </div>
-                    <div id = "message_show_loot" class = "message_control_button active_selection_button" onclick = "showLootMessages()">
-                        _Loot_
-                    </div>
-                    <div id = "message_show_background" class = "message_control_button active_selection_button" onclick = "showBackgroundMessages()">
-                        Background
-                    </div>
-                    
                 </div>
             </div>
-        </div>
 
         <div id = "bottom_panel_div">
             <div id = "save_button" class = "sl_button" onclick = "saveProgress()"> Save </div>
@@ -1495,7 +1591,7 @@
 
             function prepareGame() { //called on body loaded
                 
-                document.getElementById("changelog_button").children[0].innerHTML = "V2.22c";
+                document.getElementById("changelog_button").children[0].innerHTML = "V2.23e";
 
                 let tooltip_move_ticks = 60;
                 let tooltip_wait = 0;
