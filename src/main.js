@@ -1068,6 +1068,24 @@ function textline_special(t_key){
         else if (t_key == "freezing-engine") {
             start_engine_minigame();
         }
+        else if (t_key == "realm-II") {
+            displayed_text += 'When I saw this icy blue hexagram formation, I realized a lot...<br>';
+            displayed_text += 'The water art I once comprehended,<br>';
+            displayed_text += 'completely merged with my fire-element domain.<br>';
+            displayed_text += 'Surprisingly... this kind of mystical effect was produced.<br>';
+            displayed_text += 'Two opposing elements, are supposed to be extremely hard to have coexist.<br>';
+            displayed_text += 'But once you reach a perfect turning point,<br>';
+            displayed_text += 'you may enter the mystical state of [Two Worlds of Ice and Fire],<br>';
+            displayed_text += 'and release unbelievable power!<br>';
+            if (skills["Neko_Realm"].current_level <= 29) {
+                displayed_text += `, [Fire Spirit Illusion Sea] has received 51.2G XP!<br>`;
+            }
+            else {
+                displayed_text += `[Flame-Sea Frost Sky] has received 51.2G XP...?<br>`;
+                displayed_text += `Your comprehension has already broken through?! You're too good at farming!!<br>`;
+            }
+            add_xp_to_skill({ skill: skills["Neko_Realm"], xp_to_add: 51.2e20, should_info: true, use_bonus: false, add_to_parent: false },);
+        }
         else if(t_key == "jjhzx"){
 
             if(character.equipment.special?.name == "Boundary Lake Heart")
@@ -2004,13 +2022,16 @@ function update_neko_realm()
         log_message(`A crimson hexagram slowly rises,`, "gathered_loot");
         log_message(`The temperature in this area rises sharply,`, "gathered_loot");
         log_message(`even the floor of the ship seems to warp from the intense heat.`, "gathered_loot");
-        log_message(`Gained new technique [Phantom Sea of Fire]!`, "location_unlocked");
+        log_message(`Gained new technique [Fire Spirit Illusion Sea]!`, "location_unlocked");
         inf_combat.RM = 2;
     }
     else if(S_level >= 30 && inf_combat.RM < 3)
     {
         add_to_character_inventory([{item: getItem({...item_templates["焰海霜天[领域二重]"], quality: 200}), count: 1}]);
-        log_message(`Domain 2nd Layer story [WIP]!`, "location_unlocked");
+        log_message(`Water, vitalizes everything, is soft and elegant...`, "gathered_loot");
+        log_message(`Fire, cruel and violent, yet illuminates everything, igniting hope.`, "gathered_loot");
+        log_message(`Gained new technique [Flame-Sea Frost Sky]!`, "location_unlocked");
+        log_message(`[Freezing Air Phase Transformation Engine] - [Flame-Sea] / [Frost Sea] environments now unlocked!`, "location_unlocked");
         inf_combat.RM = 3;
     }
     else if(S_level >= 40 && inf_combat.RM < 4)
@@ -4624,7 +4645,7 @@ const engine_env2 = document.getElementById("engine_env2");
 
 
 function update_displayed_engine() {
-    engine_result_name.innerText = (inf_combat.FE.SF.num * 999.999 - inf_combat.FE.SF.ice < 0) ? "Myriad Year Ice Marrow" : "Arctic Superfluid";
+    engine_result_name.innerText = (inf_combat.FE.SF.num * 999.999 - inf_combat.FE.SF.ice < 0) ? "Myriad Year Ice Marrow Ingot" : "Arctic Superfluid";
     engine_result_fruit_status.innerText = (inf_combat.FE.fruit == -1) ? "Not added" : `Awakened ${(inf_combat.FE.fruit / 1e4).toFixed(4)}%`
     engine_result_temp.innerText = (inf_combat.FE.outer_temp.toFixed(0)) + 'K / ' + ((inf_combat.FE.outer_temp / 240) ** 2 * 12).toFixed(2) + 'MPa';
     engine_env1.style.display = (character.equipment.realm?.name == "Flame-Sea Frost Sky [Domain Stage 2]" || character.equipment.realm?.name == "Flame-Sea Frost Sky [Domain Stage 3]") ? "inline-block" : "none";
@@ -4691,7 +4712,7 @@ function update_displayed_engine() {
 function start_engine_minigame() {
     //设定1：冰原的外界气压为1.2 MPa！
     if (inf_combat.FE == undefined) engine_init();
-    if (inf_combat.FE.SF.temp == NaN || inf_combat.FE.IA.temp == null) engine_init();
+    if (inf_combat.FE.SF.temp != inf_combat.FE.SF.temp || inf_combat.FE.IA.temp != inf_combat.FE.IA.temp) engine_init();
     update_displayed_engine()
     engine_able = true;
     engine_div.style.display = "inherit";
@@ -4735,7 +4756,7 @@ function start_engine_minigame() {
         if (inf_combat.FE.piston_mode == 3) {
             //Pdt/(RT1(25/6(p2/p1)^0.4-2.5))
             dN = (character.stats.full.attack_power ** 1.5) * frametime / (8.3144626 * outer_temp * (25 / 6 * (inf_combat.FE.IA.pressure / outer_pressure) ** 0.4 - 2.5));
-            if (dN >= frametime * inf_combat.FE.IA.num) dN = 0.025 * inf_combat.FE.IA.num;
+            if (dN >= frametime * inf_combat.FE.IA.num) dN = frametime * inf_combat.FE.IA.num;
             dT = (dN / inf_combat.FE.IA.num) * (5 / 3 * outer_temp * (inf_combat.FE.IA.pressure / outer_pressure) ** 0.4 - inf_combat.FE.IA.temp);
             inf_combat.FE.IA.num += dN;
             inf_combat.FE.IA.temp += dT;
@@ -4765,6 +4786,10 @@ function start_engine_minigame() {
         }
         inf_combat.FE.IA.pressure = inf_combat.FE.IA.num * inf_combat.FE.IA.temp * 8.3144626 / inf_combat.FE.IA.volume;
         // nRT / V
+        if (inf_combat.FE.IA.pressure <= outer_pressure) {
+            inf_combat.FE.IA.num = outer_pressure * inf_combat.FE.IA.volume / inf_combat.FE.IA.temp / 8.3144626;
+            inf_combat.FE.IA.pressure = inf_combat.FE.IA.num * inf_combat.FE.IA.temp * 8.3144626 / inf_combat.FE.IA.volume;
+        }//内压小于外压就内压=外压！高压锅！
 
         //WIP:计算表面积&隔热层厚度
         //V=4pi/3 r^3,S=4pir^2,所以S=(6pi^0.5V)^2/3

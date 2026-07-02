@@ -775,6 +775,17 @@
                     </ul>
                 </li>
                 <br>
+                <li>
+                    Pressure Lock:
+                    <ul>
+                        <li>Although it can withstand pressures of several TPa on the inside just fine, but the Freezing Air Phase Transformation Engine's reverse airtightness is extremely horrible.</li>
+                        <li>If the inner pressure is less than the outer pressure, the inner pressure will instantly equal the outer pressure the next frame.</li>
+                        <li>This is because when the inner pressure = ~27.885%(-) of the outer pressure, the denominator in the air pumping equation will become a very small negative number.</li>
+                        <li>Which causes the inner air amount to become a negative number with a very large absolute value in the next frame.</li>
+                        <li>Then... heat transfer, air release, expanding, compressing etc. break down in a chain reaction, creating heaps of NaN.</li>
+                    </ul>
+                </li>
+                <br>
             </ul>
         </div>
 

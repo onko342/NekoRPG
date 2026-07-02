@@ -3467,7 +3467,7 @@ function get_location_type_penalty(type, stage, stat) {
         connected_locations: [{location: locations["飞云阁"], custom_text: "Return to Feiyun Pavilion"}],
         description: "A bitterly cold world of ice and snow. The temperature stays around 240K (-33°C), and the ice element permeating the air can spell doom for Earth Rank cultivators. [End point for versions before V2.30]",
         name: "Pure White Arctic Tundra",
-        dialogues: ["纳娜米(冰原)", "极寒相变引擎"],
+        dialogues: ["纳娜米(冰原)", "极寒相变引擎", "冰霜门户"],
         is_unlocked: false,
         bgm: 16,
         unlock_text : "In a silver-white world wrapped in thick snow, two girls stand on the peak of a snow mountain, overlooking the vast white expanse below."
@@ -3528,7 +3528,7 @@ function get_location_type_penalty(type, stage, stat) {
         },
         repeatable_reward: {
             xp: 30e8,
-            locations: [{location: "纯白冰原 - 4"}],
+            locations: [{ location: "纯白冰原 - 4" }, { location: "纯白冰原 - 冰霜门户" }],
         },
     });
     locations["纯白冰原 - 4"] = new Combat_zone({
@@ -3549,11 +3549,28 @@ function get_location_type_penalty(type, stage, stat) {
             //locations: [{location: "纯白冰原 - X"}],
         },
     });
+    locations["纯白冰原 - 冰霜门户"] = new Challenge_zone({
+        description: "In front of you is a stone gate covered in ice and snow on both sides. Only by passing this hate monster can you reach it.",
+        enemy_count: 1,
+        enemies_list: [["探险者的怨恨[BOSS]"]],
+        enemy_group_size: [1, 1],
+        types: [],
+        is_unlocked: false,
+        is_challenge: true,
+        name: "Pure White Arctic Tundra - Ice Gate",
+        bgm: 16,
+        parent_location: locations["纯白冰原"],
+        repeatable_reward: {
+            textlines: [{ dialogue: "冰霜门户", lines: ["bs1"] }],
+        },
+        unlock_text: "System notice: touching the ice gate might have unexpected rewards.",
+    });
 
     locations["纯白冰原"].connected_locations.push({location: locations["纯白冰原 - 1"]});
     locations["纯白冰原"].connected_locations.push({location: locations["纯白冰原 - 2"]});
     locations["纯白冰原"].connected_locations.push({location: locations["纯白冰原 - 3"]});
-    locations["纯白冰原"].connected_locations.push({location: locations["纯白冰原 - 4"]});
+    locations["纯白冰原"].connected_locations.push({ location: locations["纯白冰原 - 4"] });
+    locations["纯白冰原"].connected_locations.push({ location: locations["纯白冰原 - 冰霜门户"] });
 
 
 

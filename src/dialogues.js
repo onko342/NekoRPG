@@ -1678,6 +1678,72 @@ class Textline {
         }
     });
 
+    dialogues["冰霜门户"] = new Dialogue({
+        name: "Ice Gate",
+        textlines: {
+            "bs1": new Textline({
+                is_unlocked: false,
+                name: "Hey, what is this? (touch)",
+                text: "Neko's fingers touched this gate of ice.<br>Instantly, a bone-chilling cold<br>came from her palm, causing the girl to shiver for a bit.<br>In front of Neko, a long, long tunnel appeared,<br>extending in front of her.<br>The two sides of the tunnel were both tall, transparent walls of ice.",
+
+                unlocks: {
+                    textlines: [{ dialogue: "冰霜门户", lines: ["bs2"] }],
+                },
+                locks_lines: ["bs1"],
+            }),
+            "bs2": new Textline({
+                is_unlocked: false,
+                name: "(continue onward)",
+                text: "She reflexively stepped towards the end of the tunnel, <br>and soon saw a door made of ice; <br>this door looks normal and unremarkable, but glows a faint blue.<br>The power of ice felt as if it were solid, permeating the air, <br>gradually forming a strange but familiar sight, <br>it is — a huge azure hexagram!",
+
+                unlocks: {
+                    textlines: [{ dialogue: "冰霜门户", lines: ["bs3"] }],
+                },
+                locks_lines: ["bs2"],
+            }),
+            "bs3": new Textline({
+                is_unlocked: false,
+                name: "Domain... an ice-element domain!",
+                text: "Neko uncontrollably raised her hand, fire energies erupted, <br>extending around her body, <br>colliding with the huge icy hexagram in an instant!<br>A dramatic explosion resounded through the surroundings, <br>the whole tunnel was shaking intensely.<br>Shockwaves engulfed the surroundings, <br>cracks appeared all over the ice wall, then rapidly healed.<br>Cracks also appeared on the azure hexagram, <br>it was at that moment that the fire energy found its way in, <br> flowing into the cracks in the hexagram, ultimately disappearing.",
+
+                unlocks: {
+                    textlines: [{ dialogue: "冰霜门户", lines: ["bs4"] }],
+                },
+                locks_lines: ["bs3"],
+            }),
+            "bs4": new Textline({
+                is_unlocked: false,
+                name: "Water, vitalizes everything... fire, illuminates everything...",
+                text: "",
+
+                unlocks: {
+                    spec: "realm-II",
+                    textlines: [{ dialogue: "冰霜门户", lines: ["bs5"] }],
+                },
+                locks_lines: ["bs4"],
+            }),
+            "bs5": new Textline({
+                is_unlocked: false,
+                name: "...",
+                text: "[Nanami] Koko, please wake up...<br>don't scare sister.<br>Neko opened her confused eyes,<br>as her sister's worried voice reached her.<br>[Nanami] Koko!<br>You just suddenly fainted, I thought you...<br>do you still remember what happened?",
+
+                unlocks: {
+                    textlines: [{ dialogue: "冰霜门户", lines: ["bs6"] }],
+                },
+                locks_lines: ["bs5"],
+            }),
+            "bs6": new Textline({
+                is_unlocked: false,
+                name: "(creates a mini formation) How did you know my domain broke through?",
+                text: "[Nanami] Hey what? When...<br>That explains it, that ice gate?<br>That's so you, Koko, you always bring sister surprises.<br>Speaking of which, I found this inside...<br><br>Acquired [Myriad Year Ice Marrow Ingot]!",
+
+                unlocks: {
+                    items: [{ item_name: "万载冰髓锭" }],
+                },
+                locks_lines: ["bs6"],
+            }),
+        }
+    });
 
 
 
