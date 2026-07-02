@@ -2053,7 +2053,7 @@ function create_displayed_crafting_recipes() {
                 crafting_pages[recipe_category][recipe_subcategory].innerHTML = "";
             }
             Object.keys(recipes[recipe_category][recipe_subcategory]).forEach(recipe => {
-                if(!((recipe == 'Moonwheel' ) && (!global_flags["is_moonwheel_unlocked"]))) add_crafting_recipe_to_display({category: recipe_category, subcategory: recipe_subcategory, recipe_id: recipe});
+                if (!((recipe == '月轮' ) && (!global_flags["is_moonwheel_unlocked"]))) add_crafting_recipe_to_display({category: recipe_category, subcategory: recipe_subcategory, recipe_id: recipe});
             });
         });
     });
@@ -2065,7 +2065,7 @@ function unlock_moonwheel() {
     Object.keys(recipes).forEach(recipe_category => {
         Object.keys(recipes[recipe_category]).forEach(recipe_subcategory => {
             Object.keys(recipes[recipe_category][recipe_subcategory]).forEach(recipe => {
-                if((recipe == 'Moonwheel')) add_crafting_recipe_to_display({category: recipe_category, subcategory: recipe_subcategory, recipe_id: recipe});
+                if ((recipe == '月轮')) add_crafting_recipe_to_display({category: recipe_category, subcategory: recipe_subcategory, recipe_id: recipe});
             });
         });
     });
