@@ -4854,7 +4854,7 @@ function engine_f(oper) {
     if (oper == 2 && inf_combat.FE.fruit != -1) {
         //根据是否抵达1e6判定取出什么
         let q_id = inf_combat.FE.fruit > 999900 ? "玄冰果实·觉醒" : "玄冰果实";
-        log_message(`Received ${q_id} !`, "combat_loot");
+        log_message(`Received ${item_templates[q_id].name} !`, "combat_loot");
 
         add_to_character_inventory([{ "item": getItem(item_templates[q_id]), "count": 1 }]);
         update_displayed_character_inventory();
