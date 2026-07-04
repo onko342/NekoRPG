@@ -1,11 +1,21 @@
-<br>V2.24：Ice Gate/Equipment quality viewing [2026-03-06]
+<br>V2.30: BOSS/new area entrance [2026-03-07]
+<br>·Added [Hostile Hunter Soldier] / [Hostile Witch], default HP both 200%.
+<br>·Added [Pure Whit Arctic Tundra - X]. Fixed refresh 6 hunter soldiers and 1 witch, 24% aura.
+<br>·Added [Extreme Cold Ice City] entrance and BGM.
+<br>·Now the basic stat buff of domains is applied to agility.
+<br>·Because I noticed that you can get to the current area with only mixed purple and orange equipment and less than 2k kills, and that I even gave the boss more HP...
+<br>·The 3-3-4 green gem drop has been canceled. Slightly increased the regular drops.
+<br>·Mystic Ice Fruit text visual changed from pure blue to a blue outline on azure text (reverse Celestial). This should make it clearer.
+<br>
+<br>
+<br>V2.24: Ice Gate/Equipment quality viewing [2026-03-06]
 <br>·Added [Hate of the Explorer] BOSS, [Ice Gate] area (unlocked at 3-3-3).
 <br>·Added Domain Stage 2 story (slightly changed)
 <br>·Added dialogue that will guarantee that you reach Domain Stage 2
 <br>·Now equipment in the equipment slots show their quality color.
 <br>
 <br>
-<br>V2.23a-V2.23f:Freezing Air Engine bug fixes [2026-03-05]
+<br>V2.23a-V2.23g: Freezing Air Engine bug fixes [2026-03-07]
 <br>·There is way too much, it needs an independent section.
 <br>·Fixed a LaTeX wrong parenthesis bug
 <br>·Fixed the bug where Tundra Heart still has 1.03 stats.
@@ -23,6 +33,8 @@
 <br>·Forgot to remove the engine from the Hel Swamp Flying Rat AAAHHHHHHHHHH!
 <br>·The mechanic from four lines ago used ==NAN! I'm an idiot! Changed!
 <br>·Now if the inner pressure is less than the outer pressure, an amount of gas enough to equalize the pressure will enter instantly. It's like a pressure cooker that's only airtight in one direction.
+<br>·The above check was moved to before the piston is checked. Or else changing environments while compressing will crash.
+<br>·Added compress/expand/pump air negative number protection mechanisms: if the amount of air pumped in is negative, it will immediately cut out and log this session as 0.
 <br>
 <br>
 <br>V2.23: Freezing Air Phase Transformation Engine~ [2026-03-05]
@@ -64,7 +76,7 @@
 <br>·Added restorative [Energy Smoothie]. Made with Energy Cores (B1, B4) and Arctic Superfluid.
 <br>·Added the classic method of making [Myriad Year Ice Marrow Ingot]
 <br>·You need this much stuff because Epic Blue Gems provide cold, Dark Forest Leaves scatter heat through capillary action, and Porous Ice Crystals serve as insulation. However, success rate doesn't surpass 10%.
-<br>·For the normal production method, please wait for the [Freezing Air Phase Transformation Engine] coming up in the next update! (WIP)
+<br>·For the normal production method, please wait for the [Freezing Air Phase Transformation Engine] coming up in the next update!
 <br>·Fixed the bug where [Sea-Green Skin] and [Red Iron Skin] are reversed
 <br>·Added Ice Marrow weapon heads and outer armor. You know, that stuff.
 <br>·Fixed the bug where crafting Ice-Thorn Armor produces Artificial Fluffling.

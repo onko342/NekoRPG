@@ -3465,7 +3465,7 @@ function get_location_type_penalty(type, stage, stat) {
 
     locations["纯白冰原"] = new Location({ 
         connected_locations: [{location: locations["飞云阁"], custom_text: "Return to Feiyun Pavilion"}],
-        description: "A bitterly cold world of ice and snow. The temperature stays around 240K (-33°C), and the ice element permeating the air can spell doom for Earth Rank cultivators. [End point for versions before V2.30]",
+        description: "A bitterly cold world of ice and snow. The temperature stays around 240K (-33°C), and the ice element permeating the air can spell doom for Earth Rank cultivators.",
         name: "Pure White Arctic Tundra",
         dialogues: ["纳娜米(冰原)", "极寒相变引擎", "冰霜门户"],
         is_unlocked: false,
@@ -3546,7 +3546,7 @@ function get_location_type_penalty(type, stage, stat) {
         },
         repeatable_reward: {
             xp: 40e8,
-            //locations: [{location: "纯白冰原 - X"}],
+            locations: [{location: "纯白冰原 - X"}],
         },
     });
     locations["纯白冰原 - 冰霜门户"] = new Challenge_zone({
@@ -3565,12 +3565,41 @@ function get_location_type_penalty(type, stage, stat) {
         },
         unlock_text: "System notice: touching the ice gate might have unexpected rewards.",
     });
+    locations["纯白冰原 - X"] = new Challenge_zone({
+        description: "In front of you is a stone gate covered in ice and snow on both sides. Only by passing this hate monster can you reach it.",
+        enemy_count: 1,
+        enemy_groups_list: [["敌意女巫[BOSS]", "敌意猎兵[BOSS]", "敌意猎兵[BOSS]", "敌意猎兵[BOSS]", "敌意猎兵[BOSS]", "敌意猎兵[BOSS]", "敌意猎兵[BOSS]"]],
+        enemy_group_size: [7, 7],
+        types: [],
+        enemy_stat_halo: 0.24,
+        is_unlocked: false,
+        is_challenge: true,
+        name: "Pure White Arctic Tundra - X",
+        bgm: 16,
+        parent_location: locations["纯白冰原"],
+        repeatable_reward: {
+            locations: [{ location: "极寒冰城" }],
+        },
+        unlock_text: "[Hunter Soldier] Nothing much to say, if you really want to apologize, then leave your life here! Kill!",
+    });
 
     locations["纯白冰原"].connected_locations.push({location: locations["纯白冰原 - 1"]});
     locations["纯白冰原"].connected_locations.push({location: locations["纯白冰原 - 2"]});
     locations["纯白冰原"].connected_locations.push({location: locations["纯白冰原 - 3"]});
     locations["纯白冰原"].connected_locations.push({ location: locations["纯白冰原 - 4"] });
     locations["纯白冰原"].connected_locations.push({ location: locations["纯白冰原 - 冰霜门户"] });
+    locations["纯白冰原"].connected_locations.push({ location: locations["纯白冰原 - X"] });
+
+
+    locations["极寒冰城"] = new Location({
+        connected_locations: [{ location: locations["纯白冰原"], custom_text: "Return to the Pure White Arctic Tundra" }],
+        description: "In the central area of the Pure White Arctic Tundra is a city comprised entirely of ice. The witch seems to want to leave Neko and Nanami behind, but hasn't noticed that the attackers and defenders have already switched places. [End point for versions before V2.40]",
+        name: "Extreme Cold Ice City",
+        is_unlocked: false,
+        bgm: 17,
+        unlock_text: "[Witch] Outsider scum, I thought you would know to leave upon encountering difficulty, but didn't expect you to invade this ice city!",
+    });//3-4
+    locations["纯白冰原"].connected_locations.push({ location: locations["极寒冰城"] });
 
 
 

@@ -2568,7 +2568,7 @@ item_templates["Twist liek a snek"] = new Book({
         value: 4310344e6,//10B
         stats: {
             attack_power: {
-                multiplier: 1.08,//WIP!!!
+                multiplier: 1.08,
             },
             defense: {
                 multiplier: 1.08,
@@ -5192,7 +5192,7 @@ item_templates["Twist liek a snek"] = new Book({
     });
     item_templates["玄冰果实"] = new Loot({
         name: "Mystic Ice Fruit",
-        description: "When cooled to a sufficiently low temperature, a frost core will condense.<br>Must dissipate heat to [Arctic Superfluid] in the [Freezing Air Phase Transformation Engine]! (WIP)",
+        description: "When cooled to a sufficiently low temperature, a frost core will condense.<br>Must dissipate heat to [Arctic Superfluid] in the [Freezing Air Phase Transformation Engine]!",
         value: 28.8e12,
         image: "image/item/ice_fruit.png",
     });
