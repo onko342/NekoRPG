@@ -3090,7 +3090,7 @@ class Enemy {
         loot_list: [
             {item_name: "极品红宝石", chance:0.05},
             {item_name: "极品绿宝石", chance:0.02},
-            {item_name: "蓝晶碎片", chance:0.07},
+            {item_name: "蓝金碎片", chance:0.07},
             //5.0Z
         ],
     });
